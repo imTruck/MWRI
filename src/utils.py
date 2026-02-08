@@ -7,17 +7,10 @@ from pathlib import Path
 
 logger = logging.getLogger(__name__)
 
-# اسم کانفیگ‌ها - این توی همه برنامه‌ها نشون داده میشه
-PREFIX = "mwri🧘🏽"
+PREFIX = "mwri\U0001f9d8\U0001f3fd"
 
 
 def rename_config(raw, protocol, number):
-    """
-    اسم کانفیگ رو عوض میکنه
-    نتیجه: mwri🧘🏽 VLESS #1
-    این اسم توی همه برنامه‌ها نشون داده میشه چون
-    توی خود کانفیگ تغییر میکنه نه فقط ظاهری
-    """
     new_name = f"{PREFIX} #{number}"
 
     try:
@@ -30,17 +23,13 @@ def rename_config(raw, protocol, number):
                 decoded = base64.b64decode(b64).decode('utf-8', errors='ignore')
             except Exception:
                 decoded = base64.urlsafe_b64decode(b64).decode('utf-8', errors='ignore')
-
             data = json.loads(decoded)
-            # اسم رو عوض کن
             data["ps"] = new_name
             new_json = json.dumps(data, ensure_ascii=False)
             new_b64 = base64.b64encode(new_json.encode('utf-8')).decode('utf-8')
             return f"vmess://{new_b64}"
 
-        else:
-            # vless, trojan, ss, hysteria2, tuic, hy2
-            # همشون اسم رو توی # دارن
+        elif protocol == "vless":
             if '#' in raw:
                 base_part = raw.rsplit('#', 1)[0]
             else:
@@ -48,9 +37,7 @@ def rename_config(raw, protocol, number):
             encoded_name = urllib.parse.quote(new_name, safe='')
             return f"{base_part}#{encoded_name}"
 
-    except Exception as e:
-        logger.debug(f"Rename failed: {e}")
-        # حتی اگه خطا خورد، اسم رو اضافه کن
+    except Exception:
         if '#' in raw:
             base_part = raw.rsplit('#', 1)[0]
         else:
@@ -60,7 +47,6 @@ def rename_config(raw, protocol, number):
 
 
 def rename_all(configs):
-    """همه کانفیگ‌ها رو rename میکنه و لیست خام جدید برمیگردونه"""
     renamed = []
     for i, config in enumerate(configs, 1):
         new_raw = rename_config(config.raw, config.protocol, i)
@@ -94,7 +80,7 @@ def save_json(configs, filepath):
         "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC"),
         "total": len(configs),
         "configs": [{
-            "name": f"{PREFIX} {c.protocol.upper()} #{i}",
+            "name": f"{PREFIX} #{i}",
             "protocol": c.protocol,
             "address": c.address,
             "port": c.port,
@@ -136,9 +122,8 @@ def generate_readme(all_configs, best_configs):
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
     alive = [c for c in all_configs if c.is_alive]
 
-    protocols = {}
-    for c in best_configs:
-        protocols[c.protocol] = protocols.get(c.protocol, 0) + 1
+    vmess_count = len([c for c in best_configs if c.protocol == "vmess"])
+    vless_count = len([c for c in best_configs if c.protocol == "vless"])
 
     avg_latency = 0
     if best_configs:
@@ -157,38 +142,7 @@ def generate_readme(all_configs, best_configs):
 | Best Selected | {len(best_configs)} |
 | Avg Latency | {avg_latency:.0f} ms |
 | Ports | 80, 443 only |
+| VMess | {vmess_count} |
+| VLESS | {vless_count} |
 
-## Protocols
-
-| Protocol | Count |
-|----------|-------|
-"""
-    for proto, count in sorted(protocols.items()):
-        readme += f"| {proto} | {count} |\n"
-
-    readme += """
-| vless | 0 |
-| trojan | 0 |
-
-## Download
-
-- [All Configs](./output/all.txt)
-- [All Configs (Base64 Sub)](./output/all_sub.txt)
-- [All Configs (JSON)](./output/all.json)
-
-### By Protocol
-
-- [VLESS](./output/splitted/vless.txt)
-- [Trojan](./output/splitted/trojan.txt)
-- [VMess](./output/splitted/vmess.txt)
-- [Hysteria2](./output/splitted/hysteria2.txt)
-
-## Features
-
-✅ Auto collect from sources  
-✅ Test latency & alive status  
-✅ Auto rename with prefix  
-✅ Multiple export formats  
-✅ Split by protocol  
-"""
-    return readme
+## Subscription Links - All (VMess + VLESS)
