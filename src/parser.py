@@ -20,11 +20,11 @@ def safe_b64decode(data):
         data = data.strip()
         padding = 4 - len(data) % 4
         if padding != 4:
-            data += '=' * padding
+            data += "=" * padding
         try:
-            return base64.b64decode(data).decode('utf-8', errors='ignore')
+            return base64.b64decode(data).decode("utf-8", errors="ignore")
         except Exception:
-            return base64.urlsafe_b64decode(data).decode('utf-8', errors='ignore')
+            return base64.urlsafe_b64decode(data).decode("utf-8", errors="ignore")
     except Exception:
         return ""
 
@@ -71,11 +71,10 @@ def parse_config(config_str):
 
 
 def extract_configs_from_text(text):
-    protocols = ['vmess://', 'vless://']
     configs = []
 
     decoded = safe_b64decode(text)
-    if decoded and any(p in decoded for p in protocols):
+    if decoded and ("vmess://" in decoded or "vless://" in decoded):
         text = decoded
 
     for line in text.splitlines():
@@ -83,7 +82,7 @@ def extract_configs_from_text(text):
         if line.startswith("vmess://") or line.startswith("vless://"):
             configs.append(line)
 
-    for protocol in protocols:
+    for protocol in ["vmess://", "vless://"]:
         escaped = re.escape(protocol)
         pattern = escaped + r'[A-Za-z0-9+/=_\-%.@:?&#!,;\[\]()~]+'
         matches = re.findall(pattern, text)
