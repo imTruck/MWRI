@@ -1,6 +1,4 @@
-trojan://Trojan-Hqv2rayNG@151.101.66.219:443/?type=ws&host=dontskii.hqv2rayng.xyz&security=tls&sni=speedtest.net#%40Hope_Net-join-us-on-Telegram
-trojan://blue2024@75.2.32.4:443/?type=tcp&security=tls&sni=ta.promote.icu#%40Hope_Net-join-us-on-Telegram
-trojan://humanity@172.64.152.23:443?path=/assignment&security=tls&insecure=0&host=www.gossipglove.com&fp=chrome&type=ws&allowInsecure=0&sni=www.gossipglove.com#
-trojan://89b3cbba-e6ac-485a-9481-976a0415eab9@199.232.197.231:80/?type=ws&host=aliii.ir&path=%2FkptMTT8pTmxLWsoJ%3Fed%3D2560&security=tls&sni=aliii.ir#%40Hope_...
-trojan://29e0206a-2cef-4c8d-aa4b-dd7a43748167@151.101.2.133:443/?type=ws&host=fonmelo.com&security=tls&sni=zmaoz.faculty.ucdavis.edu.#%40Hope_Net-join-us-on-Telegram
-trojan://blue2024@66.235.200.173:443/?type=tcp&security=tls&sni=ta.promote.icu#%40Hope_Net-join-us-on-Telegram
+trojan://29e0206a-2cef-4c8d-aa4b-dd7a43748167@151.101.2.133:443/?type=ws&host=fonmelo.com&security=tls&sni=zmaoz.faculty.ucdavis.edu.#mwri%F0%9F%A7%98%F0%9F%8F%BD%20TROJAN%20%231
+trojan://cefffd1d-cc58-4560-b4d1-44f1af528f30@151.101.3.10:80/?type=ws&host=uni.fi&path=%2F%3Fed%3D2048&security=tls&sni=uni.fi#mwri%F0%9F%A7%98%F0%9F%8F%BD%20TROJAN%20%232
+trojan://Trojan-Hqv2rayNG@151.101.66.219:443/?type=ws&host=dontskii.hqv2rayng.xyz&security=tls&sni=speedtest.net#mwri%F0%9F%A7%98%F0%9F%8F%BD%20TROJAN%20%233
+trojan://humanity@172.64.152.23:443/?sni=www.multiplydose.com&type=ws&path=/assignment&fp=chrome#mwri%F0%9F%A7%98%F0%9F%8F%BD%20TROJAN%20%234
