@@ -7,7 +7,7 @@ from pathlib import Path
 
 logger = logging.getLogger(__name__)
 
-PREFIX = "mwri"
+PREFIX = "mwri\U0001F9D8\U0001F3FD"
 
 
 def rename_config(raw, protocol, number):

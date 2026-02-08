@@ -6,8 +6,14 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# فقط این پورتا قبوله
-ALLOWED_PORTS = [80, 443]
+ALLOWED_PORTS = [
+    80, 443,
+    8080, 8443,
+    2052, 2053,
+    2082, 2083,
+    2086, 2087,
+    2095, 2096
+]
 
 
 class ConfigTester:
@@ -16,21 +22,16 @@ class ConfigTester:
         self.max_workers = max_workers
 
     def test_single(self, config):
-        """یه کانفیگ رو تست میکنه"""
-
-        # فیلتر پورت: فقط 80 و 443
         if config.port not in ALLOWED_PORTS:
             config.is_alive = False
             return config
 
-        # DNS check
         try:
             socket.getaddrinfo(config.address, config.port)
         except Exception:
             config.is_alive = False
             return config
 
-        # TCP connect + latency
         try:
             start = time.time()
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -50,20 +51,21 @@ class ConfigTester:
         return config
 
     def test_batch(self, configs):
-        """همه کانفیگ‌ها رو تست میکنه"""
-
-        # اول فیلتر پورت بزن
         port_filtered = [c for c in configs if c.port in ALLOWED_PORTS]
         skipped = len(configs) - len(port_filtered)
 
-        logger.info(f"Port filter: {len(configs)} total -> {len(port_filtered)} with port 80/443 ({skipped} skipped)")
+        logger.info("Port filter: " + str(len(configs)) + " total -> " + str(len(port_filtered)) + " accepted (" + str(skipped) + " skipped)")
+
+        vmess_count = len([c for c in port_filtered if c.protocol == "vmess"])
+        vless_count = len([c for c in port_filtered if c.protocol == "vless"])
+        logger.info("  VMess: " + str(vmess_count) + " | VLESS: " + str(vless_count))
 
         total = len(port_filtered)
         if total == 0:
-            logger.warning("No configs with port 80 or 443!")
+            logger.warning("No configs to test!")
             return []
 
-        logger.info(f"Testing {total} configs with {self.max_workers} workers...")
+        logger.info("Testing " + str(total) + " configs...")
 
         tested = []
         alive_count = 0
@@ -78,25 +80,25 @@ class ConfigTester:
                     if result.is_alive:
                         alive_count += 1
                     if i % 50 == 0 or i == total:
-                        logger.info(f"  [{i}/{total}] Alive: {alive_count} ({alive_count/i*100:.1f}%)")
+                        logger.info("  [" + str(i) + "/" + str(total) + "] Alive: " + str(alive_count))
                 except Exception:
                     pass
 
-        logger.info(f"Done: {alive_count}/{total} alive")
+        vmess_alive = len([c for c in tested if c.is_alive and c.protocol == "vmess"])
+        vless_alive = len([c for c in tested if c.is_alive and c.protocol == "vless"])
+        logger.info("Done! Alive: " + str(alive_count) + " (VMess:" + str(vmess_alive) + " VLESS:" + str(vless_alive) + ")")
+
         return tested
 
     @staticmethod
     def get_best(configs, top_n=500, max_latency=3000):
-        """بهترین کانفیگ‌ها رو برمیگردونه"""
         alive = [c for c in configs if c.is_alive and 0 < c.latency <= max_latency]
         alive.sort(key=lambda c: c.latency)
         best = alive[:top_n]
 
-        logger.info(f"Selected {len(best)} best configs")
         if best:
-            logger.info(f"  Best:  {best[0].latency}ms")
-            logger.info(f"  Worst: {best[-1].latency}ms")
-            avg = sum(c.latency for c in best) / len(best)
-            logger.info(f"  Avg:   {avg:.0f}ms")
+            vmess_count = len([c for c in best if c.protocol == "vmess"])
+            vless_count = len([c for c in best if c.protocol == "vless"])
+            logger.info("Best " + str(len(best)) + " configs (VMess:" + str(vmess_count) + " VLESS:" + str(vless_count) + ")")
 
         return best
