@@ -18,7 +18,7 @@ def rename_config(raw, protocol, number):
     این اسم توی همه برنامه‌ها نشون داده میشه چون
     توی خود کانفیگ تغییر میکنه نه فقط ظاهری
     """
-    new_name = f"{PREFIX} {protocol.upper()} #{number}"
+    new_name = f"{PREFIX} #{number}"
 
     try:
         if protocol == "vmess":

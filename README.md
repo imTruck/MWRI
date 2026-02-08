@@ -1,13 +1,13 @@
 # mwri🧘🏽 V2Ray Config Collector
 
-> Last Updated: **2026-02-08 10:44:33 UTC**
+> Last Updated: **2026-02-08 10:51:42 UTC**
 
 ## Stats
 
 | Metric | Value |
 |--------|-------|
 | Total Collected | 24888 |
-| Alive | 21370 |
+| Alive | 21424 |
 | Best Selected | 500 |
 | Avg Latency | 1 ms |
 | Ports | 80, 443 only |
@@ -16,10 +16,10 @@
 
 | Protocol | Count |
 |----------|-------|
-| ss | 154 |
-| trojan | 4 |
-| vless | 339 |
-| vmess | 3 |
+| ss | 160 |
+| trojan | 6 |
+| vless | 323 |
+| vmess | 11 |
 
 | vless | 0 |
 | trojan | 0 |
