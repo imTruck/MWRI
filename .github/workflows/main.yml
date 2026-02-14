@@ -1,0 +1,41 @@
+name: Collect and Test
+
+on:
+  schedule:
+    - cron: '0 */3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Run
+        run: python main.py
+
+      - name: Push
+        run: |
+          git config user.email "bot@github.com"
+          git config user.name "Bot"
+          git add output/ README.md clean_ips.txt
+          if git diff --staged --quiet; then
+            echo "No changes"
+          else
+            git commit -m "update"
+            git push
+          fi
