@@ -3,80 +3,44 @@ import json
 import logging
 import urllib.parse
 import copy
-import socket
-import struct
 
 logger = logging.getLogger(__name__)
 
-# دیتابیس کشور بر اساس رنج آیپی کلودفلر
-COUNTRY_MAP = {
-    "162.159": "DE",
-    "172.64": "US",
-    "172.65": "US",
-    "172.66": "US",
-    "172.67": "US",
-    "172.68": "US",
-    "172.69": "US",
-    "172.70": "US",
-    "172.71": "US",
-    "104.16": "US",
-    "104.17": "US",
-    "104.18": "US",
-    "104.19": "US",
-    "104.20": "US",
-    "104.21": "US",
-    "104.22": "US",
-    "104.23": "US",
-    "104.24": "US",
-    "104.25": "US",
-    "104.26": "US",
-    "104.27": "US",
-    "141.101": "EU",
-    "188.114": "EU",
-    "190.93": "US",
-    "197.234": "AF",
-    "198.41": "US",
-    "170.114": "US",
-    "131.0": "EU",
-    "1.1": "AU",
-    "1.0": "AU",
-}
-
 FLAGS = {
-    "DE": "\U0001F1E9\U0001F1EA",
-    "US": "\U0001F1FA\U0001F1F8",
-    "EU": "\U0001F1EA\U0001F1FA",
-    "AF": "\U0001F1E6\U0001F1EB",
-    "AU": "\U0001F1E6\U0001F1FA",
-    "NL": "\U0001F1F3\U0001F1F1",
-    "FI": "\U0001F1EB\U0001F1EE",
-    "GB": "\U0001F1EC\U0001F1E7",
-    "FR": "\U0001F1EB\U0001F1F7",
-    "JP": "\U0001F1EF\U0001F1F5",
-    "SG": "\U0001F1F8\U0001F1EC",
-    "CA": "\U0001F1E8\U0001F1E6",
-    "CF": "\U00002601",
+    "162.159": "\U0001F1E9\U0001F1EA",
+    "172.64": "\U0001F1FA\U0001F1F8",
+    "172.65": "\U0001F1FA\U0001F1F8",
+    "172.66": "\U0001F1FA\U0001F1F8",
+    "172.67": "\U0001F1FA\U0001F1F8",
+    "172.68": "\U0001F1FA\U0001F1F8",
+    "172.69": "\U0001F1FA\U0001F1F8",
+    "172.70": "\U0001F1FA\U0001F1F8",
+    "172.71": "\U0001F1FA\U0001F1F8",
+    "104.16": "\U0001F1FA\U0001F1F8",
+    "104.17": "\U0001F1FA\U0001F1F8",
+    "104.18": "\U0001F1FA\U0001F1F8",
+    "104.19": "\U0001F1FA\U0001F1F8",
+    "104.20": "\U0001F1FA\U0001F1F8",
+    "104.21": "\U0001F1FA\U0001F1F8",
+    "104.22": "\U0001F1FA\U0001F1F8",
+    "104.23": "\U0001F1FA\U0001F1F8",
+    "104.24": "\U0001F1FA\U0001F1F8",
+    "104.25": "\U0001F1FA\U0001F1F8",
+    "104.26": "\U0001F1FA\U0001F1F8",
+    "104.27": "\U0001F1FA\U0001F1F8",
+    "141.101": "\U0001F1EA\U0001F1FA",
+    "188.114": "\U0001F1EA\U0001F1FA",
+    "190.93": "\U0001F1FA\U0001F1F8",
+    "198.41": "\U0001F1FA\U0001F1F8",
 }
 
+PREFIX = "mwri\U0001F9D8\U0001F3FD"
 
-def get_flag_for_ip(ip):
+
+def get_flag(ip):
     parts = ip.split(".")
-    if len(parts) < 2:
-        return FLAGS.get("CF", "")
-
-    prefix2 = parts[0] + "." + parts[1]
-    prefix1 = parts[0] + "." + parts[1][:1]
-
-    if prefix2 in COUNTRY_MAP:
-        code = COUNTRY_MAP[prefix2]
-        return FLAGS.get(code, ""), code
-    
-    for key in COUNTRY_MAP:
-        if ip.startswith(key):
-            code = COUNTRY_MAP[key]
-            return FLAGS.get(code, ""), code
-
-    return "\U00002601", "CF"
+    key = parts[0] + "." + parts[1]
+    return FLAGS.get(key, "\U00002601")
 
 
 def load_clean_ips(filepath="clean_ips.txt"):
@@ -91,6 +55,66 @@ def load_clean_ips(filepath="clean_ips.txt"):
         logger.warning("clean_ips.txt not found!")
     logger.info("Loaded " + str(len(ips)) + " clean IPs")
     return ips
+
+
+def is_cdn_vmess(raw):
+    try:
+        b64 = raw.replace("vmess://", "")
+        padding = 4 - len(b64) % 4
+        if padding != 4:
+            b64 += "=" * padding
+        try:
+            decoded = base64.b64decode(b64).decode("utf-8", errors="ignore")
+        except Exception:
+            decoded = base64.urlsafe_b64decode(b64).decode("utf-8", errors="ignore")
+
+        data = json.loads(decoded)
+
+        net = data.get("net", "")
+        host = data.get("host", "")
+        port = int(data.get("port", 0))
+
+        if net == "ws" and port in [80, 443, 8080, 8443, 2052, 2053, 2082, 2083, 2086, 2087, 2095, 2096]:
+            return True
+
+        return False
+    except Exception:
+        return False
+
+
+def is_cdn_vless(raw):
+    try:
+        parsed = urllib.parse.urlparse(raw)
+        params = dict(urllib.parse.parse_qsl(parsed.query))
+
+        net_type = params.get("type", "")
+        host = params.get("host", "")
+        port = parsed.port or 0
+
+        if net_type == "ws" and port in [80, 443, 8080, 8443, 2052, 2053, 2082, 2083, 2086, 2087, 2095, 2096]:
+            return True
+
+        return False
+    except Exception:
+        return False
+
+
+def filter_cdn_configs(configs):
+    cdn_configs = []
+    for c in configs:
+        if c.protocol == "vmess" and is_cdn_vmess(c.raw):
+            cdn_configs.append(c)
+        elif c.protocol == "vless" and is_cdn_vless(c.raw):
+            cdn_configs.append(c)
+
+    logger.info("CDN configs found: " + str(len(cdn_configs)) + " out of " + str(len(configs)))
+
+    vmess_cdn = len([c for c in cdn_configs if c.protocol == "vmess"])
+    vless_cdn = len([c for c in cdn_configs if c.protocol == "vless"])
+    logger.info("  VMess CDN: " + str(vmess_cdn))
+    logger.info("  VLESS CDN: " + str(vless_cdn))
+
+    return cdn_configs
 
 
 def apply_clean_ip_vmess(raw, clean_ip, name):
@@ -153,17 +177,20 @@ def apply_clean_ips(best_configs, clean_ips):
         logger.warning("No best configs!")
         return []
 
-    PREFIX = "mwri\U0001F9D8\U0001F3FD"
+    # فقط کانفیگ‌های CDN
+    cdn_configs = filter_cdn_configs(best_configs)
+
+    if not cdn_configs:
+        logger.warning("No CDN configs found! Clean IPs only work with CDN (websocket) configs.")
+        return []
 
     cleaned_configs = []
-    config_index = 0
 
     for i, ip in enumerate(clean_ips):
-        flag, country = get_flag_for_ip(ip)
+        flag = get_flag(ip)
         name = flag + " " + PREFIX + " #" + str(i + 1)
 
-        config = best_configs[config_index % len(best_configs)]
-        config_index += 1
+        config = cdn_configs[i % len(cdn_configs)]
 
         if config.protocol == "vmess":
             new_raw = apply_clean_ip_vmess(config.raw, ip, name)
@@ -180,7 +207,7 @@ def apply_clean_ips(best_configs, clean_ips):
             new_config.is_alive = True
             new_config.latency = 0
             cleaned_configs.append(new_config)
-            logger.info("  #" + str(i + 1) + " " + flag + " " + country + " " + ip + " [" + config.protocol + "]")
+            logger.info("  #" + str(i + 1) + " " + flag + " " + ip + " [" + config.protocol + "]")
 
     logger.info("Generated " + str(len(cleaned_configs)) + " clean IP configs")
     return cleaned_configs
