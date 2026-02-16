@@ -16,10 +16,8 @@ def main():
     OUTPUT_DIR = "output"
     Path(OUTPUT_DIR).mkdir(parents=True, exist_ok=True)
 
-    logger.info("Starting...")
-
     # Step 1: Collect
-    logger.info("--- Step 1: Collecting ---")
+    logger.info("=== Step 1: Collecting ===")
     collector = ConfigCollector(sources_file="sources.json")
     all_configs = collector.collect_all()
     if not all_configs:
@@ -27,7 +25,7 @@ def main():
         sys.exit(1)
 
     # Step 2: Test normal configs
-    logger.info("--- Step 2: Testing normal configs ---")
+    logger.info("=== Step 2: Testing configs ===")
     tester = ConfigTester(timeout=5, max_workers=100)
     tested = tester.test_batch(all_configs)
     best = tester.get_best(tested, top_n=BEST_COUNT, max_latency=3000)
@@ -37,8 +35,8 @@ def main():
         save_txt(all_configs, OUTPUT_DIR + "/all.txt")
         sys.exit(1)
 
-    # Step 3: Save normal configs (top 200)
-    logger.info("--- Step 3: Saving normal configs (top " + str(BEST_COUNT) + ") ---")
+    # Step 3: Save normal configs
+    logger.info("=== Step 3: Saving normal (top " + str(BEST_COUNT) + ") ===")
     save_txt(best, OUTPUT_DIR + "/best.txt")
     save_base64(best, OUTPUT_DIR + "/best_base64.txt")
     save_json(best, OUTPUT_DIR + "/best.json")
@@ -46,16 +44,17 @@ def main():
     save_by_protocol(best, OUTPUT_DIR)
 
     # Step 4: Clean IPs
-    logger.info("--- Step 4: Clean IPs ---")
+    logger.info("=== Step 4: Clean IPs ===")
     clean_ips = load_clean_ips("clean_ips.txt")
 
     if clean_ips:
-        # Apply clean IPs to best configs
+        # Apply clean IPs to best configs (1 config per IP)
+        logger.info("Applying " + str(len(clean_ips)) + " clean IPs to best configs...")
         cleaned = apply_clean_ips(best, clean_ips)
 
         if cleaned:
-            # Test clean IP configs too
-            logger.info("--- Testing clean IP configs ---")
+            # Test clean IP configs
+            logger.info("=== Testing clean IP configs ===")
             tested_clean = tester.test_batch(cleaned)
             best_clean = tester.get_best(tested_clean, top_n=BEST_COUNT, max_latency=3000)
 
@@ -68,12 +67,9 @@ def main():
                 save_json(best_clean, clean_dir + "/best.json")
                 save_by_protocol(best_clean, clean_dir)
 
-                clean_alive = len(best_clean)
-                logger.info("Clean IP: " + str(clean_alive) + " best configs saved!")
+                logger.info("Clean: " + str(len(best_clean)) + " configs saved!")
             else:
                 logger.warning("No alive clean IP configs!")
-        else:
-            logger.warning("No clean configs generated!")
     else:
         logger.info("No clean IPs, skipping...")
 
@@ -82,10 +78,12 @@ def main():
         f.write(generate_readme(tested, best))
 
     alive = len([c for c in tested if c.is_alive])
-    logger.info("=== DONE ===")
-    logger.info("Total: " + str(len(all_configs)))
-    logger.info("Alive: " + str(alive))
-    logger.info("Best: " + str(len(best)))
+    logger.info("========== DONE ==========")
+    logger.info("Total:    " + str(len(all_configs)))
+    logger.info("Alive:    " + str(alive))
+    logger.info("Best:     " + str(len(best)))
+    if clean_ips:
+        logger.info("Clean IP: " + str(len(clean_ips)) + " IPs applied")
 
 
 if __name__ == "__main__":
