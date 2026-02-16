@@ -3,10 +3,80 @@ import json
 import logging
 import urllib.parse
 import copy
-import requests
-import time
+import socket
+import struct
 
 logger = logging.getLogger(__name__)
+
+# دیتابیس کشور بر اساس رنج آیپی کلودفلر
+COUNTRY_MAP = {
+    "162.159": "DE",
+    "172.64": "US",
+    "172.65": "US",
+    "172.66": "US",
+    "172.67": "US",
+    "172.68": "US",
+    "172.69": "US",
+    "172.70": "US",
+    "172.71": "US",
+    "104.16": "US",
+    "104.17": "US",
+    "104.18": "US",
+    "104.19": "US",
+    "104.20": "US",
+    "104.21": "US",
+    "104.22": "US",
+    "104.23": "US",
+    "104.24": "US",
+    "104.25": "US",
+    "104.26": "US",
+    "104.27": "US",
+    "141.101": "EU",
+    "188.114": "EU",
+    "190.93": "US",
+    "197.234": "AF",
+    "198.41": "US",
+    "170.114": "US",
+    "131.0": "EU",
+    "1.1": "AU",
+    "1.0": "AU",
+}
+
+FLAGS = {
+    "DE": "\U0001F1E9\U0001F1EA",
+    "US": "\U0001F1FA\U0001F1F8",
+    "EU": "\U0001F1EA\U0001F1FA",
+    "AF": "\U0001F1E6\U0001F1EB",
+    "AU": "\U0001F1E6\U0001F1FA",
+    "NL": "\U0001F1F3\U0001F1F1",
+    "FI": "\U0001F1EB\U0001F1EE",
+    "GB": "\U0001F1EC\U0001F1E7",
+    "FR": "\U0001F1EB\U0001F1F7",
+    "JP": "\U0001F1EF\U0001F1F5",
+    "SG": "\U0001F1F8\U0001F1EC",
+    "CA": "\U0001F1E8\U0001F1E6",
+    "CF": "\U00002601",
+}
+
+
+def get_flag_for_ip(ip):
+    parts = ip.split(".")
+    if len(parts) < 2:
+        return FLAGS.get("CF", "")
+
+    prefix2 = parts[0] + "." + parts[1]
+    prefix1 = parts[0] + "." + parts[1][:1]
+
+    if prefix2 in COUNTRY_MAP:
+        code = COUNTRY_MAP[prefix2]
+        return FLAGS.get(code, ""), code
+    
+    for key in COUNTRY_MAP:
+        if ip.startswith(key):
+            code = COUNTRY_MAP[key]
+            return FLAGS.get(code, ""), code
+
+    return "\U00002601", "CF"
 
 
 def load_clean_ips(filepath="clean_ips.txt"):
@@ -21,37 +91,6 @@ def load_clean_ips(filepath="clean_ips.txt"):
         logger.warning("clean_ips.txt not found!")
     logger.info("Loaded " + str(len(ips)) + " clean IPs")
     return ips
-
-
-def get_country_flag(country_code):
-    if not country_code or len(country_code) != 2:
-        return ""
-    country_code = country_code.upper()
-    first = chr(0x1F1E6 + ord(country_code[0]) - ord("A"))
-    second = chr(0x1F1E6 + ord(country_code[1]) - ord("A"))
-    return first + second
-
-
-def get_ip_country(ip):
-    try:
-        url = "http://ip-api.com/json/" + ip + "?fields=countryCode"
-        resp = requests.get(url, timeout=5)
-        data = resp.json()
-        return data.get("countryCode", "")
-    except Exception:
-        return ""
-
-
-def get_all_countries(clean_ips):
-    logger.info("Getting countries for clean IPs...")
-    countries = {}
-    for ip in clean_ips:
-        country = get_ip_country(ip)
-        flag = get_country_flag(country)
-        countries[ip] = {"code": country, "flag": flag}
-        logger.info("  " + ip + " -> " + country + " " + flag)
-        time.sleep(0.5)
-    return countries
 
 
 def apply_clean_ip_vmess(raw, clean_ip, name):
@@ -114,21 +153,17 @@ def apply_clean_ips(best_configs, clean_ips):
         logger.warning("No best configs!")
         return []
 
-    # Get country for each IP
-    countries = get_all_countries(clean_ips)
-
     PREFIX = "mwri\U0001F9D8\U0001F3FD"
 
     cleaned_configs = []
+    config_index = 0
 
     for i, ip in enumerate(clean_ips):
-        # Pick a config (round-robin through best configs)
-        config = best_configs[i % len(best_configs)]
-
-        # Build name with flag
-        flag = countries[ip]["flag"]
-        country = countries[ip]["code"]
+        flag, country = get_flag_for_ip(ip)
         name = flag + " " + PREFIX + " #" + str(i + 1)
+
+        config = best_configs[config_index % len(best_configs)]
+        config_index += 1
 
         if config.protocol == "vmess":
             new_raw = apply_clean_ip_vmess(config.raw, ip, name)
@@ -142,8 +177,10 @@ def apply_clean_ips(best_configs, clean_ips):
             new_config.raw = new_raw
             new_config.address = ip
             new_config.name = name
+            new_config.is_alive = True
+            new_config.latency = 0
             cleaned_configs.append(new_config)
             logger.info("  #" + str(i + 1) + " " + flag + " " + country + " " + ip + " [" + config.protocol + "]")
 
-    logger.info("Generated " + str(len(cleaned_configs)) + " clean IP configs (1 per IP)")
+    logger.info("Generated " + str(len(cleaned_configs)) + " clean IP configs")
     return cleaned_configs
