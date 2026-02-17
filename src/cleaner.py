@@ -6,6 +6,8 @@ import copy
 
 logger = logging.getLogger(__name__)
 
+PREFIX = "mwri\U0001F9D8\U0001F3FD"
+
 FLAGS = {
     "162.159": "\U0001F1E9\U0001F1EA",
     "172.64": "\U0001F1FA\U0001F1F8",
@@ -34,7 +36,8 @@ FLAGS = {
     "198.41": "\U0001F1FA\U0001F1F8",
 }
 
-PREFIX = "mwri\U0001F9D8\U0001F3FD"
+CDN_PORTS = [80, 443, 8080, 8443, 2052, 2053, 2082, 2083, 2086, 2087, 2095, 2096]
+CDN_NETWORKS = ["ws", "xhttp", "grpc", "httpupgrade"]
 
 
 def get_flag(ip):
@@ -69,14 +72,11 @@ def is_cdn_vmess(raw):
             decoded = base64.urlsafe_b64decode(b64).decode("utf-8", errors="ignore")
 
         data = json.loads(decoded)
-
         net = data.get("net", "")
-        host = data.get("host", "")
         port = int(data.get("port", 0))
 
-        if net == "ws" and port in [80, 443, 8080, 8443, 2052, 2053, 2082, 2083, 2086, 2087, 2095, 2096]:
+        if net in CDN_NETWORKS and port in CDN_PORTS:
             return True
-
         return False
     except Exception:
         return False
@@ -86,14 +86,11 @@ def is_cdn_vless(raw):
     try:
         parsed = urllib.parse.urlparse(raw)
         params = dict(urllib.parse.parse_qsl(parsed.query))
-
         net_type = params.get("type", "")
-        host = params.get("host", "")
         port = parsed.port or 0
 
-        if net_type == "ws" and port in [80, 443, 8080, 8443, 2052, 2053, 2082, 2083, 2086, 2087, 2095, 2096]:
+        if net_type in CDN_NETWORKS and port in CDN_PORTS:
             return True
-
         return False
     except Exception:
         return False
@@ -107,13 +104,7 @@ def filter_cdn_configs(configs):
         elif c.protocol == "vless" and is_cdn_vless(c.raw):
             cdn_configs.append(c)
 
-    logger.info("CDN configs found: " + str(len(cdn_configs)) + " out of " + str(len(configs)))
-
-    vmess_cdn = len([c for c in cdn_configs if c.protocol == "vmess"])
-    vless_cdn = len([c for c in cdn_configs if c.protocol == "vless"])
-    logger.info("  VMess CDN: " + str(vmess_cdn))
-    logger.info("  VLESS CDN: " + str(vless_cdn))
-
+    logger.info("CDN configs: " + str(len(cdn_configs)) + " out of " + str(len(configs)))
     return cdn_configs
 
 
@@ -131,9 +122,15 @@ def apply_clean_ip_vmess(raw, clean_ip, name):
         data = json.loads(decoded)
         original_address = data.get("add", "")
 
+        # host رو تنظیم کن
         if not data.get("host", ""):
             data["host"] = original_address
 
+        # SNI باید برابر host باشه نه آیپی
+        host = data.get("host", original_address)
+        data["sni"] = host
+
+        # آیپی تمیز رو جایگزین کن
         data["add"] = clean_ip
         data["ps"] = name
 
@@ -153,11 +150,21 @@ def apply_clean_ip_vless(raw, clean_ip, name):
 
         params = dict(urllib.parse.parse_qsl(parsed.query))
 
+        # host رو تنظیم کن
         if "host" not in params or not params["host"]:
             params["host"] = original_host
 
-        if "sni" not in params or not params["sni"]:
-            params["sni"] = original_host
+        # SNI باید برابر host باشه
+        host = params.get("host", original_host)
+        params["sni"] = host
+
+        # security تنظیم
+        if port == 443 or port in [8443, 2053, 2083, 2087, 2096]:
+            params["security"] = "tls"
+        else:
+            params["security"] = "none"
+            if "sni" in params:
+                del params["sni"]
 
         new_query = urllib.parse.urlencode(params)
         encoded_name = urllib.parse.quote(name, safe="")
@@ -177,12 +184,13 @@ def apply_clean_ips(best_configs, clean_ips):
         logger.warning("No best configs!")
         return []
 
-    # فقط کانفیگ‌های CDN
     cdn_configs = filter_cdn_configs(best_configs)
 
     if not cdn_configs:
-        logger.warning("No CDN configs found! Clean IPs only work with CDN (websocket) configs.")
+        logger.warning("No CDN configs found!")
         return []
+
+    logger.info("Applying " + str(len(clean_ips)) + " clean IPs to " + str(len(cdn_configs)) + " CDN configs")
 
     cleaned_configs = []
 
@@ -209,5 +217,5 @@ def apply_clean_ips(best_configs, clean_ips):
             cleaned_configs.append(new_config)
             logger.info("  #" + str(i + 1) + " " + flag + " " + ip + " [" + config.protocol + "]")
 
-    logger.info("Generated " + str(len(cleaned_configs)) + " clean IP configs")
+    logger.info("Generated " + str(len(cleaned_configs)) + " clean configs")
     return cleaned_configs
