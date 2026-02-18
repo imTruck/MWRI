@@ -8,38 +8,36 @@
 
 | | |
 |---|---|
-| 🕒 Updated | `2026-02-18 19:15 UTC` |
-| 📦 Total | 38244 |
-| ✅ Alive | 24248 |
-| 🏆 Best | 300 |
+| 🕒 Updated | `2026-02-18 20:03 UTC` |
+| 📦 Total | 38561 |
+| ✅ Alive | 24416 |
+| 🏆 Best | 200 |
+| ☁️ CDN (Iran) | 13417 |
 | 🏎️ Fastest | 0.4ms |
-| 📈 Average | 1.3ms |
+| 📈 Average | 1.2ms |
 
-## 📡 Protocols
-
-| Protocol | Count |
-|---|---|
-| SS | 9 |
-| TROJAN | 13 |
-| VLESS | 213 |
-| VMESS | 65 |
-
-## 📥 Subscription Links
+## 📥 For Iranian Users 🇮🇷
 
 | Type | Link |
 |---|---|
-| 🌐 Best (Base64) | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/best_base64.txt` |
+| ☁️ CDN (Best for Iran) | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/cdn/best_sub.txt` |
 | 🧹 Clean IP | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/clean/best_sub.txt` |
-| 📋 JSON | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/best.json` |
+
+## 🌐 All Configs
+
+| Type | Link |
+|---|---|
+| Best (Base64) | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/best_base64.txt` |
+| JSON | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/best.json` |
 
 ### By Protocol
 
-| Protocol | Sub |
-|---|---|
-| SS | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/splitted/ss_sub.txt` |
-| TROJAN | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/splitted/trojan_sub.txt` |
-| VLESS | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/splitted/vless_sub.txt` |
-| VMESS | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/splitted/vmess_sub.txt` |
+| Protocol | Count | Sub |
+|---|---|---|
+| SS | 9 | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/splitted/ss_sub.txt` |
+| TROJAN | 9 | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/splitted/trojan_sub.txt` |
+| VLESS | 147 | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/splitted/vless_sub.txt` |
+| VMESS | 35 | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/splitted/vmess_sub.txt` |
 
 ---
 > ⚠️ Educational purposes only
