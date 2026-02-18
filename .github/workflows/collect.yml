@@ -37,7 +37,6 @@ jobs:
             echo "No changes"
           else
             TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
-            BEST=$(cat output/best.txt | wc -l)
-            git commit -m "🧘 Update: ${BEST} configs | ${TIMESTAMP}"
+            git commit -m "update ${TIMESTAMP}"
             git push
           fi

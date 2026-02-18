@@ -4,12 +4,12 @@ from pathlib import Path
 from src.collector import ConfigCollector
 from src.tester import ConfigTester
 from src.utils import save_txt, save_base64, save_json, save_by_protocol, generate_readme
-from src.cleaner import load_clean_ips, apply_clean_ips
+from src.cleaner import load_clean_ips, apply_clean_ips, filter_cdn_configs
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s", datefmt="%H:%M:%S")
 logger = logging.getLogger(__name__)
 
-BEST_COUNT = 300
+BEST_COUNT = 200
 
 
 def main():
@@ -17,72 +17,73 @@ def main():
     Path(OUTPUT_DIR).mkdir(parents=True, exist_ok=True)
 
     # Step 1: Collect
-    logger.info("========== Step 1: Collecting ==========")
+    logger.info("=== Step 1: Collecting ===")
     collector = ConfigCollector(sources_file="sources.json")
     all_configs = collector.collect_all()
     if not all_configs:
-        logger.error("No configs found!")
+        logger.error("No configs!")
         sys.exit(1)
 
-    # Step 2: Test - round 1 (fast filter)
-    logger.info("========== Step 2: Testing (Round 1) ==========")
-    tester = ConfigTester(timeout=4, max_workers=150)
+    # Step 2: Test all
+    logger.info("=== Step 2: Testing ===")
+    tester = ConfigTester(timeout=3, max_workers=200)
     tested = tester.test_batch(all_configs)
-    candidates = tester.get_best(tested, top_n=500, max_latency=2000)
+    best = tester.get_best(tested, top_n=BEST_COUNT, max_latency=2000)
 
-    if not candidates:
-        logger.warning("No alive configs in round 1!")
+    if not best:
+        logger.warning("No alive configs!")
         save_txt(all_configs, OUTPUT_DIR + "/all.txt")
         sys.exit(1)
 
-    # Step 3: Retest top candidates (accurate)
-    logger.info("========== Step 3: Retest Top " + str(len(candidates)) + " ==========")
-    tester2 = ConfigTester(timeout=5, max_workers=80)
-    retested = tester2.test_batch(candidates)
-    best = tester2.get_best(retested, top_n=BEST_COUNT, max_latency=1500)
-
-    if not best:
-        logger.warning("No alive after retest, using round 1 results")
-        best = candidates[:BEST_COUNT]
-
-    # Step 4: Save
-    logger.info("========== Step 4: Saving (top " + str(len(best)) + ") ==========")
+    # Step 3: Save normal best
+    logger.info("=== Step 3: Saving best ===")
     save_txt(best, OUTPUT_DIR + "/best.txt")
     save_base64(best, OUTPUT_DIR + "/best_base64.txt")
     save_json(best, OUTPUT_DIR + "/best.json")
     save_txt(all_configs, OUTPUT_DIR + "/all.txt")
     save_by_protocol(best, OUTPUT_DIR)
 
-    # Step 5: Clean IPs
-    logger.info("========== Step 5: Clean IPs ==========")
-    clean_ips = load_clean_ips("clean_ips.txt")
+    # Step 4: CDN-only configs (work in Iran)
+    logger.info("=== Step 4: CDN configs (for Iran) ===")
+    alive_configs = [c for c in tested if c.is_alive]
+    cdn_configs = filter_cdn_configs(alive_configs)
 
-    if clean_ips:
-        cleaned = apply_clean_ips(best, clean_ips)
+    if cdn_configs:
+        cdn_configs.sort(key=lambda x: x.latency)
+        cdn_best = cdn_configs[:BEST_COUNT]
+
+        cdn_dir = OUTPUT_DIR + "/cdn"
+        Path(cdn_dir).mkdir(parents=True, exist_ok=True)
+        save_txt(cdn_best, cdn_dir + "/best.txt")
+        save_base64(cdn_best, cdn_dir + "/best_sub.txt")
+        save_by_protocol(cdn_best, cdn_dir)
+        logger.info("CDN configs: " + str(len(cdn_best)))
+
+    # Step 5: Clean IPs on CDN configs
+    logger.info("=== Step 5: Clean IPs ===")
+    clean_ips = load_clean_ips("clean_ips.txt")
+    if clean_ips and cdn_configs:
+        cleaned = apply_clean_ips(cdn_best, clean_ips)
         if cleaned:
             clean_dir = OUTPUT_DIR + "/clean"
             Path(clean_dir).mkdir(parents=True, exist_ok=True)
             save_txt(cleaned, clean_dir + "/best.txt")
             save_base64(cleaned, clean_dir + "/best_sub.txt")
             save_by_protocol(cleaned, clean_dir)
-            logger.info("Clean: " + str(len(cleaned)) + " configs saved!")
-    else:
-        logger.info("No clean IPs, skipping...")
 
     # README
-    alive_count = len([c for c in tested if c.is_alive])
+    alive_count = len(alive_configs)
+    cdn_count = len(cdn_configs) if cdn_configs else 0
     with open("README.md", "w") as f:
-        f.write(generate_readme(tested, best, alive_count))
+        f.write(generate_readme(tested, best, alive_count, cdn_count))
 
-    logger.info("========================================")
-    logger.info("  Total:     " + str(len(all_configs)))
-    logger.info("  Alive:     " + str(alive_count))
-    logger.info("  Best:      " + str(len(best)))
-    logger.info("  Fastest:   " + str(best[0].latency) + "ms")
-    logger.info("  Slowest:   " + str(best[-1].latency) + "ms")
-    if clean_ips:
-        logger.info("  Clean IPs: " + str(len(clean_ips)))
-    logger.info("========================================")
+    logger.info("=== DONE ===")
+    logger.info("Total: " + str(len(all_configs)))
+    logger.info("Alive: " + str(alive_count))
+    logger.info("Best: " + str(len(best)))
+    logger.info("CDN: " + str(cdn_count))
+    if best:
+        logger.info("Fastest: " + str(best[0].latency) + "ms")
 
 
 if __name__ == "__main__":
