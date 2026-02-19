@@ -8,6 +8,7 @@ from src.cdn_tester import test_cdn_batch, generate_all_port_variants, balance_p
 from src.antifilter import fix_all_configs
 from src.fragment import generate_fragment_configs
 from src.warp import save_warp
+from src.iran_filter import filter_iran
 from src.utils import save_txt, save_base64, save_json, save_by_protocol, generate_readme
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s", datefmt="%H:%M:%S")
@@ -25,8 +26,12 @@ def main():
     if not all_configs:
         sys.exit(1)
 
+    # Filter Iran
+    logger.info("=== Filter Iran ===")
+    all_configs = filter_iran(all_configs)
+
     # Quick test
-    logger.info("=== Quick test ===")
+    logger.info("=== Testing ===")
     tester = ConfigTester(timeout=3, max_workers=200)
     tested = tester.test_batch(all_configs)
     alive_all = [c for c in tested if c.is_alive]
@@ -68,7 +73,6 @@ def main():
             save_base64(cdn_best, cdn_dir + "/best_sub.txt")
             save_by_protocol(cdn_best, cdn_dir)
 
-            # Clean IP
             clean_ips = load_clean_ips("clean_ips.txt")
             if clean_ips:
                 cleaned = apply_clean_ips(cdn_best, clean_ips)
@@ -79,7 +83,6 @@ def main():
                     save_base64(cleaned, clean_dir + "/best_sub.txt")
                     save_by_protocol(cleaned, clean_dir)
 
-            # Fragment
             frag = generate_fragment_configs(cdn_best[:50])
             if frag:
                 frag_dir = OUTPUT_DIR + "/fragment"
