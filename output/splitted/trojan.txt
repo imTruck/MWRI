@@ -1,9 +1,1 @@
-trojan://0346cf80-8b9b-11ee-ac12-1239d0255272@162.159.138.232:443?security=tls&sni=us1.test3.net&type=ws&path=/howdy&host=us1.test3.net#%F0%9F%87%A9%F0%9F%87%AA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%231
-trojan://humanity@www.gossipglove.com:443?path=%2Fassignment&security=tls&fp=chrome&type=ws&sni=www.gossipglove.com#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%232
-trojan://5cccb4da-8aee-4b01-be84-2056265e52dc@172.64.80.1:443?path=/hV829BTVzg35A6ueyyZnWd&security=tls&alpn=http/1.1&host=nMk.288288.sHOP&type=ws&sni=nMk.288288.sHOP#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%233
-trojan://humanity@172.64.152.23:443/?path=/assignment&security=tls&insecure=0&host=www.creationlong.org&type=ws&allowInsecure=0&sni=www.creationlong.org#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%234
-trojan://trojan@45.192.222.112:8443/?security=tls&sni=store.timimi.dpdns.org&insecure=0&allowInsecure=0&type=ws&host=store.timimi.dpdns.org&path=/?ed=2560#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%235
-trojan://89ce124f-42d1-4c90-b9d2-bde2861ae615@162.159.136.206:443?security=tls&sni=jp61.pqjc.buzz&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%236
-trojan://gIRrGnuuNm@45.85.119.179:2096?path=%2F&security=tls&host=aa.v2jey.fun&type=ws&sni=aa.v2jey.fun#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%237
-trojan://psycho@104.21.80.1:443?security=tls&sni=PSYchO.SueX12.Ir#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%238
-trojan://0b65bb06-6b28-487a-8e3c-820dda51e977@104.21.12.87:443?security=tls&sni=series-v1.samanehha.co&type=ws&path=/43xf5zgeApzDAfhOHq&Host=series-v1.samanehha.co#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%239
+trojan://humanity@172.64.152.23:443?path=/assignment&security=tls&host=www.creationlong.org&type=ws&sni=www.creationlong.org#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%231
