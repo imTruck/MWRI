@@ -7,6 +7,7 @@ from src.cleaner import load_clean_ips, apply_clean_ips, filter_cdn_configs
 from src.cdn_tester import test_cdn_batch, generate_all_port_variants, balance_ports
 from src.antifilter import fix_all_configs
 from src.fragment import generate_fragment_configs
+from src.warp import save_warp
 from src.utils import save_txt, save_base64, save_json, save_by_protocol, generate_readme
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s", datefmt="%H:%M:%S")
@@ -35,7 +36,6 @@ def main():
         save_txt(all_configs, OUTPUT_DIR + "/all.txt")
         sys.exit(1)
 
-    # Fix & save best
     best = fix_all_configs(best)
     save_txt(best, OUTPUT_DIR + "/best.txt")
     save_base64(best, OUTPUT_DIR + "/best_base64.txt")
@@ -43,30 +43,22 @@ def main():
     save_txt(all_configs, OUTPUT_DIR + "/all.txt")
     save_by_protocol(best, OUTPUT_DIR)
 
-    # === CDN ===
+    # CDN
     logger.info("=== CDN ===")
     cdn_alive = filter_cdn_configs(alive_all)
-
     cdn_count = 0
+
     if cdn_alive:
         cdn_alive.sort(key=lambda x: x.latency)
         top_cdn = cdn_alive[:150]
-
-        # Generate port variants
-        logger.info("=== Port variants ===")
         variants = generate_all_port_variants(top_cdn[:50])
         all_cdn = top_cdn + variants
 
-        # Download test all CDN
-        logger.info("=== CDN download test ===")
         cdn_tested = test_cdn_batch(all_cdn)
         cdn_passed = [c for c in cdn_tested if c.is_alive and c.latency > 0]
 
         if cdn_passed:
-            # Fix configs
             cdn_passed = fix_all_configs(cdn_passed)
-
-            # Balance across ports (~40 per port)
             cdn_best = balance_ports(cdn_passed, total=500)
             cdn_count = len(cdn_best)
 
@@ -95,10 +87,15 @@ def main():
                 save_txt(frag, frag_dir + "/best.txt")
                 save_base64(frag, frag_dir + "/best_sub.txt")
 
-    with open("README.md", "w") as f:
-        f.write(generate_readme(tested, best, len(alive_all), cdn_count))
+    # WARP
+    logger.info("=== WARP ===")
+    warp_count = save_warp(OUTPUT_DIR)
 
-    logger.info("=== DONE | Best:" + str(len(best)) + " CDN:" + str(cdn_count) + " ===")
+    # README
+    with open("README.md", "w") as f:
+        f.write(generate_readme(tested, best, len(alive_all), cdn_count, warp_count))
+
+    logger.info("=== DONE | Best:" + str(len(best)) + " CDN:" + str(cdn_count) + " WARP:" + str(warp_count) + " ===")
 
 
 if __name__ == "__main__":

@@ -22,21 +22,29 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
+      - name: Install
         run: pip install -r requirements.txt
 
-      - name: Run collector
+      - name: Run
         run: python main.py
 
-      - name: Commit & Push
+      - name: Copy to docs
+        run: |
+          mkdir -p docs
+          cp output/best_base64.txt docs/best.txt 2>/dev/null || true
+          cp output/cdn/best_sub.txt docs/cdn.txt 2>/dev/null || true
+          cp output/clean/best_sub.txt docs/clean.txt 2>/dev/null || true
+          cp output/fragment/best_sub.txt docs/fragment.txt 2>/dev/null || true
+          cp output/warp/warp_sub.txt docs/warp.txt 2>/dev/null || true
+
+      - name: Push
         run: |
           git config user.email "bot@github.com"
           git config user.name "MWRI Bot"
-          git add output/ README.md
+          git add output/ docs/ README.md
           if git diff --staged --quiet; then
             echo "No changes"
           else
-            TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
-            git commit -m "update ${TIMESTAMP}"
+            git commit -m "update"
             git push
           fi
