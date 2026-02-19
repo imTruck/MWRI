@@ -91,6 +91,20 @@
     "https://raw.githubusercontent.com/Farid-Karimi/Config-Collector/main/sub.txt",
     "https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/sub.txt",
     "https://raw.githubusercontent.com/Danialsamadi/v2go/main/sub.txt",
-    "https://sub.shadowmere.xyz/fetch/base64"
+    "https://sub.shadowmere.xyz/fetch/base64",
+    "https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/xray/normal/vmess",
+    "https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/xray/normal/vless",
+    "https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/xray/normal/trojan",
+    "https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/xray/base64/mix",
+    "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vmess",
+    "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vless",
+    "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/trojan",
+    "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/subscribe/base64/vmess",
+    "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/subscribe/base64/vless",
+    "https://raw.githubusercontent.com/IranianCyphworker/sub/main/config",
+    "https://raw.githubusercontent.com/sarinaesmailzadeh/V2Hub/main/merged_base64",
+    "https://raw.githubusercontent.com/freev2rayconfig/V2RAY_SUB/main/v2ray.txt",
+    "https://raw.githubusercontent.com/Leon406/SubCrawler/master/sub/share/vless",
+    "https://raw.githubusercontent.com/Leon406/SubCrawler/master/sub/share/vmess"
   ]
 }
