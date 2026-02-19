@@ -1,1 +1,1 @@
-trojan://humanity@172.64.152.23:443?path=/assignment&security=tls&host=www.creationlong.org&type=ws&sni=www.creationlong.org#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%231
+trojan://jagoanssh-Aweqdcc@104.21.32.17:443?security=tls&sni=to.ruangguru.com&allowInsecure=1&type=tcp&alpn=h2%2Chttp%2F1.1&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%231

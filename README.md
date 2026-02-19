@@ -8,11 +8,11 @@
 
 | | |
 |---|---|
-| 🕒 Updated | `2026-02-19 15:41 UTC` |
-| 📦 Total | 72834 |
-| ✅ Alive | 58043 |
+| 🕒 Updated | `2026-02-19 15:48 UTC` |
+| 📦 Total | 72882 |
+| ✅ Alive | 58026 |
 | 🏆 Best | 200 |
-| ☁️ CDN (Iran) | 367 |
+| ☁️ CDN (Iran) | 500 |
 | 🏎️ Fastest | 0.4ms |
 | 📈 Average | 1.0ms |
 
@@ -34,9 +34,10 @@
 
 | Protocol | Count | Sub |
 |---|---|---|
-| SS | 4 | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/splitted/ss_sub.txt` |
-| VLESS | 186 | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/splitted/vless_sub.txt` |
-| VMESS | 10 | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/splitted/vmess_sub.txt` |
+| SS | 10 | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/splitted/ss_sub.txt` |
+| TROJAN | 1 | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/splitted/trojan_sub.txt` |
+| VLESS | 183 | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/splitted/vless_sub.txt` |
+| VMESS | 6 | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/splitted/vmess_sub.txt` |
 
 ---
 > ⚠️ Educational purposes only

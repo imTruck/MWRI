@@ -8,6 +8,7 @@ from src.geoip import get_flag
 logger = logging.getLogger(__name__)
 
 PREFIX = "mwri\U0001F9D8\U0001F3FD"
+TLS_PORTS = [443, 8443, 2053, 2083, 2087, 2096]
 
 
 def fix_vmess(raw, number):
@@ -23,27 +24,23 @@ def fix_vmess(raw, number):
         data = json.loads(decoded)
 
         address = data.get("add", "")
-        host = data.get("host", "")
-        sni = data.get("sni", "")
-        net = data.get("net", "")
         port = int(data.get("port", 0))
-        tls = data.get("tls", "")
 
-        # Fix 1: host empty
-        if not host and address:
+        if not data.get("host"):
             data["host"] = address
 
-        # Fix 2: sni empty or wrong
-        if tls == "tls":
-            if not sni:
+        if port in TLS_PORTS:
+            data["tls"] = "tls"
+            if not data.get("sni"):
                 data["sni"] = data.get("host", address)
-            # Fix 3: alpn
             if not data.get("alpn"):
                 data["alpn"] = "h2,http/1.1"
-
-        # Fix 4: fp (fingerprint)
-        if not data.get("fp"):
-            data["fp"] = "chrome"
+            if not data.get("fp"):
+                data["fp"] = "chrome"
+            # Fix EOF: allowInsecure
+            data["allowInsecure"] = True
+        else:
+            data["tls"] = ""
 
         flag = get_flag(address)
         data["ps"] = flag + " " + PREFIX + " #" + str(number)
@@ -62,34 +59,26 @@ def fix_vless(raw, number):
         userinfo = parsed.username or ""
         params = dict(urllib.parse.parse_qsl(parsed.query))
 
-        security = params.get("security", "")
-        sni = params.get("sni", "")
-        host_param = params.get("host", "")
-        net_type = params.get("type", "")
-
-        # Fix 1: host empty
-        if not host_param and host:
+        if not params.get("host"):
             params["host"] = host
 
-        # Fix 2: sni empty
-        if security in ["tls", "reality"]:
-            if not sni:
+        if port in TLS_PORTS:
+            if params.get("security", "") != "reality":
+                params["security"] = "tls"
+            if not params.get("sni"):
                 params["sni"] = params.get("host", host)
-
-            # Fix 3: alpn
             if not params.get("alpn"):
                 params["alpn"] = "h2,http/1.1"
-
-            # Fix 4: fingerprint
             if not params.get("fp"):
                 params["fp"] = "chrome"
-
-            # Fix 5: allowInsecure
             params["allowInsecure"] = "1"
+        else:
+            params["security"] = "none"
+            params.pop("sni", None)
+            params.pop("alpn", None)
 
         flag = get_flag(host)
         name = flag + " " + PREFIX + " #" + str(number)
-
         query = urllib.parse.urlencode(params)
         encoded_name = urllib.parse.quote(name, safe="")
         return "vless://" + userinfo + "@" + host + ":" + str(port) + "?" + query + "#" + encoded_name
@@ -105,26 +94,16 @@ def fix_trojan(raw, number):
         password = parsed.username or ""
         params = dict(urllib.parse.parse_qsl(parsed.query))
 
-        sni = params.get("sni", "")
-
-        # Fix 1: sni
-        if not sni:
+        if not params.get("sni"):
             params["sni"] = host
-
-        # Fix 2: alpn
         if not params.get("alpn"):
             params["alpn"] = "h2,http/1.1"
-
-        # Fix 3: fingerprint
         if not params.get("fp"):
             params["fp"] = "chrome"
-
-        # Fix 4: allowInsecure
         params["allowInsecure"] = "1"
 
         flag = get_flag(host)
         name = flag + " " + PREFIX + " #" + str(number)
-
         query = urllib.parse.urlencode(params)
         encoded_name = urllib.parse.quote(name, safe="")
         return "trojan://" + password + "@" + host + ":" + str(port) + "?" + query + "#" + encoded_name
@@ -133,11 +112,9 @@ def fix_trojan(raw, number):
 
 
 def fix_all_configs(configs):
-    """Fix TLS/SNI/fingerprint issues for all configs"""
     fixed = []
     for i, c in enumerate(configs, 1):
         new_raw = None
-
         if c.protocol == "vmess":
             new_raw = fix_vmess(c.raw, i)
         elif c.protocol == "vless":
@@ -152,5 +129,5 @@ def fix_all_configs(configs):
         else:
             fixed.append(c)
 
-    logger.info("Fixed " + str(len(fixed)) + " configs (SNI/TLS/FP)")
+    logger.info("Fixed " + str(len(fixed)) + " configs")
     return fixed
