@@ -24,7 +24,7 @@ def main():
     if not all_configs:
         sys.exit(1)
 
-    # Quick test (for best sub only)
+    # Quick test
     logger.info("=== Testing ===")
     tester = ConfigTester(timeout=3, max_workers=200)
     tested = tester.test_batch(all_configs)
@@ -42,16 +42,12 @@ def main():
     save_txt(all_configs, OUTPUT_DIR + "/all.txt")
     save_by_protocol(best, OUTPUT_DIR)
 
-    # CDN: NO TEST - just filter + clean IP + fix
-    logger.info("=== CDN (filter only, no test) ===")
-
-    # Filter CDN from ALL configs (not just alive)
+    # CDN from ALL configs (not just alive)
+    logger.info("=== CDN ===")
     cdn_all = filter_cdn_configs(all_configs)
-    logger.info("Total CDN configs: " + str(len(cdn_all)))
 
     cdn_count = 0
     if cdn_all:
-        # Deduplicate by address:port:host
         seen = set()
         cdn_unique = []
         for c in cdn_all:
@@ -60,7 +56,6 @@ def main():
                 seen.add(key)
                 cdn_unique.append(c)
 
-        # Fix all
         cdn_fixed = fix_all_configs(cdn_unique[:500])
         cdn_count = len(cdn_fixed)
 
@@ -69,25 +64,27 @@ def main():
         save_txt(cdn_fixed, cdn_dir + "/best.txt")
         save_base64(cdn_fixed, cdn_dir + "/best_sub.txt")
         save_by_protocol(cdn_fixed, cdn_dir)
-        logger.info("CDN saved: " + str(cdn_count))
 
-        # Clean IP = best for Iran
-        logger.info("=== Clean IP ===")
-        clean_ips = load_clean_ips("clean_ips.txt")
-        if clean_ips:
-            cleaned = apply_clean_ips(cdn_fixed, clean_ips)
-            if cleaned:
-                # Fix cleaned too
-                cleaned = fix_all_configs(cleaned)
-                clean_dir = OUTPUT_DIR + "/clean"
-                Path(clean_dir).mkdir(parents=True, exist_ok=True)
-                save_txt(cleaned, clean_dir + "/best.txt")
-                save_base64(cleaned, clean_dir + "/best_sub.txt")
-                save_by_protocol(cleaned, clean_dir)
-                logger.info("Clean IP: " + str(len(cleaned)))
+    # Clean IP from ALL CDN configs
+    logger.info("=== Clean IP ===")
+    clean_ips = load_clean_ips("clean_ips.txt")
+    if clean_ips:
+        # Use all CDN configs, not just fixed
+        all_cdn_for_clean = cdn_all if cdn_all else []
+        cleaned = apply_clean_ips(all_cdn_for_clean, clean_ips)
+        if cleaned:
+            clean_dir = OUTPUT_DIR + "/clean"
+            Path(clean_dir).mkdir(parents=True, exist_ok=True)
+            save_txt(cleaned, clean_dir + "/best.txt")
+            save_base64(cleaned, clean_dir + "/best_sub.txt")
+            save_by_protocol(cleaned, clean_dir)
+            logger.info("Clean total: " + str(len(cleaned)))
+        else:
+            logger.warning("No clean configs generated!")
 
-        # Fragment
-        frag = generate_fragment_configs(cdn_fixed[:50])
+    # Fragment
+    if cdn_all:
+        frag = generate_fragment_configs(cdn_fixed[:50] if cdn_count > 0 else [])
         if frag:
             frag_dir = OUTPUT_DIR + "/fragment"
             Path(frag_dir).mkdir(parents=True, exist_ok=True)
@@ -102,7 +99,11 @@ def main():
     with open("README.md", "w") as f:
         f.write(generate_readme(tested, best, len(alive_all), cdn_count, warp_count))
 
-    logger.info("=== DONE | Best:" + str(len(best)) + " CDN:" + str(cdn_count) + " ===")
+    logger.info("=== DONE ===")
+    logger.info("Best: " + str(len(best)))
+    logger.info("CDN: " + str(cdn_count))
+    logger.info("Clean: " + str(len(cleaned) if clean_ips and cleaned else 0))
+    logger.info("WARP: " + str(warp_count))
 
 
 if __name__ == "__main__":
