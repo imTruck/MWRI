@@ -1,1606 +1,1606 @@
 {
-  "updated_at": "2026-02-19 18:45:29 UTC",
+  "updated_at": "2026-02-20 14:50:22 UTC",
   "total": 200,
   "configs": [
     {
-      "name": "🇬🇧 mwri🧘🏽 #1",
-      "protocol": "ss",
-      "address": "51.104.204.185",
-      "port": 443,
+      "name": "🇪🇺 mwri🧘🏽 #1",
+      "protocol": "vless",
+      "address": "151.101.169.242",
+      "port": 80,
       "latency_ms": 0.4,
-      "raw": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB@51.104.204.185:443#%F0%9F%87%AC%F0%9F%87%A7%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%231"
+      "raw": "vless://21d38abf-0ed8-444b-b6ab-1c432898c067@151.101.169.242:80?mode=packet-up&path=%2F%3Fed%3D2560&security=none&encryption=none&host=bama.ir&type=xhttp#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%231"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #2",
+      "name": "🇪🇺 mwri🧘🏽 #2",
       "protocol": "vless",
-      "address": "140.248.147.82",
-      "port": 443,
-      "latency_ms": 0.5,
-      "raw": "vless://cbf73250-e228-4fc8-95a1-3804176354be@140.248.147.82:443?mode=auto&path=%2Fdl%3Fed%3D2560&security=tls&encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A+%221000000%22%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D&host=Fastsssspeedmar.global.ssl.fastly.net&type=xhttp&sni=default.ssl.fastly.net&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%232"
+      "address": "151.101.25.242",
+      "port": 80,
+      "latency_ms": 0.4,
+      "raw": "vless://21d38abf-0ed8-444b-b6ab-1c432898c067@151.101.25.242:80?mode=packet-up&path=%2F%3Fed%3D8080&security=none&encryption=none&host=bama.ir&type=xhttp#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%232"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #3",
       "protocol": "vless",
-      "address": "140.248.159.164",
+      "address": "199.232.214.172",
       "port": 80,
       "latency_ms": 0.5,
-      "raw": "vless://505997ba-cbdb-466e-a3ad-69c6a4553b38@140.248.159.164:80?path=%2Fcontainers%2Ffi&security=none&encryption=none&host=ahlekarbala.global.ssl.fastly.net&type=ws#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%233"
+      "raw": "vless://c02c072f-39ba-46bd-ba66-4791a6ccfbde@199.232.214.172:80?mode=auto&path=%2F%3Fed%3D2048&security=none&encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A+%221000000%22%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D&host=speedtest.net.hostfastuke.net&type=xhttp#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%233"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #4",
+      "name": "🇺🇸 mwri🧘🏽 #4",
       "protocol": "vless",
-      "address": "151.101.195.8",
+      "address": "140.248.128.0",
       "port": 80,
       "latency_ms": 0.5,
-      "raw": "vless://3ff60b54-f6d6-467f-9189-df1a0567c647@151.101.195.8:80?encryption=none&type=ws&host=norbert-team-free1.global.ssl.fastly.net&path=%2F%3Fed%3D2052%3F%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%234"
+      "raw": "vless://d4c244cd-fb79-478a-be50-7ea889491270@140.248.128.0:80?encryption=none&security=none&type=xhttp&host=hazaranetwork.bh&path=%2Fxhttp&mode=auto#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%234"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #5",
+      "name": "🇪🇺 mwri🧘🏽 #5",
       "protocol": "vless",
-      "address": "199.232.236.1",
+      "address": "151.101.3.8",
       "port": 80,
       "latency_ms": 0.5,
-      "raw": "vless://0bf4efe9-c3b3-47bc-a707-e1535b502e90@199.232.236.1:80?path=%2F&encryption=none&host=pmiusc1l1.global.ssl.fastly.net&type=ws&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%235"
+      "raw": "vless://qeshmserver@151.101.3.8:80?type=xhttp&amp%3Bmode=auto&amp%3Bhost=qeshmserverfree.global.ssl.fastly.net&amp%3Bsecurity=none&host=151.101.3.8&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%235"
     },
     {
       "name": "🇪🇺 mwri🧘🏽 #6",
       "protocol": "vless",
-      "address": "151.101.192.155",
+      "address": "185.231.114.218",
       "port": 80,
       "latency_ms": 0.5,
-      "raw": "vless://%252525252525252525252525252525252525252574%252525252525252525252525252525252525252565%25252525252525252525252525252525252525256c%252525252525252525252525252525252525252565%252525252525252525252525252525252525252567%252525252525252525252525252525252525252572%252525252525252525252525252525252525252561%25252525252525252525252525252525252525256d%25252525252525252525252525252525252525252d%252525252525252525252525252525252525252541%252525252525252525252525252525252525252572%252525252525252525252525252525252525252556%252525252525252525252525252525252525252532%252525252525252525252525252525252525252572%252525252525252525252525252525252525252561%252525252525252525252525252525252525252579@151.101.192.155:80?path=%2Ftelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%3Fed%3D2048&encryption=none&host=Www.speedtest.net.41.Salatinmaccv.ir.&type=ws&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%236"
+      "raw": "vless://65115d6d-7c5b-45e5-929f-f50a86138f51@185.231.114.218:80?security=none&type=ws&host=gr1.asc-sam.ir&path=%2Fswgsth#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%236"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #7",
+      "name": "🇺🇸 mwri🧘🏽 #7",
       "protocol": "vless",
-      "address": "151.101.64.223",
+      "address": "140.248.158.132",
       "port": 80,
       "latency_ms": 0.5,
-      "raw": "vless://91f2e3fa-3047-4010-8c21-7ba9351602a5@151.101.64.223:80?mode=packet-up&path=%2FDailyConfigs&security=none&encryption=none&host=freeuse.global.ssl.fastly.net&type=xhttp#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%237"
+      "raw": "vless://e250d63d-5125-42de-98ce-0bfa85c38eed@140.248.158.132:80?type=tcp&encryption=none&host=140.248.158.132&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%237"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #8",
+      "name": "🇺🇸 mwri🧘🏽 #8",
       "protocol": "vless",
-      "address": "151.101.2.216",
+      "address": "140.248.183.178",
       "port": 80,
-      "latency_ms": 0.6,
-      "raw": "vless://telegram-ArV2ray@151.101.2.216:80?path=%2Ftelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry&security=none&encryption=none&host=4.fer67osowk.net&type=ws#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%238"
+      "latency_ms": 0.5,
+      "raw": "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@140.248.183.178:80?type=ws&encryption=none&host=aliii.ir&path=%2FkptMTT8pTmxLWsoJ%3Fed%3D2560&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%238"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #9",
+      "name": "🇺🇸 mwri🧘🏽 #9",
       "protocol": "vless",
-      "address": "151.101.0.155",
+      "address": "167.82.1.130",
       "port": 80,
-      "latency_ms": 0.6,
-      "raw": "vless://9034aba2-064d-4e03-9ee6-f502fffe09e1@151.101.0.155:80?mode=auto&path=ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON%3Fed%3D2048&security=none&encryption=none&host=zedmodeon237.global.ssl.fastly.net&type=xhttp#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%239"
+      "latency_ms": 0.5,
+      "raw": "vless://253ef561-9e57-4336-befd-878ddd30df01@167.82.1.130:80?type=ws&encryption=none&host=teleirani.ir&path=%2F%3Fed%3D2048&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%239"
     },
     {
       "name": "🇪🇺 mwri🧘🏽 #10",
       "protocol": "vless",
-      "address": "151.101.25.242",
+      "address": "151.101.193.124",
       "port": 80,
-      "latency_ms": 0.6,
-      "raw": "vless://fbbd87c3-170b-4249-8139-aa6b23ad5133@151.101.25.242:80?mode=auto&amp%3Bpath=%2F%3Fed%3D2560&amp%3Bsecurity=none&amp%3Bencryption=none&amp%3Bhost=maxde22.global.ssl.fastly.net&amp%3Btype=xhttp&host=151.101.25.242&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2310"
+      "latency_ms": 0.5,
+      "raw": "vless://129ec9f4-56a9-497f-91fc-9a062faf5d72@151.101.193.124:80?type=xhttp&encryption=none&host=151.101.193.124&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2310"
     },
     {
       "name": "🇪🇺 mwri🧘🏽 #11",
       "protocol": "vless",
-      "address": "151.101.194.219",
+      "address": "151.101.2.216",
       "port": 80,
-      "latency_ms": 0.6,
-      "raw": "vless://27016d6e-1f62-5805-a7e6-32c32006c307@151.101.194.219:80?security=none&amp%3Btype=ws&amp%3Bhost=f35-ELi.ir&amp%3Bpath=%2FTelegram%2C&host=151.101.194.219#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2311"
+      "latency_ms": 0.5,
+      "raw": "vless://%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252574%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252565%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525256c%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252565%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252567%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252572%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252561%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525256d%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252d%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252541%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252572%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252556%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252532%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252572%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252561%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252579@151.101.2.216:80?path=%2Ftelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry&security=none&encryption=none&host=4.fer68osowk.net&type=ws#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2311"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #12",
+      "name": "🇺🇸 mwri🧘🏽 #12",
       "protocol": "vless",
-      "address": "151.101.192.223",
+      "address": "199.232.209.133",
       "port": 80,
-      "latency_ms": 0.6,
-      "raw": "vless://a26bbed7-a286-4840-84bc-dc102c526777@151.101.192.223:80?mode=auto&path=category%2Fmusic&security=none&encryption=none&host=iran.boltboost.gg&type=xhttp#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2312"
+      "latency_ms": 0.5,
+      "raw": "vless://28ef7769-b7a8-478f-bac7-052494312c01@199.232.209.133:80?security=none&type=ws&path=%2Fcontainers%2Ffi&host=vasat.global.ssl.fastly.net#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2312"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #13",
+      "name": "🇪🇺 mwri🧘🏽 #13",
       "protocol": "vless",
-      "address": "199.232.193.10",
-      "port": 80,
+      "address": "151.101.129.203",
+      "port": 443,
       "latency_ms": 0.6,
-      "raw": "vless://896c2efd-252d-4837-b3b7-349faa02956d@199.232.193.10:80?path=%2F%3FTELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI%3Fed%3D2560&security=none&encryption=none&host=easyhostmanger.global.ssl.fastly.net&type=ws#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2313"
+      "raw": "vless://29af39ed-f8c8-49b8-9a5f-ea24fad97a09@151.101.129.203:443?path=%2F%3Fed%3D1024&amp%3Bsecurity=tls&amp%3Bencryption=none&amp%3Balpn=h2%2Chttp%2F1.1&amp%3Bhost=fastopra.com&amp%3Bfp=firefox&amp%3Btype=ws&amp%3Bsni=video.nordkapp-boats.no&host=151.101.129.203&security=tls&sni=151.101.129.203&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2313"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #14",
+      "name": "🇪🇺 mwri🧘🏽 #14",
       "protocol": "vless",
-      "address": "140.248.128.0",
+      "address": "151.101.128.155",
       "port": 80,
       "latency_ms": 0.6,
-      "raw": "vless://d4c244cd-fb79-478a-be50-7ea889491270@140.248.128.0:80?mode=auto&path=%2Fxhttp&security=none&encryption=none&host=hazaranetwork.bh&type=xhttp#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2314"
+      "raw": "vless://2487c34c-016e-43f3-9460-cb13b1f4c418@151.101.128.155:80?security=none&amp%3Btype=ws&amp%3Bhost=UNLIMITEDDEV.channel-telegram-1.ir&host=151.101.128.155#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2314"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #15",
+      "name": "🌐 mwri🧘🏽 #15",
       "protocol": "vless",
-      "address": "151.101.193.242",
+      "address": "z.ssl.fastly.net",
       "port": 80,
       "latency_ms": 0.6,
-      "raw": "vless://ea980c9c-43d5-4487-90c3-aa917020b6fa@151.101.193.242:80?encryption=none&security=none&type=xhttp&host=harro-warm-z2.global.ssl.fastly.net&mode=auto&extra=%7B%22scMaxEachPostBytes%22%3A+1000000%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2315"
+      "raw": "vless://837b6716-6901-4b4d-a49f-2b6ac9306aa3@z.ssl.fastly.net:80?path=%2F%3FTELEGRAM-V2rayBaaz_V2rayBaaz_V2rayBaaz_V2rayBaaz_V2rayBaaz_V2rayBaaz_V2rayBaaz_V2rayBaaz_V2rayBaaz_V2rayBaaz_V2rayBaaz_V2rayBaaz_V2rayBaaz_V2rayBaaz_V2rayBaaz_V2rayBaaz_V2rayBaaz_V2rayBaaz_V2rayBaaz_V2rayBaaz_V2rayBaaz_V2rayBaaz_V2rayBaaz_V2rayBaaz%3Fed%3D512&encryption=none&host=gerrma.global.ssl.fastly.net&type=ws&security=none#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2315"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #16",
+      "name": "🇺🇸 mwri🧘🏽 #16",
       "protocol": "vless",
-      "address": "151.101.130.228",
+      "address": "140.248.159.164",
       "port": 80,
       "latency_ms": 0.6,
-      "raw": "vless://5f301020-9b83-493f-94a9-75fb761ef0d3@151.101.130.228:80?type=ws&encryption=none&host=wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v25.drlimit.net&path=%2F&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2316"
+      "raw": "vless://081b4532-255d-4481-9484-b75ceab21b0d@140.248.159.164:80?path=%2Fcontainers%2Ffi&security=none&encryption=none&host=faqatchai.global.ssl.fastly.net&type=ws#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2316"
     },
     {
       "name": "🇪🇺 mwri🧘🏽 #17",
       "protocol": "vless",
-      "address": "151.101.67.8",
+      "address": "151.101.1.6",
       "port": 80,
       "latency_ms": 0.6,
-      "raw": "vless://TELEGRAM-CONFiGLiNE-47@151.101.67.8:80?mode=auto&path=%2Ftelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%3Fed%3D2048&security=none&encryption=none&host=telegrammmconfigline.global.ssl.fastly.net&type=xhttp#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2317"
+      "raw": "vless://2657c719-a504-58fa-8a29-02476e27bb1b@151.101.1.6:80?security=none&type=ws&host=PABLO-MOSTAFAA.COM&encryption=none&headerType=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2317"
     },
     {
-      "name": "🌐 mwri🧘🏽 #18",
-      "protocol": "ss",
-      "address": "172.165.94.205",
-      "port": 443,
-      "latency_ms": 0.7,
-      "raw": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxeE8yY3FQYXpxakdmQ2Zk@172.165.94.205:443#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2318"
+      "name": "🇪🇺 mwri🧘🏽 #18",
+      "protocol": "vless",
+      "address": "151.101.194.219",
+      "port": 80,
+      "latency_ms": 0.6,
+      "raw": "vless://08c7f096-d057-4d53-82fd-c739d372887b@151.101.194.219:80?encryption=none&security=none&type=ws&host=latvias.global.ssl.fastly.net&path=%2F%3Fed%3D1024#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2318"
     },
     {
       "name": "🇪🇺 mwri🧘🏽 #19",
       "protocol": "vless",
-      "address": "151.101.2.165",
+      "address": "151.101.192.155",
       "port": 80,
-      "latency_ms": 0.7,
-      "raw": "vless://b841859d-b59d-42e3-8282-1fa879ad660e@151.101.2.165:80?security=none&amp%3Btype=ws&amp%3Bhost=Aqakheylynamardin.net&amp%3Bpath=%2Ftelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%3Fed%3D2048&host=151.101.2.165#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2319"
+      "latency_ms": 0.6,
+      "raw": "vless://%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252574%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252565%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525256c%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252565%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252567%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252572%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252561%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525256d%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252d%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252541%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252572%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252556%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252532%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252572%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252561%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252579@151.101.192.155:80?path=%2Ftelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%2Ctelegram-ArV2ry%3Fed%3D2048&encryption=none&host=Www.speedtest.net.41.Salatinmaccv.ir.&type=ws&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2319"
     },
     {
       "name": "🇪🇺 mwri🧘🏽 #20",
       "protocol": "vless",
-      "address": "151.101.194.133",
+      "address": "151.101.2.219",
       "port": 443,
-      "latency_ms": 0.7,
-      "raw": "vless://32dbe23a-852e-44a8-9dc2-80188643f550@151.101.194.133:443?path=%2Ftelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%2Ctelegram-%40Sobi_Vpn%3Fed%3D2048&security=tls&encryption=none&host=moeinzp.com&type=ws&sni=mio.splashthat.com&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2320"
+      "latency_ms": 0.6,
+      "raw": "vless://411c60ae-ca8a-4cb8-8c76-37b8dbf29c38@151.101.2.219:443?security=tls&sni=speedtest.net&type=ws&host=kingstore.ir&path=%2F%3Fed%3D1024&fp=chrome&alpn=h2%2Chttp%2F1.1&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2320"
     },
     {
-      "name": "🌐 mwri🧘🏽 #21",
+      "name": "🇺🇸 mwri🧘🏽 #21",
       "protocol": "vless",
-      "address": "ipf3.justrouting.sbs",
-      "port": 443,
-      "latency_ms": 0.7,
-      "raw": "vless://cbf73250-e228-4fc8-95a1-3804176354be@ipf3.justrouting.sbs:443?mode=auto&path=%2Fed%3D3072&security=tls&encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A+%221000000%22%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D&insecure=0&host=Afrashupspeed.global.ssl.fastly.net&type=xhttp&allowInsecure=1&sni=default.ssl.fastly.net&alpn=h2%2Chttp%2F1.1&fp=chrome#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2321"
-    },
-    {
-      "name": "🇺🇸 mwri🧘🏽 #22",
-      "protocol": "vless",
-      "address": "140.248.158.132",
+      "address": "199.232.193.10",
       "port": 80,
-      "latency_ms": 0.7,
-      "raw": "vless://e250d63d-5125-42de-98ce-0bfa85c38eed@140.248.158.132:80?mode=auto&path=%2F&security=none&encryption=none&host=barcodevpn.global.ssl.fastly.net&type=xhttp#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2322"
+      "latency_ms": 0.6,
+      "raw": "vless://896c2efd-252d-4837-b3b7-349faa02956d@199.232.193.10:80?encryption=none&host=easyhostmanger.global.ssl.fastly.net&type=ws&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2321"
     },
     {
-      "name": "🌐 mwri🧘🏽 #23",
+      "name": "🇪🇺 mwri🧘🏽 #22",
       "protocol": "vless",
-      "address": "ipwit1.fastspeedx4.info",
-      "port": 443,
-      "latency_ms": 0.7,
-      "raw": "vless://cbf73250-e228-4fc8-95a1-3804176354be@ipwit1.fastspeedx4.info:443?mode=auto&path=%2Fed%3D3072&security=tls&encryption=none&host=ipwit1.fastspeedx4.info&sni=ipwit1.fastspeedx4.info&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2323"
-    },
-    {
-      "name": "🌐 mwri🧘🏽 #24",
-      "protocol": "vless",
-      "address": "z.ssl.fastly.net",
+      "address": "151.101.2.165",
       "port": 80,
-      "latency_ms": 0.7,
-      "raw": "vless://3d2b28ec-e2f5-4edd-a95c-18d8ea828022@z.ssl.fastly.net:80?security=none&encryption=none&host=ukamanaijji.global.ssl.fastly.net&type=ws#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2324"
+      "latency_ms": 0.6,
+      "raw": "vless://b841859d-b59d-42e3-8282-1fa879ad660e@151.101.2.165:80?security=none&amp%3Btype=ws&amp%3Bhost=Aqakheylynamardin.net&amp%3Bpath=%2Ftelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%3Fed%3D2048&host=151.101.2.165#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2322"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #25",
+      "name": "🇺🇸 mwri🧘🏽 #23",
       "protocol": "vless",
-      "address": "151.101.99.161",
+      "address": "167.82.0.14",
       "port": 80,
-      "latency_ms": 0.7,
-      "raw": "vless://1c886572-7bc1-4051-b4c5-534db1287a45@151.101.99.161:80?mode=auto&path=%2FewaroopDWDWDdowOWDwOerio3orfo3ooFOWOFOFWOWfWFIjWWwow&security=none&encryption=none&host=m2shbosl.global.ssl.fastly.net&type=xhttp#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2325"
+      "latency_ms": 0.6,
+      "raw": "vless://42f36835-730c-4ecc-9daf-20121ae7ba47@167.82.0.14:80?type=ws&encryption=none&path=%2Fvless-ws%2F&security=none&host=167.82.0.14#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2323"
+    },
+    {
+      "name": "🇪🇺 mwri🧘🏽 #24",
+      "protocol": "vless",
+      "address": "151.101.0.223",
+      "port": 80,
+      "latency_ms": 0.6,
+      "raw": "vless://2864e305-d269-4b90-b1bd-9c8f3905ebc8@151.101.0.223:80?path=%2Fcontainers%2Ffi&security=none&encryption=none&host=mitisaker.io&type=ws#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2324"
+    },
+    {
+      "name": "🇺🇸 mwri🧘🏽 #25",
+      "protocol": "vless",
+      "address": "199.232.11.238",
+      "port": 80,
+      "latency_ms": 0.6,
+      "raw": "vless://8edaa2ae-7c08-4370-93b5-a3c2637bad9d@199.232.11.238:80?encryption=mlkem768x25519plus.native.0rtt.AQyUbbOYcuQkbAymidfXiqxpfC8UsX1tnoyPE_ljFg0&security=none&type=xhttp&host=iranclicks23.global.ssl.fastly.net&path=%2F&mode=auto#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2325"
     },
     {
       "name": "🇪🇺 mwri🧘🏽 #26",
       "protocol": "vless",
-      "address": "151.101.2.219",
+      "address": "151.101.64.155",
       "port": 80,
-      "latency_ms": 0.7,
-      "raw": "vless://464c401d-d4ec-42ea-878d-be73f68737a3@151.101.2.219:80?mode=auto&path=%2Flepingshop&security=none&encryption=none&host=lepingshop.global.ssl.fastly.net&type=xhttp#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2326"
+      "latency_ms": 0.6,
+      "raw": "vless://9c488e6e-932c-44cb-b488-0b27f591b034@151.101.64.155:80?path=%2F-LiV2ry%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6%E2%80%A6%3C%2Fdiv%3E&host=151.101.64.155&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2326"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #27",
+      "name": "🇺🇸 mwri🧘🏽 #27",
       "protocol": "vless",
-      "address": "151.101.1.57",
-      "port": 80,
-      "latency_ms": 0.7,
-      "raw": "vless://41028f19-152d-480d-9367-f0915e5f9cc5@151.101.1.57:80?type=ws&encryption=none&host=Www.speedtest.net.sPeedtest2.sbs.&path=%2F-LiV2ry%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL-%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6-TEL--%40LIGHTNING6%3Fed%3D2048&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2327"
+      "address": "140.248.129.68",
+      "port": 443,
+      "latency_ms": 0.6,
+      "raw": "vless://8522177a-de08-4e28-8d79-3302ad89b335@140.248.129.68:443?path=%2Fwst%3Fed%3D2056&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&host=parsianmobilebank.ir&fp=chrome&type=ws&sni=default.ssl.fastly.net&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2327"
     },
     {
       "name": "🇪🇺 mwri🧘🏽 #28",
       "protocol": "vless",
-      "address": "151.101.66.219",
-      "port": 80,
-      "latency_ms": 0.7,
-      "raw": "vless://165a8cdd-bcb0-48bd-87d1-65e51cffa6f6@151.101.66.219:80?encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A+%221000000%22%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D&host=speedtest.net.fast.hard.detailofude.org&mode=auto&path=%2F&security=none&type=xhttp#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2328"
+      "address": "151.101.130.219",
+      "port": 443,
+      "latency_ms": 0.6,
+      "raw": "vless://3857bc00-5792-4fed-b22d-465928712000@151.101.130.219:443?type=ws&encryption=none&host=i-am-melo.com&path=%2F%40melov2ray%2Fws%3Fed%3D2048&security=tls&sni=speedtest.net&alpn=h2%2Chttp%2F1.1&fp=firefox&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2328"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #29",
+      "name": "🇪🇺 mwri🧘🏽 #29",
       "protocol": "vless",
-      "address": "199.232.193.57",
-      "port": 80,
-      "latency_ms": 0.7,
-      "raw": "vless://698e1d97-0594-481d-8d97-f5f6f46aa32d@199.232.193.57:80?type=ws&encryption=none&host=virav2ray-alsjddhkasdasdkaslj.com&path=ViraV2ray%2F%3Fed%3D2560&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2329"
+      "address": "151.101.1.203",
+      "port": 443,
+      "latency_ms": 0.6,
+      "raw": "vless://9d21c63f-a121-4411-cd51-1d6782157c0f@151.101.1.203:443?type=ws&encryption=none&host=ViraV2ray-OusMMD.com&path=%2F%40ViraV2ray%2C%40ViraV2ray%2C%40ViraV2ray%2C%40ViraV2ray%2C%40ViraV2ray%2C%40ViraV2ray%2C%40ViraV2ray%2C%40ViraV2ray%2C%40ViraV2ray%2C%40ViraV2ray%2C%40ViraV2ray%2C%40ViraV2ray%2C%40ViraV2ray%2C%40ViraV2ray%2C%40ViraV2ray%2F%3Fed%3D2560&security=tls&sni=video.nordkapp-boats.no&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2329"
     },
     {
-      "name": "🌐 mwri🧘🏽 #30",
+      "name": "🇺🇸 mwri🧘🏽 #30",
       "protocol": "vless",
-      "address": "104.156.85.17",
+      "address": "140.248.171.134",
       "port": 80,
-      "latency_ms": 0.7,
-      "raw": "vless://ed6bb2ca-b9b4-43a2-94db-2d74be9a20ae@104.156.85.17:80?mode=auto&path=%2F&security=none&encryption=none&host=yarban.global.ssl.fastly.net&type=xhttp#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2330"
+      "latency_ms": 0.6,
+      "raw": "vless://c5b8a950-cf26-4d17-a50c-bfcbd1c0f7cc@140.248.171.134:80?mode=auto&path=%2F&security=none&encryption=none&host=maxoc1your-name.global.ssl.fastly.net&type=xhttp#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2330"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #31",
+      "name": "🌐 mwri🧘🏽 #31",
       "protocol": "vless",
-      "address": "167.82.1.111",
-      "port": 80,
-      "latency_ms": 0.7,
-      "raw": "vless://253ef561-9e57-4336-befd-878ddd30df01@167.82.1.111:80?type=ws&encryption=none&host=teleirani.ir&path=%2F%3Fed%3D2048&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2331"
+      "address": "miltering.global.ssl.fastly.net",
+      "port": 443,
+      "latency_ms": 0.6,
+      "raw": "vless://32b203c8-e9be-4645-a762-cd9287ac410c@miltering.global.ssl.fastly.net:443?path=%2Fdownload&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=miltering.global.ssl.fastly.net&fp=chrome&type=ws&allowInsecure=1&sni=miltering.global.ssl.fastly.net#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2331"
     },
     {
       "name": "🇪🇺 mwri🧘🏽 #32",
       "protocol": "vless",
-      "address": "151.101.0.0",
-      "port": 80,
-      "latency_ms": 0.7,
-      "raw": "vless://TELEGRAM-CONFiGLiNE-68@151.101.0.0:80?mode=auto&path=%2Ftelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%3Fed%3D2048&security=none&encryption=none&host=azaiji3.global.ssl.fastly.net&type=xhttp#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2332"
+      "address": "151.101.195.6",
+      "port": 443,
+      "latency_ms": 0.6,
+      "raw": "vless://e7dcd0ce-a13d-4af0-b8f4-85920e5e7d50@151.101.195.6:443?mode=packet-up&path=%2F&security=tls&fragment=1%2C1%2Ctlshello%2C100-200&encryption=none&alpn=h3&extra=%7B%22scMaxEachPostBytes%22%3A%221000000%22%2C%22scMaxConcurrentPosts%22%3A100.0%2C%22scMinPostsIntervalMs%22%3A30.0%2C%22xPaddingBytes%22%3A%22100-1000%22%2C%22noGRPCHeader%22%3Afalse%7D&host=lsboss.tm&fp=chrome&allowinsecure=1&type=xhttp&sni=lsboss.tm&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2332"
     },
     {
       "name": "🇪🇺 mwri🧘🏽 #33",
       "protocol": "vless",
-      "address": "151.101.130.219",
+      "address": "151.101.66.219",
       "port": 443,
-      "latency_ms": 0.7,
-      "raw": "vless://66bcb167-7663-45ca-a3ad-e4ef21f18b6c@151.101.130.219:443?security=tls&sni=speedtest.net&type=ws&host=dfuighrtguibgjkbngihbghib.com&path=ws%2F%3Fed%3D2048&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2333"
+      "latency_ms": 0.6,
+      "raw": "vless://5f0c9583-7dab-4288-908f-9fa86b82d0bc@151.101.66.219:443?security=tls&amp%3Bsni=speedtest.net&amp%3Btype=ws&amp%3Bhost=kingstore.ir&amp%3Bpath=Join%3A%40oPeTa_v2ray-telegram%3A%40oPeTa_v2ray-join-chanel%3A%40oPeTa_v2ray-join%3A%40opeta_v2ray-telegram%3A%40opeta_v2ray%2F%3Fed%3D1024&amp%3Bfp=chrome&amp%3Balpn=h2%2Chttp%2F1.1&host=151.101.66.219&sni=151.101.66.219&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2333"
     },
     {
       "name": "🇪🇺 mwri🧘🏽 #34",
       "protocol": "vless",
-      "address": "151.101.67.6",
+      "address": "151.101.194.133",
+      "port": 443,
+      "latency_ms": 0.6,
+      "raw": "vless://a485ef08-b622-4ac2-817f-2785cbbf3455@151.101.194.133:443?path=%2FHHJ1feCQkdARo4ZzMOCSwT&security=tls&encryption=none&alpn=h2&host=ms4bdcc9cbbbfdc1cb06245d5a1f.repl.co&fp=chrome&type=ws&sni=asu.edu&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2334"
+    },
+    {
+      "name": "🇪🇺 mwri🧘🏽 #35",
+      "protocol": "vless",
+      "address": "151.101.33.212",
+      "port": 443,
+      "latency_ms": 0.6,
+      "raw": "vless://0416d09f-a24f-46a2-a913-b0f2be57c009@151.101.33.212:443?type=ws&encryption=none&host=aklisvpn.com&path=%2F%40aklisvpn%40aklisvpn%40aklisvpn&security=tls&sni=map.google.com&fp=chrome&alpn=h2%2Chttp%2F1.1&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2335"
+    },
+    {
+      "name": "🇺🇸 mwri🧘🏽 #36",
+      "protocol": "vless",
+      "address": "167.82.1.102",
+      "port": 80,
+      "latency_ms": 0.6,
+      "raw": "vless://253ef561-9e57-4336-befd-878ddd30df01@167.82.1.102:80?type=ws&encryption=none&host=teleirani.ir&path=%2F%3Fed%3D2048&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2336"
+    },
+    {
+      "name": "🇺🇸 mwri🧘🏽 #37",
+      "protocol": "vless",
+      "address": "140.248.130.32",
+      "port": 443,
+      "latency_ms": 0.6,
+      "raw": "vless://2bfba95e-d1c5-4382-96ba-aa598f1f2fb0@140.248.130.32:443?security=tls&type=ws&path=%2Fwst%3Fed%3D2056&host=parsianmobilebank.ir&sni=default.ssl.fastly.net&fp=chrome&alpn=h2%2Chttp%2F1.1&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2337"
+    },
+    {
+      "name": "🇪🇺 mwri🧘🏽 #38",
+      "protocol": "vless",
+      "address": "151.101.194.219",
+      "port": 443,
+      "latency_ms": 0.6,
+      "raw": "vless://44f2572e-6264-4200-b839-82dffb623095@151.101.194.219:443?security=tls&sni=speedtest.net&type=ws&host=kingstore.ir&path=Join%3A%40oPeTa_v2ray-telegram%3A%40oPeTa_v2ray-join-chanel%3A%40oPeTa_v2ray-join%3A%40opeta_v2ray-telegram%3A%40opeta_v2ray%2F%3Fed%3D1024&fp=chrome&alpn=h2%2Chttp%2F1.1&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2338"
+    },
+    {
+      "name": "🇪🇺 mwri🧘🏽 #39",
+      "protocol": "vless",
+      "address": "151.101.193.242",
+      "port": 80,
+      "latency_ms": 0.6,
+      "raw": "vless://3801241c-590a-4bc2-90c1-f40d978e040b@151.101.193.242:80?encryption=none&security=none&type=xhttp&host=harro-warm-z2.global.ssl.fastly.net&mode=auto&extra=%7B%22scMaxEachPostBytes%22%3A+1000000%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2339"
+    },
+    {
+      "name": "🇺🇸 mwri🧘🏽 #40",
+      "protocol": "vless",
+      "address": "167.82.0.242",
+      "port": 80,
+      "latency_ms": 0.6,
+      "raw": "vless://253ef561-9e57-4336-befd-878ddd30df01@167.82.0.242:80?type=ws&encryption=none&host=teleirani.ir&path=%2Fvless-ws%2F%40a...&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2340"
+    },
+    {
+      "name": "🇺🇸 mwri🧘🏽 #41",
+      "protocol": "vless",
+      "address": "167.82.0.226",
+      "port": 80,
+      "latency_ms": 0.6,
+      "raw": "vless://253ef561-9e57-4336-befd-878ddd30df01@167.82.0.226:80?type=ws&encryption=none&host=teleirani.ir&path=%2F&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2341"
+    },
+    {
+      "name": "🇬🇧 mwri🧘🏽 #42",
+      "protocol": "ss",
+      "address": "51.11.137.81",
       "port": 443,
       "latency_ms": 0.7,
-      "raw": "vless://74a35085-df4f-40d2-8480-beb2352f9439@151.101.67.6:443?mode=packet-up&path=%2F&security=tls&encryption=none&alpn=h3&extra=%7B%22scMaxEachPostBytes%22%3A%221000000%22%2C%22scMaxConcurrentPosts%22%3A100.0%2C%22scMinPostsIntervalMs%22%3A30.0%2C%22xPad%E2%80%A6&host=151.101.67.6&sni=151.101.67.6&fp=chrome&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2334"
+      "raw": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB@51.11.137.81:443#%F0%9F%87%AC%F0%9F%87%A7%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2342"
     },
     {
-      "name": "🌐 mwri🧘🏽 #35",
-      "protocol": "vless",
-      "address": "clearcreditrepair.com",
-      "port": 443,
-      "latency_ms": 0.8,
-      "raw": "vless://02500334-97ea-4952-b648-e27c42dd3a65@clearcreditrepair.com:443?security=tls&host=ELiV2RAY.cc&fp=randomized&type=ws&sni=clearcreditrepair.com&alpn=h2%2Chttp%2F1.1&allowInsecure=1#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2335"
-    },
-    {
-      "name": "🌐 mwri🧘🏽 #36",
-      "protocol": "vless",
-      "address": "d815b7638416b6d2.speedtest.net",
+      "name": "🇺🇸 mwri🧘🏽 #43",
+      "protocol": "vmess",
+      "address": "140.248.137.99",
       "port": 80,
-      "latency_ms": 0.8,
-      "raw": "vless://f6e16f66-0893-4d84-b5ac-781ac6f0b196@d815b7638416b6d2.speedtest.net:80?path=%2F%40V2NET_IRAN%2F%40V2NET_IRAN%2F%40V2NET_IRAN%2F%40V2NET_IRAN%2F%40V2NET_IRAN%2F%40V2NET_IRAN%2F%40V2NET_IRAN%2F%40V2NET_IRAN%2F%40V2NET_IRAN%3Fed%3D1024&security=none&encryption=none&host=v2netiran.life&type=ws#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2336"
-    },
-    {
-      "name": "🌐 mwri🧘🏽 #37",
-      "protocol": "vless",
-      "address": "theatlantic.com",
-      "port": 443,
-      "latency_ms": 0.8,
-      "raw": "vless://TELEGRAM-NUFiLTER@theatlantic.com:443?path=%2Ftelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%3Fed%3D80&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&host=Shotor2la2la.neT&fp=chrome&type=ws&sni=Zmaoz.Faculty.Ucdavis.Edu&allowInsecure=1#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2337"
-    },
-    {
-      "name": "🌐 mwri🧘🏽 #38",
-      "protocol": "ss",
-      "address": "series-a1.samanehha.co",
-      "port": 443,
-      "latency_ms": 0.8,
-      "raw": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB@series-a1.samanehha.co:443#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2338"
-    },
-    {
-      "name": "🌐 mwri🧘🏽 #39",
-      "protocol": "vless",
-      "address": "trt.fastlynew.hosting-ip.com",
-      "port": 80,
-      "latency_ms": 0.8,
-      "raw": "vless://de8ebf94-883b-46e0-b276-2c3cd0c96e4e@trt.fastlynew.hosting-ip.com:80?mode=auto&amp%3Bpath=%2F%3Fed%3D2560&amp%3Bsecurity=none&amp%3Bencryption=none&amp%3Bhost=maxde219.global.ssl.fastly.net&amp%3Btype=xhttp&host=trt.fastlynew.hosting-ip.com&security=none#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2339"
-    },
-    {
-      "name": "🇪🇺 mwri🧘🏽 #40",
-      "protocol": "vless",
-      "address": "151.101.2.133",
-      "port": 80,
-      "latency_ms": 0.8,
-      "raw": "vless://0e7579f2-d136-57cd-b2de-c41e49b00c75@151.101.2.133:80?security=none&amp%3Btype=ws&amp%3Bhost=mortezatv89.ir&amp%3Bpath=%2Fvless&host=151.101.2.133#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2340"
-    },
-    {
-      "name": "🇪🇺 mwri🧘🏽 #41",
-      "protocol": "vless",
-      "address": "151.101.64.155",
-      "port": 80,
-      "latency_ms": 0.8,
-      "raw": "vless://9c488e6e-932c-44cb-b488-0b27f591b034@151.101.64.155:80?path=%2F-LiV2ry%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-TEL--%40LIGHTNING6-JOIN-%40LIGHTNING6%E2%80%A6%3C%2Fdiv%3E&host=151.101.64.155&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2341"
-    },
-    {
-      "name": "🌐 mwri🧘🏽 #42",
-      "protocol": "vless",
-      "address": "fastly1.fastspeeds.ir",
-      "port": 80,
-      "latency_ms": 0.8,
-      "raw": "vless://392ca09f-3285-4266-9544-14195f0227fa@fastly1.fastspeeds.ir:80?mode=auto&path=%2F&security=none&encryption=none&host=fastly1.fastspeeds.ir#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2342"
-    },
-    {
-      "name": "🌐 mwri🧘🏽 #43",
-      "protocol": "vless",
-      "address": "python.org",
-      "port": 80,
-      "latency_ms": 0.8,
-      "raw": "vless://4d63dcc0-d836-4101-9618-a15306d5d8ba@python.org:80?mode=auto&path=%2Fdatax_proxy&security=none&encryption=none&host=dataxlondon.global.ssl.fastly.net&type=xhttp#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2343"
+      "latency_ms": 0.7,
+      "raw": "vmess://eyJhZGQiOiAiMTQwLjI0OC4xMzcuOTkiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAicGwzaGN5b3VyLW5hbWUuZ2xvYmFsLnNzbC5mYXN0bHkubmV0IiwgImlkIjogIjEwZjQ0YTQ2LTE3ZTQtNDBlNS04Mjk2LTdmNjk1YjdkZTM3YSIsICJpbnNlY3VyZSI6ICIwIiwgIm5ldCI6ICJ4aHR0cCIsICJwYXRoIjogIi8iLCAicG9ydCI6ICI4MCIsICJwcyI6ICLwn4e68J+HuCBtd3Jp8J+nmPCfj70gIzQzIiwgInNjeSI6ICJhdXRvIiwgInNuaSI6ICIiLCAidGxzIjogIiIsICJ0eXBlIjogImF1dG8iLCAidiI6ICIyIn0="
     },
     {
       "name": "🌐 mwri🧘🏽 #44",
-      "protocol": "vless",
-      "address": "s.ssl.fastly.net",
-      "port": 80,
-      "latency_ms": 0.8,
-      "raw": "vless://3d2b28ec-e2f5-4edd-a95c-18d8ea828022@s.ssl.fastly.net:80?security=none&encryption=none&host=usakhidam.global.ssl.fastly.net&type=ws#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2344"
+      "protocol": "ss",
+      "address": "172.165.94.205",
+      "port": 443,
+      "latency_ms": 0.7,
+      "raw": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxeE8yY3FQYXpxakdmQ2Zk@172.165.94.205:443#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2344"
     },
     {
       "name": "🇪🇺 mwri🧘🏽 #45",
       "protocol": "vless",
-      "address": "151.101.169.242",
+      "address": "151.101.66.219",
       "port": 80,
-      "latency_ms": 0.8,
-      "raw": "vless://TELEGRAM-CONFiGLiNE-125@151.101.169.242:80?path=%2Ftelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%3Fed%3D1024&security=none&encryption=none&host=barayeazaadi.global.ssl.fastly.net&type=ws#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2345"
+      "latency_ms": 0.7,
+      "raw": "vless://cc29b4c8-f8c5-4d1b-b553-798fbe60e937@151.101.66.219:80?type=ws&amp%3Bhost=alf17.ir&amp%3Bpath=%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%3Fed%3D2048&host=151.101.66.219&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2345"
     },
     {
-      "name": "🌐 mwri🧘🏽 #46",
+      "name": "🇪🇺 mwri🧘🏽 #46",
       "protocol": "vless",
-      "address": "nls.zdshop.ir",
+      "address": "151.101.3.19",
       "port": 80,
-      "latency_ms": 0.8,
-      "raw": "vless://bc20990c-a88e-4852-8e3b-f5b3ff4ae56a@nls.zdshop.ir:80?encryption=none&host=okpan3musicnl.global.ssl.fastly.net&path=%2Fed%3D2560&security=none&type=ws#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2346"
+      "latency_ms": 0.7,
+      "raw": "vless://0b516cf6-cd76-470c-954d-9374d734f445@151.101.3.19:80?path=%2Fsite&encryption=none&host=yalandonya.global.ssl.fastly.net&type=ws&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2346"
     },
     {
       "name": "🌐 mwri🧘🏽 #47",
       "protocol": "vless",
-      "address": "ip2-fast.tyryqyserver.ir",
+      "address": "speedtest.net",
       "port": 80,
-      "latency_ms": 0.8,
-      "raw": "vless://c30da8f2-29f1-4bb6-8cbb-1d23331f7033@ip2-fast.tyryqyserver.ir:80?path=%2FV2ynpv-V2ynpv-V2ynpv-V2ynpv-V2ynpv&security=none&encryption=none&host=norbertde1.global.ssl.fastly.net&type=ws#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2347"
+      "latency_ms": 0.7,
+      "raw": "vless://TELEGRAM-NUFiLTER-2@speedtest.net:80?path=%2Ftelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%3Fed%3D1024&encryption=none&host=onlygod.global.ssl.fastly.net&type=ws&security=none#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2347"
     },
     {
-      "name": "🌐 mwri🧘🏽 #48",
+      "name": "🇺🇸 mwri🧘🏽 #48",
       "protocol": "vless",
-      "address": "fast1.mrsf.ir",
-      "port": 443,
-      "latency_ms": 0.8,
-      "raw": "vless://cbf73250-e228-4fc8-95a1-3804176354be@fast1.mrsf.ir:443?mode=auto&path=%2Fdl%3Fed%3D2560&security=tls&serviseName=%40icv2ray%2C%40icv2ray%2C%40icv2ray%2C%40icv2ray%2C%40icv2ray%2C%40icv2ray%2C%40icv2ray%2C%40icv2ray%2C%40icv2ray%2C%40icv2ray%2C%40icv2ray%2C%40icv2ray&encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A+%221000000%22%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D&insecure=0&host=Osipanel.global.ssl.fastly.net&type=xhttp&allowInsecure=1&sni=default.ssl.fastly.net&alpn=h2%2Chttp%2F1.1&fp=chrome#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2348"
-    },
-    {
-      "name": "🇺🇸 mwri🧘🏽 #49",
-      "protocol": "vless",
-      "address": "23.185.0.0",
+      "address": "140.248.171.91",
       "port": 80,
-      "latency_ms": 0.8,
-      "raw": "vless://e8db8a07-9264-4072-8637-8118ec39d682@23.185.0.0:80?mode=auto&path=%2F&security=none&encryption=none&host=9ow30rfd9jhwf9j.global.ssl.fastly.net&type=xhttp#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2349"
+      "latency_ms": 0.7,
+      "raw": "vless://49af75d4-31d0-4322-b425-630be07030e1@140.248.171.91:80?path=%2F&security=none&encryption=none&host=fdsgszd.global.ssl.fastly.net&type=ws#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2348"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #50",
+      "name": "🇪🇺 mwri🧘🏽 #49",
       "protocol": "vless",
-      "address": "199.232.196.204",
+      "address": "151.101.129.6",
       "port": 80,
-      "latency_ms": 0.8,
-      "raw": "vless://6ef79989-6321-5e6b-b39e-602fc95ecf3e@199.232.196.204:80?type=ws&encryption=none&host=199.232.196.204&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2350"
+      "latency_ms": 0.7,
+      "raw": "vless://2657c719-a504-58fa-8a29-02476e27bb1b@151.101.129.6:80?security=none&type=ws&host=PABLO-MOSTAFAA.COM&encryption=none&headerType=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2349"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #51",
+      "name": "🇪🇺 mwri🧘🏽 #50",
       "protocol": "vless",
-      "address": "199.232.0.73",
-      "port": 443,
-      "latency_ms": 0.8,
-      "raw": "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@199.232.0.73:443?type=ws&encryption=none&host=behdasht.hrtc.ir&path=%2FH%3Fed%3D2560&security=tls&sni=behdasht.hrtc.ir&alpn=h2%2Chttp%2F1.1&fp=randomized&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2351"
+      "address": "151.101.195.8",
+      "port": 80,
+      "latency_ms": 0.7,
+      "raw": "vless://telegram-id-ArV2ray@151.101.195.8:80?encryption=none&type=xhttp&mode=auto&host=Mtkirand.&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2350"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #52",
+      "name": "🇪🇺 mwri🧘🏽 #51",
       "protocol": "vless",
-      "address": "151.101.1.140",
+      "address": "151.101.194.133",
+      "port": 80,
+      "latency_ms": 0.7,
+      "raw": "vless://560a0f6c-9057-4d18-b88f-6512c2568481@151.101.194.133:80?security=none&amp%3Btype=ws&amp%3Bhost=Morchechi.ir&amp%3Bpath=%2Ftelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%3Fed%3D2048&host=151.101.194.133#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2351"
+    },
+    {
+      "name": "🇺🇸 mwri🧘🏽 #52",
+      "protocol": "vless",
+      "address": "199.232.79.55",
       "port": 443,
-      "latency_ms": 0.8,
-      "raw": "vless://c6d299d4-db0b-4444-8b56-b23bbdcbcd67@151.101.1.140:443?type=ws&encryption=none&host=imdiana.net&path=%2FFreedomToDream%3Fed%3D2560&security=tls&sni=speedtest.net&fp=randomized&alpn=h2%2Chttp%2F1.1&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2352"
+      "latency_ms": 0.7,
+      "raw": "vless://2d595682-9541-42e8-a0ae-a5132702f988@199.232.79.55:443?type=tcp&encryption=none&host=199.232.79.55&security=tls&sni=199.232.79.55&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2352"
     },
     {
       "name": "🇪🇺 mwri🧘🏽 #53",
       "protocol": "vless",
-      "address": "151.101.128.155",
+      "address": "151.101.2.57",
       "port": 80,
-      "latency_ms": 0.8,
-      "raw": "vless://9ec9abe3-8b93-4829-b6ed-d40ceb7db1f5@151.101.128.155:80?security=none&type=ws&host=joinbedeee-daily-configs.net&encryption=none&path=%2F%40Daily_Configs--%40Daily_Configs--%40Daily_Configs--%40Daily_Configs--%40Daily_Configs--%40Daily_Configs%3Fed%3D2056&headerType=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2353"
+      "latency_ms": 0.7,
+      "raw": "vless://e82a2294-7fe7-4482-8c8a-8b39e6aadd01@151.101.2.57:80?mode=auto&path=%2FJoin-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON&security=none&encryption=none&host=shlnlpld.global.ssl.fastly.net&type=xhttp#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2353"
     },
     {
-      "name": "🌐 mwri🧘🏽 #54",
+      "name": "🇪🇺 mwri🧘🏽 #54",
       "protocol": "vless",
-      "address": "spd-mynames.global.ssl.fastly.net",
+      "address": "151.101.2.219",
       "port": 80,
-      "latency_ms": 0.9,
-      "raw": "vless://8e378a41-d5e1-427a-aaf8-30190d4be0a0@spd-mynames.global.ssl.fastly.net:80?mode=auto&path=%2F&security=none&encryption=none&host=Spd-mynames.global.ssl.fastly.net&type=xhttp#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2354"
+      "latency_ms": 0.7,
+      "raw": "vless://01abdb29-cca0-47c6-844d-9f4e29f21c56@151.101.2.219:80?host=www.club6621.org&mode=auto&path=%2FPossimusliberoEoscumque&security=none&type=xhttp#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2354"
     },
     {
-      "name": "🌐 mwri🧘🏽 #55",
-      "protocol": "ss",
-      "address": "series-a2.varzesh360.co",
+      "name": "🇺🇸 mwri🧘🏽 #55",
+      "protocol": "vless",
+      "address": "199.232.8.39",
       "port": 443,
-      "latency_ms": 0.9,
-      "raw": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1Zn@series-a2.varzesh360.co:443#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2355"
+      "latency_ms": 0.7,
+      "raw": "vless://fd29defb-7f80-59ba-88d9-2234b20a806e@199.232.8.39:443?type=ws&encryption=none&host=ELiV2RAY-JOIN.COM&security=tls&sni=ELiv2RAy-jOiN.cOm&fp=edge&alpn=h2%2Chttp%2F1.1&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2355"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #56",
+      "name": "🇺🇸 mwri🧘🏽 #56",
       "protocol": "vless",
-      "address": "151.101.130.219",
+      "address": "167.82.0.1",
       "port": 80,
-      "latency_ms": 0.9,
-      "raw": "vless://faec23a3-1cab-4ef2-b9aa-4999ea14e451@151.101.130.219:80?type=ws&amp%3Bhost=alf17.ir&amp%3Bpath=%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%3Fed%3D2048&host=151.101.130.219&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2356"
+      "latency_ms": 0.7,
+      "raw": "vless://42f36835-730c-4ecc-9daf-20121ae7ba47@167.82.0.1:80?type=ws&encryption=none&host=edge.validbv3528.ir&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2356"
     },
     {
       "name": "🇪🇺 mwri🧘🏽 #57",
       "protocol": "vless",
-      "address": "151.101.194.216",
-      "port": 80,
-      "latency_ms": 0.9,
-      "raw": "vless://217b48d6-5dac-4662-9a8c-aa76e92a7cfe@151.101.194.216:80?security=none&amp%3Btype=ws&amp%3Bhost=befreewithus.com&amp%3Bpath=ws%2F%3Fed%3D2048&host=151.101.194.216#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2357"
+      "address": "151.101.66.133",
+      "port": 443,
+      "latency_ms": 0.7,
+      "raw": "vless://25b8f4b0-4f7d-400f-bc4a-f10e5b8796a2@151.101.66.133:443?path=%2Fstream&host=151.101.66.133&security=tls&sni=151.101.66.133&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2357"
     },
     {
-      "name": "🌐 mwri🧘🏽 #58",
+      "name": "🇪🇺 mwri🧘🏽 #58",
       "protocol": "vless",
-      "address": "mx.tehrantolidi.ir",
+      "address": "151.101.194.216",
       "port": 80,
-      "latency_ms": 0.9,
-      "raw": "vless://4e97c916-e186-4a5f-8b64-07c6862964b4@mx.tehrantolidi.ir:80?encryption=none&security=none&type=ws&host=kir-to-iranzamin.global.ssl.fastly.net&path=%2Fdownload#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2358"
+      "latency_ms": 0.7,
+      "raw": "vless://8820e16b-fbc2-49d3-90e4-eeeb8301c83c@151.101.194.216:80?security=none&type=ws&host=anycast.leslie.ch&path=%2F%3Fed%3D2560#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2358"
     },
     {
       "name": "🇪🇺 mwri🧘🏽 #59",
       "protocol": "vless",
-      "address": "151.101.0.10",
+      "address": "151.101.7.79",
       "port": 80,
-      "latency_ms": 0.9,
-      "raw": "vless://957d0930-8730-4923-b58c-6c0d640418bd@151.101.0.10:80?mode=auto&path=%2Fdl%3Fed%3D2560&security=none&encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A+%221000000%22%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D&host=goraz.global.ssl.fastly.net&type=xhttp#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2359"
+      "latency_ms": 0.7,
+      "raw": "vless://1b771dab-e581-4457-b1d9-416d48ea5d8c@151.101.7.79:80?mode=auto&amp%3Bpath=%2F&amp%3Bsecurity=none&amp%3Bencryption=none&amp%3Bextra=%7B%22scMaxEachPostBytes%22%3A+1000000%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D&amp%3Bhost=8Svnlet-it-happen-khafesho-Sd.global.ssl.fastly.net&amp%3Btype=xhttp&host=151.101.7.79&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2359"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #60",
-      "protocol": "vless",
-      "address": "151.101.3.19",
-      "port": 80,
-      "latency_ms": 0.9,
-      "raw": "vless://0b516cf6-cd76-470c-954d-9374d734f445@151.101.3.19:80?path=%2Fsite&encryption=none&host=yalandonya.global.ssl.fastly.net&type=ws&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2360"
-    },
-    {
-      "name": "🌐 mwri🧘🏽 #61",
+      "name": "🌐 mwri🧘🏽 #60",
       "protocol": "vless",
       "address": "imgur.com",
       "port": 80,
-      "latency_ms": 0.9,
-      "raw": "vless://2a4f0318-117b-4d1b-994b-692267ec3cc1@imgur.com:80?path=%2Fcontainers%2Ffi&security=none&encryption=none&host=shotornet.global.ssl.fastly.net&type=ws#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2361"
+      "latency_ms": 0.8,
+      "raw": "vless://49af75d4-31d0-4322-b425-630be07030e1@imgur.com:80?path=%2Fdownload&security=none&encryption=none&host=diarasup2.global.ssl.fastly.net&type=ws#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2360"
     },
     {
-      "name": "🌐 mwri🧘🏽 #62",
+      "name": "🇪🇺 mwri🧘🏽 #61",
       "protocol": "vless",
-      "address": "mx1.tehrantolidi.ir",
+      "address": "151.101.192.223",
       "port": 80,
-      "latency_ms": 0.9,
-      "raw": "vless://4e97c916-e186-4a5f-8b64-07c6862964b4@mx1.tehrantolidi.ir:80?encryption=none&security=none&type=ws&host=qeyme.global.ssl.fastly.net&path=%2Fdownload#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2362"
+      "latency_ms": 0.8,
+      "raw": "vless://a26bbed7-a286-4840-84bc-dc102c526777@151.101.192.223:80?mode=auto&path=category%2Fmusic&security=none&encryption=none&host=iran.boltboost.gg&type=xhttp#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2361"
+    },
+    {
+      "name": "🇺🇸 mwri🧘🏽 #62",
+      "protocol": "vless",
+      "address": "140.248.147.82",
+      "port": 443,
+      "latency_ms": 0.8,
+      "raw": "vless://cbf73250-e228-4fc8-95a1-3804176354be@140.248.147.82:443?mode=auto&path=%2Fdl%3Fed%3D2560&security=tls&encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A+%221000000%22%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D&host=Fastsssspeedmar.global.ssl.fastly.net&type=xhttp&sni=default.ssl.fastly.net&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2362"
     },
     {
       "name": "🌐 mwri🧘🏽 #63",
       "protocol": "vless",
-      "address": "in-yeki-vase-mahsa.global.ssl.fastly.net",
+      "address": "hallllbadi.global.ssl.fastly.net",
       "port": 443,
-      "latency_ms": 0.9,
-      "raw": "vless://5003ee68-7646-45b1-ada9-27afa4e99fd4@in-yeki-vase-mahsa.global.ssl.fastly.net:443?path=%2Fcontainers%2Ffi&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=in-yeki-vase-mahsa.global.ssl.fastly.net&fp=chrome&type=ws&allowInsecure=1&sni=in-yeki-vase-mahsa.global.ssl.fastly.net#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2363"
+      "latency_ms": 0.8,
+      "raw": "vless://0f7794ff-c024-4968-a6c7-6e44c7d188c7@hallllbadi.global.ssl.fastly.net:443?encryption=none&security=tls&sni=hallllbadi.global.ssl.fastly.net&fp=chrome&alpn=http%2F1.1&insecure=0&allowInsecure=1&type=ws&path=%2Fsite&host=hallllbadi.global.ssl.fastly.net#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2363"
     },
     {
       "name": "🌐 mwri🧘🏽 #64",
       "protocol": "vless",
-      "address": "perl.org",
-      "port": 80,
-      "latency_ms": 0.9,
-      "raw": "vless://0b0c4294-1781-4322-9041-3b3f3e42bd80@perl.org:80?path=%2Fdownload&amp%3Bsecurity=none&amp%3Bencryption=none&amp%3Bhost=miltering.global.ssl.fastly.net&amp%3Btype=ws&host=perl.org&security=none#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2364"
+      "address": "fastly1.fastspeeds.ir",
+      "port": 443,
+      "latency_ms": 0.8,
+      "raw": "vless://cbf73250-e228-4fc8-95a1-3804176354be@fastly1.fastspeeds.ir:443?mode=auto&path=%2Fdl%3Fed%3D2560&security=tls&encryption=none&host=fastly1.fastspeeds.ir&sni=fastly1.fastspeeds.ir&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2364"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #65",
+      "name": "🌐 mwri🧘🏽 #65",
       "protocol": "vless",
-      "address": "151.101.3.8",
-      "port": 80,
-      "latency_ms": 0.9,
-      "raw": "vless://62f4a6db-a57a-4b56-9e7d-b00418c4f816@151.101.3.8:80?path=%2F%40AKLISVPN%40aklisvpn%40aklisvpn%40aklisvpn%40AKLISVPN%40aklisvpn%40aklisvpn%40aklisvpn%40AKLISVPN%40aklisvpn%40aklisvpn%40aklisvpn%40AKLISVPN%40aklisvpn%40aklisvpn%40aklisvpn%40AKLISVPN%40aklisvpn%40aklisvpn%40aklisvpn%40AKLISVPN%40aklisvpn%40aklisvpn%40aklisvpn&amp%3Bencryption=none&amp%3Bhost=aklisturkey.org&amp%3Btype=ws&host=151.101.3.8&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2365"
+      "address": "live.skornorth.com",
+      "port": 443,
+      "latency_ms": 0.8,
+      "raw": "vless://d6252cc5-2f53-4966-ad3b-99285b891879@live.skornorth.com:443?path=%2F%40custom_config%3Fed%3D2048&security=tls&encryption=none&alpn=h2%2Chttp%2F1.1&host=custom-config.ir&fp=chrome&type=ws&sni=live.skornorth.com&allowInsecure=1#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2365"
     },
     {
       "name": "🌐 mwri🧘🏽 #66",
       "protocol": "vless",
-      "address": "trta.fastlynew.hosting-ip.com",
-      "port": 80,
-      "latency_ms": 0.9,
-      "raw": "vless://92270115-969b-45cd-a72a-1cb52ed295b9@trta.fastlynew.hosting-ip.com:80?path=%2F&encryption=none&host=blazeenn7your-name.global.ssl.fastly.net&type=xhttp&security=none#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2366"
+      "address": "ipv1.shakhle.ir",
+      "port": 443,
+      "latency_ms": 0.8,
+      "raw": "vless://b433fd43-e947-4cd0-96f9-901eb09df4b9@ipv1.shakhle.ir:443?path=%2F%3Fed&host=ipv1.shakhle.ir&security=tls&sni=ipv1.shakhle.ir&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2366"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #67",
       "protocol": "vless",
-      "address": "140.248.184.165",
+      "address": "140.248.131.123",
       "port": 80,
-      "latency_ms": 0.9,
-      "raw": "vless://f7ef2c19-1670-4e82-befe-5f470ad2728c@140.248.184.165:80?mode=auto&path=path&encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A&host=140.248.184.165&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2367"
+      "latency_ms": 0.8,
+      "raw": "vless://dd0cfef0-fda9-47ec-8a65-49d7bc004f82@140.248.131.123:80?path=%2F--Telegram---MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN&security=none&encryption=none&host=mitivpn3.global.ssl.fastly.net&type=ws#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2367"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #68",
       "protocol": "vless",
-      "address": "167.82.103.27",
-      "port": 443,
-      "latency_ms": 0.9,
-      "raw": "vless://5e98cc1c-8fda-43a2-a608-bf564f35d398@167.82.103.27:443?type=ws&encryption=none&host=mehrjavan.ir&path=...&security=tls&sni=default.ssl.fastly.net&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2368"
+      "address": "167.82.0.46",
+      "port": 80,
+      "latency_ms": 0.8,
+      "raw": "vless://42f36835-730c-4ecc-9daf-20121ae7ba47@167.82.0.46:80?type=ws&encryption=none&host=edge.validbv3528.ir&path=%2Fvless-ws&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2368"
     },
     {
-      "name": "🌐 mwri🧘🏽 #69",
+      "name": "🇺🇸 mwri🧘🏽 #69",
       "protocol": "vless",
-      "address": "104.156.85.174",
+      "address": "199.232.0.178",
       "port": 443,
-      "latency_ms": 0.9,
-      "raw": "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@104.156.85.174:443?type=ws&encryption=none&host=en.mfa.gov.ir&path=%2FH%3Fed%3D2560&security=tls&sni=en.mfa.gov.ir&alpn=h2%2Chttp%2F1.1&fp=randomized&allowInsecure=1#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2369"
+      "latency_ms": 0.8,
+      "raw": "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@199.232.0.178:443?type=ws&encryption=none&host=behdasht.hrtc.ir&path=%2FH%3Fed%3D2560&security=tls&sni=behdasht.hrtc.ir&alpn=h2%2Chttp%2F1.1&fp=randomized&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2369"
     },
     {
       "name": "🇪🇺 mwri🧘🏽 #70",
       "protocol": "vless",
-      "address": "151.101.194.228",
+      "address": "151.101.130.133",
       "port": 80,
-      "latency_ms": 0.9,
-      "raw": "vless://4daa04ab-9dd5-4387-af38-afb5fdfc1ef2@151.101.194.228:80?mode=auto&path=%2Fdownloader&security=none&encryption=none&host=trxiliservice.global.ssl.fastly.net&type=xhttp#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2370"
+      "latency_ms": 0.8,
+      "raw": "vless://8e72da07-0429-432e-8f0a-e9a3d4fc538f@151.101.130.133:80?type=ws&encryption=none&host=JOin.ELiV2-R-A-Y.io&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2370"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #71",
       "protocol": "vless",
-      "address": "199.232.8.31",
-      "port": 443,
-      "latency_ms": 0.9,
-      "raw": "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@199.232.8.31:443?type=ws&encryption=none&host=Sanjeshp.Ir&path=%2FH%3Fed%3D2560fp%3Drandomized&security=tls&sni=Sanjeshp.Ir&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2371"
+      "address": "140.248.185.168",
+      "port": 80,
+      "latency_ms": 0.8,
+      "raw": "vless://804d7f16-87fe-47fd-a952-66540439df51@140.248.185.168:80?type=ws&encryption=none&host=bia-daily-configs.com&path=%2F%40Daily_Configs%2C%40Daily_Configs%2C%40Daily_Configs&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2371"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #72",
+      "name": "🌐 mwri🧘🏽 #72",
       "protocol": "vless",
-      "address": "151.101.64.203",
+      "address": "www.fast.hosting-ip.com",
       "port": 80,
-      "latency_ms": 0.9,
-      "raw": "vless://44af3fe4-9f23-4723-acc7-f0a0eac054c4@151.101.64.203:80?security=none&encryption=none&host=Xu8idkdndj.global.ssl.fastly.net&type=ws#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2372"
+      "latency_ms": 0.8,
+      "raw": "vless://01abdb29-cca0-47c6-844d-9f4e29f21c56@www.fast.hosting-ip.com:80?host=www.fjld34.com&mode=auto&path=%2FPossimusliberoEoscumque&security=none&type=xhttp#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2372"
     },
     {
       "name": "🇪🇺 mwri🧘🏽 #73",
       "protocol": "vless",
-      "address": "151.101.129.140",
-      "port": 443,
-      "latency_ms": 0.9,
-      "raw": "vless://8b222b0d-dfc1-4ed9-9c26-1c6b66e03c09@151.101.129.140:443?type=ws&encryption=none&host=aminpanelge.com&path=%2F%3Fed%3D1024&security=tls&sni=redd.it&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2373"
+      "address": "151.101.67.8",
+      "port": 80,
+      "latency_ms": 0.8,
+      "raw": "vless://TELEGRAM-CONFiGLiNE-47@151.101.67.8:80?mode=auto&path=%2Ftelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%3Fed%3D2048&security=none&encryption=none&host=telegrammmconfigline.global.ssl.fastly.net&type=xhttp#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2373"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #74",
       "protocol": "vless",
-      "address": "167.82.1.102",
-      "port": 80,
-      "latency_ms": 0.9,
-      "raw": "vless://253ef561-9e57-4336-befd-878ddd30df01@167.82.1.102:80?type=ws&encryption=none&host=teleirani.ir&path=%2F%3Fed%3D2048&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2374"
-    },
-    {
-      "name": "🇺🇸 mwri🧘🏽 #75",
-      "protocol": "vless",
-      "address": "199.232.10.59",
+      "address": "167.82.97.248",
       "port": 443,
-      "latency_ms": 0.9,
-      "raw": "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@199.232.10.59:443?type=tcp&encryption=none&host=199.232.10.59&security=tls&sni=199.232.10.59&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2375"
+      "latency_ms": 0.8,
+      "raw": "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@167.82.97.248:443?type=ws&encryption=none&host=backto...&security=tls&sni=backto...&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2374"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #76",
+      "name": "🇪🇺 mwri🧘🏽 #75",
       "protocol": "vless",
-      "address": "151.101.193.6",
+      "address": "151.101.67.152",
       "port": 80,
-      "latency_ms": 0.9,
-      "raw": "vless://271d139e-b41b-5338-b306-32f66450140b@151.101.193.6:80?type=ws&encryption=none&host=PABLOO-MOSTAFA.COM&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2376"
+      "latency_ms": 0.8,
+      "raw": "vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@151.101.67.152:80?type=ws&host=Join--E-L-i-V-2-R-A-Y.net&path=Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2375"
+    },
+    {
+      "name": "🌐 mwri🧘🏽 #76",
+      "protocol": "vless",
+      "address": "p.ssl.fastly.net",
+      "port": 80,
+      "latency_ms": 0.8,
+      "raw": "vless://TELEGRAM-NUFiLTER@p.ssl.fastly.net:80?path=%2FTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%2CTELEGRAM-NUFiLTER%3Fed%3D2056&security=none&encryption=none&host=teleg-NUFiLTER.global.ssl.fastly.net&type=ws#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2376"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #77",
       "protocol": "vless",
-      "address": "167.82.102.107",
+      "address": "199.232.196.204",
       "port": 80,
-      "latency_ms": 0.9,
-      "raw": "vless://42f36835-730c-4ecc-9daf-20121ae7ba47@167.82.102.107:80?type=ws&encryption=none&host=edge.validbv3528.ir&path=%2F&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2377"
+      "latency_ms": 0.8,
+      "raw": "vless://6ef79989-6321-5e6b-b39e-602fc95ecf3e@199.232.196.204:80?type=ws&encryption=none&host=199.232.196.204&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2377"
     },
     {
       "name": "🌐 mwri🧘🏽 #78",
       "protocol": "vless",
-      "address": "telegram-srcvpn.fastlynew.hosting-ip.com",
+      "address": "ipwfastl1.ygdfw.com",
       "port": 80,
-      "latency_ms": 1.0,
-      "raw": "vless://e4a6331b-e3e7-4f4e-b46a-8c31bf44bf83@telegram-srcvpn.fastlynew.hosting-ip.com:80?encryption=none&type=ws&host=moodaontw.global.ssl.fastly.net&path=%2F%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%2F%40HqV2RayNG--%40HqV2RayNG%3Fed%3D2056&security=none#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2378"
+      "latency_ms": 0.8,
+      "raw": "vless://8b634076-c63f-4374-82f9-d755fecc62ac@ipwfastl1.ygdfw.com:80?mode=auto&path=%2F&security=none&encryption=none&host=maxoc1your-name.global.ssl.fastly.net&type=xhttp#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2378"
     },
     {
-      "name": "🌐 mwri🧘🏽 #79",
+      "name": "🇺🇸 mwri🧘🏽 #79",
       "protocol": "vless",
-      "address": "ipv1.shakhle.ir",
-      "port": 443,
-      "latency_ms": 1.0,
-      "raw": "vless://b433fd43-e947-4cd0-96f9-901eb09df4b9@ipv1.shakhle.ir:443?path=%2F%3Fed%23TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI%3Fed%3D2560&security=tls&alpn=h3%2Ch2%2Chttp%2F1.1&encryption=none&insecure=0&host=MediaOP-name.global.ssl.fastly.net.&fp=chrome&type=ws&allowInsecure=1&sni=MediaOP-name.global.ssl.fastly.net.#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2379"
+      "address": "167.82.0.37",
+      "port": 80,
+      "latency_ms": 0.8,
+      "raw": "vless://42f36835-730c-4ecc-9daf-20121ae7ba47@167.82.0.37:80?type=ws&encryption=none&host=edge.validbv3528.ir&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2379"
     },
     {
-      "name": "🌐 mwri🧘🏽 #80",
-      "protocol": "ss",
-      "address": "series-a2.samanehha.co",
-      "port": 443,
-      "latency_ms": 1.0,
-      "raw": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB@series-a2.samanehha.co:443#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2380"
+      "name": "🇺🇸 mwri🧘🏽 #80",
+      "protocol": "vless",
+      "address": "167.82.0.47",
+      "port": 80,
+      "latency_ms": 0.8,
+      "raw": "vless://253ef561-9e57-4336-befd-878ddd30df01@167.82.0.47:80?type=ws&encryption=none&host=teleirani.ir&path=%2Fvless-ws%25...&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2380"
     },
     {
       "name": "🇪🇺 mwri🧘🏽 #81",
       "protocol": "vless",
-      "address": "151.101.1.140",
+      "address": "151.101.0.0",
       "port": 80,
-      "latency_ms": 1.0,
-      "raw": "vless://51a601e6-b25b-4ae7-83a6-1619ac7e7722@151.101.1.140:80?security=none&amp%3Btype=ws&amp%3Bhost=Upload.edu&amp%3Bpath=%2FJoin--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420%3Fed%3D2048&host=151.101.1.140#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2381"
+      "latency_ms": 0.8,
+      "raw": "vless://TELEGRAM-CONFiGLiNE-65@151.101.0.0:80?mode=auto&path=%2Ftelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%2Ctelegram-CONFiGLiNE%3Fed%3D2048&security=none&encryption=none&host=looanooboijji.global.ssl.fastly.net&type=xhttp#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2381"
     },
     {
-      "name": "🌐 mwri🧘🏽 #82",
+      "name": "🇪🇺 mwri🧘🏽 #82",
       "protocol": "vless",
-      "address": "hajlab.ucdavis.edu",
+      "address": "151.101.56.105",
       "port": 80,
-      "latency_ms": 1.0,
-      "raw": "vless://1a7a6b22-a062-48b7-9949-6038de8f6414@hajlab.ucdavis.edu:80?security=none&amp%3Btype=ws&amp%3Bhost=wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v06.drlimitemergency.net&host=hajlab.ucdavis.edu#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2382"
+      "latency_ms": 0.8,
+      "raw": "vless://bb9fccb8-4d50-43a4-8bf1-359a3775b6f3@151.101.56.105:80?type=ws&encryption=none&host=edu.tabligh.au&path=%2F%3Fed%3D2048&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2382"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #83",
+      "name": "🌐 mwri🧘🏽 #83",
       "protocol": "vless",
-      "address": "151.101.130.133",
+      "address": "fastly1.fastspeeds.ir",
       "port": 80,
-      "latency_ms": 1.0,
-      "raw": "vless://560a0f6c-9057-4d18-b88f-6512c2568481@151.101.130.133:80?security=none&amp%3Btype=ws&amp%3Bhost=Morchechi.ir&amp%3Bpath=%2Ftelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%3Fed%3D2048&host=151.101.130.133#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2383"
+      "latency_ms": 0.9,
+      "raw": "vless://392ca09f-3285-4266-9544-14195f0227fa@fastly1.fastspeeds.ir:80?mode=auto&path=%2F&security=none&encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A%221000000%22%2C%22xPaddingBytes%22%3A%22100-1000%22%7D&serviseName=%40icv2ray%2C%40icv2ray%2C%40icv2ray%2C%40icv2ray%2C%40icv2ray%2C%40icv2ray%2C%40icv2ray%2C%40icv2ray%2C%40icv2ray%2C%40icv2ray%2C%40icv2ray%2C%40icv2ray&host=5SvNlet-iT-haPpEn-KhaFeSho-Sd.gLoBal.Ssl.FaStLy.nEt.&type=xhttp#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2383"
     },
     {
       "name": "🌐 mwri🧘🏽 #84",
       "protocol": "vless",
-      "address": "ip2.gptban.com",
-      "port": 80,
-      "latency_ms": 1.0,
-      "raw": "vless://cbf73250-e228-4fc8-95a1-3804176354be@ip2.gptban.com:80?mode=auto&path=%2Fdl%3Fed%3D2560&security=none&encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A+%221000000%22%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D&host=Osipanel.global.ssl.fastly.net&type=xhttp#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2384"
+      "address": "itly1.azangooo.ir",
+      "port": 443,
+      "latency_ms": 0.9,
+      "raw": "vless://a6130991-2c81-4c38-ad62-3e6bd01be7e0@itly1.azangooo.ir:443?mode=packet-up&path=%2Ffsxh&security=tls&encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A%221000000%22%2C%22scMaxConcurrentPosts%22%3A100%2C%22scMinPostsIntervalMs%22%3A30%2C%22xPaddingBytes%22%3A%22100-1000%22%2C%22noGRPCHeader%22%3Afalse%7D&insecure=0&host=mawxich.global.ssl.fastly.net&type=xhttp&allowInsecure=1&sni=default.ssl.fastly.net&alpn=h2%2Chttp%2F1.1&fp=chrome#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2384"
     },
     {
       "name": "🌐 mwri🧘🏽 #85",
       "protocol": "vless",
-      "address": "ip1-fast.tyryqyserver.ir",
-      "port": 80,
-      "latency_ms": 1.0,
-      "raw": "vless://43efb096-aeb2-4423-8601-be799dd3b9c0@ip1-fast.tyryqyserver.ir:80?path=%2F%3Fed%3D2052&security=none&encryption=none&host=tamamde1.global.ssl.fastly.net&type=ws#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2385"
+      "address": "faqatchai.global.ssl.fastly.net",
+      "port": 443,
+      "latency_ms": 0.9,
+      "raw": "vless://a9bac46a-2037-4ad1-a192-08c70927f4ad@faqatchai.global.ssl.fastly.net:443?security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=faqatchai.global.ssl.fastly.net&fp=chrome&type=ws&allowInsecure=1&sni=faqatchai.global.ssl.fastly.net&path=%2FTelegram%40V2ynpv-Telegram%40V2ynpv-Telegram%40V2ynpv-Telegram%40V2ynpv-Telegram%40V2ynpv-Telegram%40V2ynpv-Telegram%40V2ynpv#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2385"
     },
     {
       "name": "🌐 mwri🧘🏽 #86",
       "protocol": "vless",
-      "address": "speedtest.net",
-      "port": 80,
-      "latency_ms": 1.0,
-      "raw": "vless://a26bbed7-a286-4840-84bc-dc102c526777@speedtest.net:80?mode=auto&path=%2Fcategory%2Fmusic&security=none&encryption=none&host=iran.boltboost.gg&type=xhttp%40freenettir#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2386"
+      "address": "clearcreditrepair.com",
+      "port": 443,
+      "latency_ms": 0.9,
+      "raw": "vless://02500334-97ea-4952-b648-e27c42dd3a65@clearcreditrepair.com:443?security=tls&host=ELiV2RAY.cc&fp=randomized&type=ws&sni=clearcreditrepair.com&alpn=h2%2Chttp%2F1.1&allowInsecure=1#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2386"
     },
     {
       "name": "🌐 mwri🧘🏽 #87",
       "protocol": "vless",
-      "address": "fasty2.hamrahpath.ir",
-      "port": 80,
-      "latency_ms": 1.0,
-      "raw": "vless://7247324a-1c5b-420e-a33a-e56d101da742@fasty2.hamrahpath.ir:80?mode=auto&path=%2Fdownload&security=none&encryption=none&host=fasty2.hamrahpath.ir#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2387"
-    },
-    {
-      "name": "🌐 mwri🧘🏽 #88",
-      "protocol": "vless",
-      "address": "speedtestcustom.com",
+      "address": "theatlantic.com",
       "port": 443,
-      "latency_ms": 1.0,
-      "raw": "vless://f4f0ed6b-3b3f-42ad-ae22-d96204c06378@speedtestcustom.com:443?path=%2Fmelov2ray%2Fmelov2ray%2Fmelov2ray%2Fmelov2ray%2Fmelov2ray&security=tls&encryption=none&alpn=h2%2Chttp%2F1.1&host=melofin.ir&fp=firefox&type=ws&sni=speedtestcustom.com&allowInsecure=1#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2388"
+      "latency_ms": 0.9,
+      "raw": "vless://TELEGRAM-NUFiLTER@theatlantic.com:443?path=%2Ftelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%3Fed%3D80&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&host=Shotor2la2la.neT&fp=chrome&type=ws&sni=Zmaoz.Faculty.Ucdavis.Edu&allowInsecure=1#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2387"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #89",
+      "name": "🇺🇸 mwri🧘🏽 #88",
       "protocol": "vless",
-      "address": "151.101.66.228",
+      "address": "140.248.133.204",
+      "port": 443,
+      "latency_ms": 0.9,
+      "raw": "vless://07e299c3-1e03-42d8-82a6-c47bfc79954d@140.248.133.204:443?path=%2Fwst%3Fed%3D2056&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&host=parsianmobilebank.ir&fp=chrome&type=ws&sni=default.ssl.fastly.net&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2388"
+    },
+    {
+      "name": "🌐 mwri🧘🏽 #89",
+      "protocol": "vless",
+      "address": "mx.tehrantolidi.ir",
       "port": 80,
-      "latency_ms": 1.0,
-      "raw": "vless://2037eda3-6750-428b-af5d-c396e7ce2a41@151.101.66.228:80?type=ws&encryption=none&host=hajmainv2.COM.&path=%2FTELEGRAM-%40MainV2-ray%2C...&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2389"
+      "latency_ms": 0.9,
+      "raw": "vless://73c59568-935a-4351-9104-6697df718f7a@mx.tehrantolidi.ir:80?encryption=none&security=none&type=ws&host=kir-to-iranzamin.global.ssl.fastly.net&path=%2Fdownload#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2389"
     },
     {
       "name": "🇪🇺 mwri🧘🏽 #90",
       "protocol": "vless",
-      "address": "151.101.128.223",
+      "address": "151.101.66.216",
       "port": 80,
-      "latency_ms": 1.0,
-      "raw": "vless://21d38abf-0ed8-444b-b6ab-1c432898c067@151.101.128.223:80?mode=packet-up&path=%2F%3Fed%3D8080&security=none&encryption=none&host=bama.ir&type=xhttp#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2390"
+      "latency_ms": 0.9,
+      "raw": "vless://f44a6b40-011c-4f2f-beb1-2f7b17e4c407@151.101.66.216:80?type=ws&encryption=none&host=shermusic.org&path=%2F%3Fed%3D1024&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2390"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #91",
+      "name": "🌐 mwri🧘🏽 #91",
       "protocol": "vless",
-      "address": "167.82.0.37",
-      "port": 80,
-      "latency_ms": 1.0,
-      "raw": "vless://42f36835-730c-4ecc-9daf-20121ae7ba47@167.82.0.37:80?type=ws&encryption=none&host=edge.validbv3528.ir&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2391"
-    },
-    {
-      "name": "🇺🇸 mwri🧘🏽 #92",
-      "protocol": "vless",
-      "address": "199.232.8.39",
+      "address": "khaste-sho-haji-man-khaste-shodam.global.ssl.fastly.net",
       "port": 443,
-      "latency_ms": 1.0,
-      "raw": "vless://fd29defb-7f80-59ba-88d9-2234b20a806e@199.232.8.39:443?type=ws&encryption=none&host=ELiV2RAY-JOIN.COM&security=tls&sni=ELiv2RAy-jOiN.cOm&fp=edge&alpn=h2%2Chttp%2F1.1&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2392"
+      "latency_ms": 0.9,
+      "raw": "vless://33e0555d-7b68-498d-8061-9f6f551c5d2e@khaste-sho-haji-man-khaste-shodam.global.ssl.fastly.net:443?security=tls&allowInsecure=1&encryption=none&type=ws&host=khaste-sho-haji-man-khaste-shodam.global.ssl.fastly.net&path=%2Fdownload&sni=khaste-sho-haji-man-khaste-shodam.global.ssl.fastly.net&fp=firefox&alpn=http%2F1.1#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2391"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #93",
+      "name": "🌐 mwri🧘🏽 #92",
       "protocol": "vless",
-      "address": "151.101.194.219",
+      "address": "ssdc.global.ssl.fastly.net",
+      "port": 80,
+      "latency_ms": 0.9,
+      "raw": "vless://7588e459-0d02-13ca-79bd-3a39b034baf8@ssdc.global.ssl.fastly.net:80?security=none&type=ws&encryption=none&path=%2Fed%3D2560&host=speedtest.net.it#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2392"
+    },
+    {
+      "name": "🌐 mwri🧘🏽 #93",
+      "protocol": "vless",
+      "address": "python.org",
+      "port": 80,
+      "latency_ms": 0.9,
+      "raw": "vless://1fbd6005-2228-44f4-b33e-d7845afd725d@python.org:80?path=%2Fsite%40V2YNPV-%40V2YNPV-%40V2YNPV-%40V2YNPV-%40V2YNPV-%40V2YNPV-%40V2YNPV-%40V2YNPV-%40V2YNPV-%40V2YNPV-%40V2YNPV-%40V2YNPV-%40V2YNPV-%40V2YNPV-%40V2YNPV-%40V2YNPV-%40V2YNPV-%40V2YNPV-&security=none&encryption=none&host=yalandonya.global.ssl.fastly.net&type=ws#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2393"
+    },
+    {
+      "name": "🌐 mwri🧘🏽 #94",
+      "protocol": "vless",
+      "address": "fastly.com",
+      "port": 80,
+      "latency_ms": 0.9,
+      "raw": "vless://48006220-24eb-4948-9c2b-95cb39dbed74@fastly.com:80?path=%2F%3Fed%3D1024&encryption=none&host=mihan-tr.global.ssl.fastly.net&type=ws&security=none#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2394"
+    },
+    {
+      "name": "🇺🇸 mwri🧘🏽 #95",
+      "protocol": "vless",
+      "address": "199.232.0.177",
       "port": 443,
-      "latency_ms": 1.0,
-      "raw": "vless://ef267958-2200-4ef5-b115-10bba6b5a26f@151.101.194.219:443?security=tls&sni=speedtest.net&type=ws&host=i-am-melo.com&path=%2F%40melov2ray%2Fws%3Fed%3D2048&fp=firefox&alpn=h2%2Chttp%2F1.1&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2393"
+      "latency_ms": 0.9,
+      "raw": "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@199.232.0.177:443?type=ws&amp%3Bsecurity=tls&amp%3Bhost=Tahagoogooli.ir&amp%3Bpath=%2FveNbt06rF0tTFtp6%2FMTcyLjY0LjEzNC41OA%3D%3D%3Fed%3D2560&amp%3Bfp=randomized&amp%3Bsni=SpEedteST.NET&amp%3Balpn=h2%2Chttp%2F1.1&host=199.232.0.177&security=tls&sni=199.232.0.177&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2395"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #94",
+      "name": "🌐 mwri🧘🏽 #96",
       "protocol": "vless",
-      "address": "167.82.1.130",
-      "port": 80,
-      "latency_ms": 1.0,
-      "raw": "vless://253ef561-9e57-4336-befd-878ddd30df01@167.82.1.130:80?type=ws&encryption=none&host=teleirani.ir&path=%2F%3Fed%3D2048&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2394"
-    },
-    {
-      "name": "🌐 mwri🧘🏽 #95",
-      "protocol": "vless",
-      "address": "d53daf37ff1146a6.speedtest.net",
-      "port": 80,
-      "latency_ms": 1.1,
-      "raw": "vless://161bdc78-3d90-43d8-915e-2dfb708959b0@d53daf37ff1146a6.speedtest.net:80?security=none&type=ws&path=%2F%40V2NET_IRAN%2F%40V2NET_IRAN%2F%40V2NET_IRAN%2F%40V2NET_IRAN%2F%40V2NET_IRAN%2F%40V2NET_IRAN%2F%40V2NET_IRAN%2F%40V2NET_IRAN%2F%40V2NET_IRAN%3Fed%3D1024&host=v2netiran.life.#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2395"
-    },
-    {
-      "name": "🇺🇸 mwri🧘🏽 #96",
-      "protocol": "vless",
-      "address": "172.66.40.99",
+      "address": "dojman.global.ssl.fastly.net",
       "port": 443,
-      "latency_ms": 1.1,
-      "raw": "vless://5879d109-8c92-448a-801b-3f3989019934@172.66.40.99:443?path=%2FTelegram-XV2ray---Telegram-XV2ray---Telegram-XV2ray---Telegram-XV2ray---Telegram-XV2ray---Telegram-XV2ray---Telegram-XV2ray---Telegram-XV2ray---Telegram-XV2ray---Telegram-XV2ray---Telegram-XV2ray---Telegram-XV2ray---Telegram-XV2ray%3Fed%3D2048&amp%3Bsecurity=tls&amp%3Bencryption=none&amp%3Bhost=hrtfwe.pages.dev&amp%3Btype=ws&amp%3Bsni=pages.dev&host=172.66.40.99&security=tls&sni=172.66.40.99&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2396"
+      "latency_ms": 0.9,
+      "raw": "vless://a9bac46a-2037-4ad1-a192-08c70927f4ad@dojman.global.ssl.fastly.net:443?encryption=none&type=ws&host=dojman.global.ssl.fastly.net&path=%2Fcontainers%2Ffi&security=tls&fp=chrome&sni=dojman.global.ssl.fastly.net&alpn=http%2F1.1&allowInsecure=1#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2396"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #97",
+      "name": "🇺🇸 mwri🧘🏽 #97",
       "protocol": "vless",
-      "address": "151.101.66.133",
+      "address": "167.82.0.103",
       "port": 80,
-      "latency_ms": 1.1,
-      "raw": "vless://560a0f6c-9057-4d18-b88f-6512c2568481@151.101.66.133:80?security=none&amp%3Btype=ws&amp%3Bhost=Morchechi.ir&amp%3Bpath=%2Ftelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%3Fed%3D2048&host=151.101.66.133#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2397"
+      "latency_ms": 0.9,
+      "raw": "vless://42f36835-730c-4ecc-9daf-20121ae7ba47@167.82.0.103:80?type=ws&encryption=none&path=%2Fvless-ws%2F&security=none&host=167.82.0.103#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2397"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #98",
       "protocol": "vless",
-      "address": "104.17.25.173",
-      "port": 443,
-      "latency_ms": 1.1,
-      "raw": "vless://621a845a-48ea-35f0-9b9a-ca499c647ade@104.17.25.173:443?encryption=none&security=tls&sni=dabaihk.webn.cc&alpn=h3%2Ch2&fp=chrome&allowInsecure=1&type=ws&host=dabaihk.webn.cc&path=%2Fdb1024e9df2f990b#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2398"
+      "address": "167.82.1.111",
+      "port": 80,
+      "latency_ms": 0.9,
+      "raw": "vless://253ef561-9e57-4336-befd-878ddd30df01@167.82.1.111:80?type=ws&encryption=none&host=teleirani.ir&path=%2F%3Fed%3D2048&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2398"
     },
     {
       "name": "🌐 mwri🧘🏽 #99",
       "protocol": "vless",
-      "address": "atawich.global.ssl.fastly.net",
-      "port": 443,
-      "latency_ms": 1.1,
-      "raw": "vless://505997ba-cbdb-466e-a3ad-69c6a4553b38@atawich.global.ssl.fastly.net:443?path=%2Fcontainers%2Ffi&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=atawich.global.ssl.fastly.net&fp=chrome&type=ws&allowInsecure=1&sni=atawich.global.ssl.fastly.net#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2399"
+      "address": "speedtestcustom.com",
+      "port": 80,
+      "latency_ms": 0.9,
+      "raw": "vless://70cc95fc-7040-44d0-84f0-71b9381f8a66@speedtestcustom.com:80?mode=auto&amp%3Bpath=%2FGaMeOpTiMiZeR%3Fed%3D2048&amp%3Bsecurity=none&amp%3Bencryption=none&amp%3Bextra=%7B%22scMaxEachPostBytes%22%3A+1000000%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%2C+%22xmux%22%3A+%7B%22maxConcurrency%22%3A+%2216-32%22%2C+%22maxConnections%22%3A+0%2C+%22cMaxReuseTimes%22%3A+%2264-128%22%2C+%22cMaxLifetimeMs%22%3A+0%2C+%22hMaxRequestTimes%22%3A+%22800-900%22%2C+%22hKeepAlivePeriod%22%3A+0%7D%7D&amp%3Bhost=sudo2017.ir&amp%3Btype=xhttp&host=speedtestcustom.com&security=none#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%2399"
     },
     {
       "name": "🌐 mwri🧘🏽 #100",
       "protocol": "vless",
-      "address": "frs.zdshop.ir",
+      "address": "helpme.love-speed.sbs",
       "port": 80,
-      "latency_ms": 1.1,
-      "raw": "vless://bc20990c-a88e-4852-8e3b-f5b3ff4ae56a@frs.zdshop.ir:80?path=%2Fed%3D2560&security=none&encryption=none&host=okpan3musicfr.global.ssl.fastly.net&type=ws#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23100"
+      "latency_ms": 0.9,
+      "raw": "vless://582c9df1-736c-4d8c-800c-82805b7ee788@helpme.love-speed.sbs:80?security=none&amp%3Btype=xhttp&amp%3Bpath=%2F&amp%3Bhost=xxraypanelsw.com&amp%3Bmode=auto&amp%3Bextra=%7B%22xPaddingBytes%22%3A%22100-1000%22%7D&host=helpme.love-speed.sbs#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23100"
     },
     {
-      "name": "🌐 mwri🧘🏽 #101",
-      "protocol": "ss",
-      "address": "20.108.15.110",
-      "port": 443,
-      "latency_ms": 1.1,
-      "raw": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprYVFIM2hHZGNQODBYRURJ@20.108.15.110:443#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23101"
-    },
-    {
-      "name": "🇺🇸 mwri🧘🏽 #102",
-      "protocol": "vmess",
-      "address": "104.16.89.44",
-      "port": 443,
-      "latency_ms": 1.1,
-      "raw": "vmess://eyJhZGQiOiAiMTA0LjE2Ljg5LjQ0IiwgImFpZCI6IDAsICJob3N0IjogInpodXlvbmcuaHVjbG91ZC1kbnMueHl6IiwgImlkIjogIjlhMThjYmIxLTgxZDItNDcyMC05ZjA5LTQ2ZWEyNzZiNmRkYiIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvaHVodWJsb2ciLCAicG9ydCI6IDQ0MywgInBzIjogIvCfh7rwn4e4IG13cmnwn6eY8J+PvSAjMTAyIiwgInNlY3VyaXR5IjogImF1dG8iLCAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWUsICJzbmkiOiAiemh1eW9uZy5odWNsb3VkLWRucy54eXoiLCAidGxzIjogInRscyIsICJ0eXBlIjogImF1dG8iLCAiYWxwbiI6ICJoMixodHRwLzEuMSIsICJmcCI6ICJjaHJvbWUiLCAiYWxsb3dJbnNlY3VyZSI6IHRydWV9"
-    },
-    {
-      "name": "🇦🇺 mwri🧘🏽 #103",
+      "name": "🇺🇸 mwri🧘🏽 #101",
       "protocol": "vless",
-      "address": "103.160.204.191",
-      "port": 8443,
-      "latency_ms": 1.1,
-      "raw": "vless://115e24e4-fc6b-4d89-8f55-05eb00770001@103.160.204.191:8443?mode=auto&path=%2Ft.me%2FVip_fragment_v2ray&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&host=ic.imsoon.io.&fp=chrome&type=xhttp&allowInsecure=1&sni=ic.imsoon.io#%F0%9F%87%A6%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23103"
-    },
-    {
-      "name": "🌐 mwri🧘🏽 #104",
-      "protocol": "vless",
-      "address": "fsxhh.fastshop1.com",
-      "port": 443,
-      "latency_ms": 1.1,
-      "raw": "vless://7174a404-0b07-4a78-b921-4c0a4dda44a7@fsxhh.fastshop1.com:443?mode=packet-up&path=%2Flizzard&security=tls&encryption=none&insecure=0&host=lizzard.global.ssl.fastly.net&fp=firefox&type=xhttp&allowInsecure=1&sni=default.ssl.fastly.net&alpn=h2%2Chttp%2F1.1#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23104"
-    },
-    {
-      "name": "🌐 mwri🧘🏽 #105",
-      "protocol": "vless",
-      "address": "live.skornorth.com",
+      "address": "167.82.0.9",
       "port": 80,
-      "latency_ms": 1.1,
-      "raw": "vless://75ecef77-2050-4250-99f7-936d0188edf2@live.skornorth.com:80?path=%2Fws%2F%3Fed%3D2048&amp%3Bencryption=none&amp%3Bhost=xasshsga---RUBIKA.ir.speedtest.net.ARCHYU.IR&amp%3Btype=ws&host=live.skornorth.com&security=none#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23105"
+      "latency_ms": 0.9,
+      "raw": "vless://42f36835-730c-4ecc-9daf-20121ae7ba47@167.82.0.9:80?type=ws&encryption=none&host=167.82.0.9&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23101"
     },
     {
-      "name": "🌐 mwri🧘🏽 #106",
+      "name": "🇪🇺 mwri🧘🏽 #102",
       "protocol": "vless",
-      "address": "shookhidasti.global.ssl.fastly.net",
+      "address": "151.101.1.160",
+      "port": 80,
+      "latency_ms": 0.9,
+      "raw": "vless://2bfba95e-d1c5-4382-96ba-aa598f1f2fb0@151.101.1.160:80?security=none&type=ws&path=%2Fwst%3Fed%3D2056&host=parsianmobilebank.ir#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23102"
+    },
+    {
+      "name": "🇪🇺 mwri🧘🏽 #103",
+      "protocol": "vless",
+      "address": "151.101.192.84",
       "port": 443,
-      "latency_ms": 1.1,
-      "raw": "vless://e3cb508f-4cd7-4f1b-8fd1-6d71cdb11429@shookhidasti.global.ssl.fastly.net:443?path=%2Fsite&security=tls&alpn=http%2F1.1&encryption=none&insecure=1&fp=chrome&type=ws&allowInsecure=1&sni=shookhidasti.global.ssl.fastly.net&host=shookhidasti.global.ssl.fastly.net#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23106"
+      "latency_ms": 0.9,
+      "raw": "vless://47b65c00-d158-4ba4-897f-689f0e59f09d@151.101.192.84:443?security=tls&sni=www.pinterest.com&type=ws&host=shopcpir.ir&path=%2F%3Fed%3D1024&fp=firefox&alpn=h2&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23103"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #107",
+      "name": "🇺🇸 mwri🧘🏽 #104",
       "protocol": "vless",
-      "address": "172.64.153.235",
-      "port": 8443,
-      "latency_ms": 1.1,
-      "raw": "vless://f94fc28f-688f-43aa-92a0-621f6255451c@172.64.153.235:8443?path=%2F%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&insecure=1&host=il8fd4w6j293nc2uzjc6xkwko6ohe43k845a76c2nl6su5q19ivkrboek9.zjde5.de5.net&fp=chrome&type=ws&allowInsecure=1&sni=il8fd4w6j293nc2uzjc6xkwko6ohe43k845a76c2nl6su5q19ivkrboek9.zjde5.de5.net#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23107"
+      "address": "199.232.208.19",
+      "port": 80,
+      "latency_ms": 0.9,
+      "raw": "vless://0d2b6505-c554-43db-95f0-0b51bac41f48@199.232.208.19:80?type=xhttp&encryption=none&host=199.232.208.19&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23104"
+    },
+    {
+      "name": "🇪🇺 mwri🧘🏽 #105",
+      "protocol": "vless",
+      "address": "151.101.0.155",
+      "port": 80,
+      "latency_ms": 0.9,
+      "raw": "vless://424c2031-1add-4063-8fc0-d57dc8358b21@151.101.0.155:80?path=%2Fde%3Fed%3D1048&amp%3Bsecurity=none&amp%3Bencryption=none&amp%3Bhost=Yghbshup.com&amp%3Btype=ws&host=151.101.0.155&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23105"
+    },
+    {
+      "name": "🇪🇺 mwri🧘🏽 #106",
+      "protocol": "vless",
+      "address": "151.101.2.228",
+      "port": 443,
+      "latency_ms": 0.9,
+      "raw": "vless://ef78d69f-1bbf-4f5a-a669-df9670ed636a@151.101.2.228:443?path=%2Fws%2F%3Fed%3D2048&security=tls&encryption=none&host=jihvbtctvy9778.com&type=ws&sni=pscresearch.faculty.ucdavis.edu&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23106"
+    },
+    {
+      "name": "🇪🇺 mwri🧘🏽 #107",
+      "protocol": "vless",
+      "address": "151.101.1.140",
+      "port": 80,
+      "latency_ms": 0.9,
+      "raw": "vless://51a601e6-b25b-4ae7-83a6-1619ac7e7722@151.101.1.140:80?security=none&amp%3Btype=ws&amp%3Bhost=Upload.edu&amp%3Bpath=%2FJoin--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420%3Fed%3D2048&host=151.101.1.140#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23107"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #108",
       "protocol": "vless",
-      "address": "104.18.126.50",
-      "port": 443,
-      "latency_ms": 1.1,
-      "raw": "vless://331dbbef-b821-4d9d-9bf3-df1a1eaeb2d7@104.18.126.50:443?type=ws&encryption=none&host=hk5p1.pqvip.top&path=%2Fpq%2Fhk5&headerType=none&quicSecurity=none&security=tls&fp=chrome&insecure=0&sni=hk5p1.pqvip.top&alpn=h2%2Chttp%2F1.1&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23108"
-    },
-    {
-      "name": "🇺🇸 mwri🧘🏽 #109",
-      "protocol": "vless",
-      "address": "167.82.0.103",
+      "address": "167.82.0.147",
       "port": 80,
-      "latency_ms": 1.1,
-      "raw": "vless://42f36835-730c-4ecc-9daf-20121ae7ba47@167.82.0.103:80?type=ws&encryption=none&path=%2Fvless-ws%2F&security=none&host=167.82.0.103#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23109"
+      "latency_ms": 0.9,
+      "raw": "vless://42f36835-730c-4ecc-9daf-20121ae7ba47@167.82.0.147:80?type=ws&encryption=none&host=edge.validbv3528.ir&path=%2Fvless-ws%2F%40Azarbayjab1%40Azarbayjab1%40Azarbayjab1%40Azarbayjab1%40Azarbayja1%2F%3Fed%3D2560&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23108"
     },
     {
-      "name": "🌐 mwri🧘🏽 #110",
+      "name": "🌐 mwri🧘🏽 #109",
       "protocol": "vless",
-      "address": "zmaoz.faculty.ucdavis.edu",
+      "address": "www.fastly.com",
       "port": 80,
-      "latency_ms": 1.1,
-      "raw": "vless://Parsashonam-189@zmaoz.faculty.ucdavis.edu:80?path=%2F%40Parsashonam%3Fed%3D2048&security=none&encryption=none&host=Parsashonam-DE.ir&fp=firefox&type=ws#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23110"
+      "latency_ms": 0.9,
+      "raw": "vless://6e71e113-9cab-4604-81ac-330967a214ba@www.fastly.com:80?mode=auto&path=%2F&security=none&encryption=none&host=tonellmelig4.global.ssl.fastly.net&type=xhttp#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23109"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #111",
+      "name": "🇺🇸 mwri🧘🏽 #110",
       "protocol": "vless",
-      "address": "151.101.65.153",
+      "address": "199.232.184.1",
       "port": 80,
-      "latency_ms": 1.1,
-      "raw": "vless://ed500a32-05ba-4d2f-a1a8-f8d2a50e1ee9@151.101.65.153:80?security=none&amp%3Btype=ws&amp%3Bhost=topalangmani.com&amp%3Bpath=%2Fwss%2F%3Fed%3D2048&host=151.101.65.153#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23111"
+      "latency_ms": 0.9,
+      "raw": "vless://82f9beee-a609-47f2-9142-14c25258dc0b@199.232.184.1:80?mode=auto&amp%3Bpath=%2FGaMeOpTiMiZeR%3Fed%3D2048&amp%3Bsecurity=none&amp%3Bencryption=none&amp%3Bextra=%7B%22scMaxEachPostBytes%22%3A+1000000%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%2C+%22xmux%22%3A+%7B%22maxConcurrency%22%3A+%2216-32%22%2C+%22maxConnections%22%3A+0%2C+%22cMaxReuseTimes%22%3A+%2264-128%22%2C+%22cMaxLifetimeMs%22%3A+0%2C+%22hMaxRequestTimes%22%3A+%22800-900%22%2C+%22hKeepAlivePeriod%22%3A+0%7D%7D&amp%3Bhost=sudo2014.ir&amp%3Btype=xhttp&host=199.232.184.1&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23110"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #112",
+      "name": "🌐 mwri🧘🏽 #111",
+      "protocol": "ss",
+      "address": "series-a1.samanehha.co",
+      "port": 443,
+      "latency_ms": 1.0,
+      "raw": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB@series-a1.samanehha.co:443#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23111"
+    },
+    {
+      "name": "🌐 mwri🧘🏽 #112",
       "protocol": "vless",
-      "address": "140.248.135.40",
+      "address": "dariush-kharabkar.global.ssl.fastly.net",
+      "port": 443,
+      "latency_ms": 1.0,
+      "raw": "vless://0f7794ff-c024-4968-a6c7-6e44c7d188c7@dariush-kharabkar.global.ssl.fastly.net:443?encryption=none&security=tls&sni=dariush-kharabkar.global.ssl.fastly.net&fp=chrome&alpn=http%2F1.1&insecure=0&allowInsecure=1&type=ws&path=%2Fsite&host=dariush-kharabkar.global.ssl.fastly.net#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23112"
+    },
+    {
+      "name": "🌐 mwri🧘🏽 #113",
+      "protocol": "vless",
+      "address": "s.ssl.fastly.net",
       "port": 80,
-      "latency_ms": 1.1,
-      "raw": "vless://8820e16b-fbc2-49d3-90e4-eeeb8301c83c@140.248.135.40:80?security=none&type=ws&host=anycast.leslie.ch&path=%2F%3Fed%3D2560#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23112"
+      "latency_ms": 1.0,
+      "raw": "vless://976cd600-97a1-4c9c-b143-c901dbf175e7@s.ssl.fastly.net:80?security=none&encryption=none&host=usakhidam.global.ssl.fastly.net&type=ws#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23113"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #113",
-      "protocol": "vless",
-      "address": "151.101.2.219",
-      "port": 443,
-      "latency_ms": 1.1,
-      "raw": "vless://7e9cfe7c-4cb5-4529-bc49-8b11d2143038@151.101.2.219:443?security=tls&sni=speedtest.net&type=ws&host=hostiran.net&path=%2F%3Fed%3D1024&fp=chrome&alpn=h2%2Chttp%2F1.1&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23113"
+      "name": "🇪🇺 mwri🧘🏽 #114",
+      "protocol": "vmess",
+      "address": "151.101.2.133",
+      "port": 80,
+      "latency_ms": 1.0,
+      "raw": "vmess://eyJhZGQiOiAiMTUxLjEwMS4yLjEzMyIsICJhaWQiOiAiMCIsICJhbHBuIjogIiIsICJmcCI6ICIiLCAiaG9zdCI6ICJnZXJNQW55SVN2UC5pUiIsICJpZCI6ICJhODg4Yjg5YS0wOGFjLTQwZTYtOGFkNy1jZmNlOTU2OWY5NjciLCAibmV0IjogIndzIiwgInBhdGgiOiAiL3JhY2V2cG4iLCAicG9ydCI6ICI4MCIsICJwcyI6ICLwn4eq8J+HuiBtd3Jp8J+nmPCfj70gIzExNCIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiIiwgInRscyI6ICIiLCAidHlwZSI6ICIiLCAidiI6ICIyIn0="
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #114",
+      "name": "🇪🇺 mwri🧘🏽 #115",
       "protocol": "vless",
-      "address": "199.232.0.177",
-      "port": 443,
-      "latency_ms": 1.1,
-      "raw": "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@199.232.0.177:443?type=ws&amp%3Bsecurity=tls&amp%3Bhost=Tahagoogooli.ir&amp%3Bpath=%2FveNbt06rF0tTFtp6%2FMTcyLjY0LjEzNC41OA%3D%3D%3Fed%3D2560&amp%3Bfp=randomized&amp%3Bsni=SpEedteST.NET&amp%3Balpn=h2%2Chttp%2F1.1&host=199.232.0.177&security=tls&sni=199.232.0.177&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23114"
-    },
-    {
-      "name": "🇺🇸 mwri🧘🏽 #115",
-      "protocol": "vless",
-      "address": "140.248.129.68",
-      "port": 443,
-      "latency_ms": 1.1,
-      "raw": "vless://a630ad68-6722-40af-94cf-4eb37bf91d72@140.248.129.68:443?encryption=none&security=tls&sni=default.ssl.fastly.net&fp=chrome&alpn=h2%2Chttp%2F1.1&insecure=0&allowInsecure=1&type=ws&host=parsianmobilebank.ir&path=%2Fwst%3Fed%3D2056#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23115"
+      "address": "151.101.66.133",
+      "port": 80,
+      "latency_ms": 1.0,
+      "raw": "vless://560a0f6c-9057-4d18-b88f-6512c2568481@151.101.66.133:80?security=none&amp%3Btype=ws&amp%3Bhost=Morchechi.ir&amp%3Bpath=%2Ftelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%3Fed%3D2048&host=151.101.66.133#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23115"
     },
     {
       "name": "🌐 mwri🧘🏽 #116",
       "protocol": "vless",
-      "address": "mci.farsnews.fun",
+      "address": "nls.zdshop.ir",
       "port": 80,
-      "latency_ms": 1.1,
-      "raw": "vless://f8157b85-ba98-436a-b868-e109947813fb@mci.farsnews.fun:80?mode=auto&path=%2F&security=none&encryption=none&host=tonellmelig3.global.ssl.fastly.net&type=xhttp#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23116"
+      "latency_ms": 1.0,
+      "raw": "vless://bc20990c-a88e-4852-8e3b-f5b3ff4ae56a@nls.zdshop.ir:80?encryption=none&host=okpan3musicnl.global.ssl.fastly.net&path=%2Fed%3D2560&security=none&type=ws#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23116"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #117",
+      "name": "🌐 mwri🧘🏽 #117",
       "protocol": "vless",
-      "address": "199.232.0.232",
+      "address": "perl.org",
       "port": 80,
-      "latency_ms": 1.1,
-      "raw": "vless://252efa0f-43a4-4224-9cc4-f823bc6ac56c@199.232.0.232:80?type=xhttp&encryption=none&path=%40PuLaVPN%2C%40PuLaFreeBOT%2C%40PuLaVPN%2C%40PuLaFreeBOT%2C%40PuLaVPN%2C%40PuLaFreeBOT%2C%40PuLaVPN%2C%40PuLaFreeBOT%2C%40PuLaVPN%2C%40PuLaFreeBOT%2C%40PuLaVPN%2C%40PuLaFreeBOT%2C%40PuLaVPN%2C%40PuLaFreeBOT%2C%40PuLaVPN%2C%40PuLaFreeBOT%2C%40PuLaVPN%2C%40PuLaFreeBOT%2C%40PuLaVPN%2C%40PuLaFreeBOT%2C%40PuLaVPN%2C%40PuLaFreeBOT%2C%40PuLaVPN%2C%40PuLaFreeBOT%2C&host=sos-llcofranging.ir&mode=auto&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23117"
+      "latency_ms": 1.0,
+      "raw": "vless://0b0c4294-1781-4322-9041-3b3f3e42bd80@perl.org:80?path=%2Fdownload&security=none&encryption=none&host=miltering.global.ssl.fastly.net&type=ws#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23117"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #118",
+      "name": "🌐 mwri🧘🏽 #118",
       "protocol": "vless",
-      "address": "199.232.123.12",
+      "address": "fasty.hamrahx.ir",
       "port": 80,
-      "latency_ms": 1.1,
-      "raw": "vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@199.232.123.12:80?type=ws&encryption=none&host=CHANNEL--ELiV2RAY-ELiV2RAY.IR&path=%2F%3Fed%3D2048&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23118"
+      "latency_ms": 1.0,
+      "raw": "vless://abd62325-714e-4fff-8499-6d5f452cd798@fasty.hamrahx.ir:80?mode=auto&path=%2Fdownload&security=none&encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A&host=fasty.hamrahx.ir#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23118"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #119",
+      "name": "🌐 mwri🧘🏽 #119",
       "protocol": "vless",
-      "address": "151.101.129.140",
+      "address": "ip2.gptban.com",
       "port": 80,
-      "latency_ms": 1.1,
-      "raw": "vless://b990ae01-5d9f-4008-849c-8c0ef84b85a9@151.101.129.140:80?security=none&type=ws&host=Assdnmkilp.net&path=%2FJoin--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420%3Fed%3D2048#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23119"
+      "latency_ms": 1.0,
+      "raw": "vless://cbf73250-e228-4fc8-95a1-3804176354be@ip2.gptban.com:80?mode=auto&path=%2Fdl%3Fed%3D2560&security=none&encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A&host=ip2.gptban.com#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23119"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #120",
       "protocol": "vless",
-      "address": "104.16.244.232",
+      "address": "23.185.0.0",
       "port": 80,
-      "latency_ms": 1.2,
-      "raw": "vless://b00d9e6d-227d-4944-8ffd-b1a806196356@104.16.244.232:80?path=%252F%253Fed%253D2048&security=none&encryption=none&host=neuroonvpn.mamadjacki83.workers.dev&type=ws#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23120"
+      "latency_ms": 1.0,
+      "raw": "vless://e8db8a07-9264-4072-8637-8118ec39d682@23.185.0.0:80?mode=auto&path=%2F&security=none&encryption=none&host=9ow30rfd9jhwf9j.global.ssl.fastly.net&type=xhttp#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23120"
     },
     {
       "name": "🇪🇺 mwri🧘🏽 #121",
       "protocol": "vless",
-      "address": "151.101.131.1",
+      "address": "151.101.1.124",
       "port": 80,
-      "latency_ms": 1.2,
-      "raw": "vless://cefffd1d-cc58-4560-b4d1-44f1af528f30@151.101.131.1:80?path=%2F%3Fed%3D2048&security=none&encryption=none&host=fraud.chase&type=ws#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23121"
+      "latency_ms": 1.0,
+      "raw": "vless://f149f3ea-ac0f-4e29-8db2-89d57b4f6eac@151.101.1.124:80?type=ws&path=%2F&host=danuwazero.com&encryption=none&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23121"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #122",
       "protocol": "vless",
-      "address": "140.238.100.35",
-      "port": 40721,
-      "latency_ms": 1.2,
-      "raw": "vless://bf3e8944-8d26-47de-8748-b9aa74cce974@140.238.100.35:40721?type=tcp&encryption=none&fp=chrome&security=none&pbk=TUZgwzcTvoROSbgnqMh3WorXVMxQNIF2zsEM39FQbyk&sid=df8611c07d&host=140.238.100.35#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23122"
-    },
-    {
-      "name": "🇩🇪 mwri🧘🏽 #123",
-      "protocol": "trojan",
-      "address": "89.116.180.158",
-      "port": 443,
-      "latency_ms": 1.2,
-      "raw": "trojan://2e7d3f13-be1b-479c-94ff-0e95c2bd565d@89.116.180.158:443?security=tls&sni=3us2.pqjc.buzz&type=tcp&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%A9%F0%9F%87%AA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23123"
-    },
-    {
-      "name": "🇪🇺 mwri🧘🏽 #124",
-      "protocol": "vless",
-      "address": "151.101.66.216",
+      "address": "140.248.184.165",
       "port": 80,
-      "latency_ms": 1.2,
-      "raw": "vless://217b48d6-5dac-4662-9a8c-aa76e92a7cfe@151.101.66.216:80?security=none&amp%3Btype=ws&amp%3Bhost=befreewithus.com&amp%3Bpath=ws%2F%3Fed%3D2048&host=151.101.66.216#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23124"
+      "latency_ms": 1.0,
+      "raw": "vless://f7ef2c19-1670-4e82-befe-5f470ad2728c@140.248.184.165:80?mode=auto&path=path&encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A&host=140.248.184.165&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23122"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #125",
-      "protocol": "vless",
-      "address": "151.101.130.216",
-      "port": 80,
-      "latency_ms": 1.2,
-      "raw": "vless://217b48d6-5dac-4662-9a8c-aa76e92a7cfe@151.101.130.216:80?security=none&amp%3Btype=ws&amp%3Bhost=befreewithus.com&amp%3Bpath=ws%2F%3Fed%3D2048&host=151.101.130.216#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23125"
-    },
-    {
-      "name": "🇺🇸 mwri🧘🏽 #126",
+      "name": "🌐 mwri🧘🏽 #123",
       "protocol": "vmess",
-      "address": "23.227.38.23",
+      "address": "gov.uk",
       "port": 443,
-      "latency_ms": 1.2,
-      "raw": "vmess://eyJhZGQiOiAiMjMuMjI3LjM4LjIzIiwgImFpZCI6IDAsICJob3N0IjogIm9wbGcxLmNmY2RuMi54eXoiLCAiaWQiOiAiYzVhMmQ3YjgtYmY4NC00Zjk3LTg1NzctYjliODdmMmJhYWY3IiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi9BVUlLTjhBVSIsICJwb3J0IjogNDQzLCAicHMiOiAi8J+HuvCfh7ggbXdyafCfp5jwn4+9ICMxMjYiLCAidGxzIjogInRscyIsICJ0eXBlIjogImF1dG8iLCAic2VjdXJpdHkiOiAiYXV0byIsICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwgInNuaSI6ICJvcGxnMS5jZmNkbjIueHl6IiwgImFscG4iOiAiaDIsaHR0cC8xLjEiLCAiZnAiOiAiY2hyb21lIiwgImFsbG93SW5zZWN1cmUiOiB0cnVlfQ=="
+      "latency_ms": 1.0,
+      "raw": "vmess://eyJhZGQiOiAiZ292LnVrIiwgImFpZCI6ICIwIiwgImFscG4iOiAiaDIsaHR0cC8xLjEiLCAiZnAiOiAiY2hyb21lIiwgImhvc3QiOiAiemhlc2hpc2NwLmNvbSIsICJpZCI6ICI3Nzg0ODgyNC05M2I3LTRiODktZmZkMC1lOTFhZmZmNDA2Y2UiLCAibmV0IjogIndzIiwgInBhdGgiOiAiLzc3ODQ4ODI0IiwgInBvcnQiOiAiNDQzIiwgInBzIjogIvCfjJAgbXdyafCfp5jwn4+9ICMxMjMiLCAic2N5IjogImF1dG8iLCAic25pIjogImdvdi51ayIsICJ0bHMiOiAidGxzIiwgInR5cGUiOiAibm9uZSIsICJ2IjogIjIiLCAiYWxsb3dJbnNlY3VyZSI6IHRydWV9"
+    },
+    {
+      "name": "🌐 mwri🧘🏽 #124",
+      "protocol": "vless",
+      "address": "evay_vpn.fast.hosting-ip.com",
+      "port": 80,
+      "latency_ms": 1.0,
+      "raw": "vless://2dac3536-244a-4558-9ab9-ab9ae34638c1@evay_vpn.fast.hosting-ip.com:80?type=xhttp&mode=auto&host=p30download.ir&path=%2F%3Fed%3D80%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn----%40Evay_vpn&security=none#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23124"
+    },
+    {
+      "name": "🌐 mwri🧘🏽 #125",
+      "protocol": "vless",
+      "address": "join-svnteam.fast.hosting-ip.com",
+      "port": 80,
+      "latency_ms": 1.0,
+      "raw": "vless://SVNTEAM@join-svnteam.fast.hosting-ip.com:80?type=ws&path=%2F%40SvnTeam----%40SvnTeam----%40SvnTeam----%40SvnTeam----%40SvnTeam----%40SvnTeam----%40SvnTeam----%40SvnTeam----%40SvnTeam----%40SvnTeam----%40SvnTeam----%40SvnTeam%3Fed%3D2048&host=CloudFlare.JOIN-SVNTEAM.wWw.SpeedTeSt.cOm.Zula.ir.0.0.0.0.SVNTEAM-SVNTEAN.ir&security=none#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23125"
+    },
+    {
+      "name": "🇪🇺 mwri🧘🏽 #126",
+      "protocol": "vless",
+      "address": "151.101.194.67",
+      "port": 80,
+      "latency_ms": 1.0,
+      "raw": "vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@151.101.194.67:80?type=ws&host=Join--E-L-i-V-2-R-A-Y.net&path=Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2+&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23126"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #127",
-      "protocol": "vmess",
-      "address": "154.92.9.51",
-      "port": 80,
-      "latency_ms": 1.2,
-      "raw": "vmess://eyJhZGQiOiAiMTU0LjkyLjkuNTEiLCAiYWlkIjogMCwgImhvc3QiOiAiMTU0LjkyLjkuNTEiLCAiaWQiOiAiZGQ0MWI1Y2ItYjcyZS00YThjLWM3NWEtM2VjYzkyOGQ2ZWIzIiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi9ibHVlIiwgInBvcnQiOiA4MCwgInBzIjogIvCfh7rwn4e4IG13cmnwn6eY8J+PvSAjMTI3IiwgInRscyI6ICIiLCAidHlwZSI6ICJhdXRvIiwgInNlY3VyaXR5IjogImF1dG8iLCAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWUsICJzbmkiOiAiIn0="
-    },
-    {
-      "name": "🇪🇺 mwri🧘🏽 #128",
       "protocol": "vless",
-      "address": "151.101.129.203",
+      "address": "199.232.8.215",
       "port": 443,
-      "latency_ms": 1.2,
-      "raw": "vless://29af39ed-f8c8-49b8-9a5f-ea24fad97a09@151.101.129.203:443?path=%2F%3Fed%3D1024&amp%3Bsecurity=tls&amp%3Bencryption=none&amp%3Balpn=h2%2Chttp%2F1.1&amp%3Bhost=fastopra.com&amp%3Bfp=firefox&amp%3Btype=ws&amp%3Bsni=video.nordkapp-boats.no&host=151.101.129.203&security=tls&sni=151.101.129.203&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23128"
+      "latency_ms": 1.0,
+      "raw": "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@199.232.8.215:443?type=ws&encryption=none&security=tls&sni=Sanjeshp.Ir&host=199.232.8.215&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23127"
     },
     {
-      "name": "🌐 mwri🧘🏽 #129",
+      "name": "🇺🇸 mwri🧘🏽 #128",
       "protocol": "vless",
-      "address": "cd4ul9u4hlil.fly.p7d.ir",
+      "address": "167.82.100.124",
       "port": 80,
-      "latency_ms": 1.2,
-      "raw": "vless://14ba9603-1936-4d79-889a-f2b12d7508c2@cd4ul9u4hlil.fly.p7d.ir:80?mode=auto&path=%2Fassets&security=none&encryption=none&host=xn--9kqz4c3d8f2a9b7e6h5m4n3p2q1r0s8t7u6v5w4x.global.ssl.fastly.net&type=xhttp#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23129"
+      "latency_ms": 1.0,
+      "raw": "vless://42f36835-730c-4ecc-9daf-20121ae7ba47@167.82.100.124:80?type=ws&encryption=none&host=edge.validbv3528.ir&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23128"
     },
     {
-      "name": "🇩🇪 mwri🧘🏽 #130",
-      "protocol": "vmess",
-      "address": "162.159.137.249",
-      "port": 8080,
-      "latency_ms": 1.2,
-      "raw": "vmess://eyJhZGQiOiAiMTYyLjE1OS4xMzcuMjQ5IiwgImFpZCI6ICIwIiwgImFscG4iOiAiIiwgImhvc3QiOiAibmVzdC1lbWlseS1oZWFsaW5nLWgudHJ5Y2xvdWRmbGFyZS5jb20iLCAiaWQiOiAiMDI4YzgxMzEtOWUzZS00ODM2LTk0YWMtZWE3ZjI0ZDRkMDVhIiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIjAyOGM4MTMxLTllM2UtNDgzNi05NGFjLWVhN2YyNGQ0ZDA1YS12bSIsICJwb3J0IjogIjgwODAiLCAicHMiOiAi8J+HqfCfh6ogbXdyafCfp5jwn4+9ICMxMzAiLCAic2N5IjogImF1dG8iLCAic25pIjogIiIsICJ0bHMiOiAiIiwgInR5cGUiOiAibm9uZSIsICJ2IjogIjIifQ=="
-    },
-    {
-      "name": "🌐 mwri🧘🏽 #131",
+      "name": "🇺🇸 mwri🧘🏽 #129",
       "protocol": "vless",
-      "address": "p.ssl.fastly.net",
+      "address": "140.248.152.85",
+      "port": 443,
+      "latency_ms": 1.0,
+      "raw": "vless://229e6ed9-4ec3-43ea-94db-05cd79825f1f@140.248.152.85:443?type=xhttp&encryption=none&security=tls&sni=zula.ir&alpn=h3%2Ch2%2Chttp%2F1.1&fp=chrome&host=140.248.152.85&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23129"
+    },
+    {
+      "name": "🇪🇺 mwri🧘🏽 #130",
+      "protocol": "vless",
+      "address": "151.101.26.228",
+      "port": 443,
+      "latency_ms": 1.0,
+      "raw": "vless://fdb65f69-2bf5-434c-92b7-e547aa6af08b@151.101.26.228:443?type=ws&encryption=none&host=mashti.com&security=tls&sni=zmaoz.faculty.ucdavis.edu&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23130"
+    },
+    {
+      "name": "🇪🇺 mwri🧘🏽 #131",
+      "protocol": "vless",
+      "address": "151.101.193.55",
       "port": 80,
-      "latency_ms": 1.2,
-      "raw": "vless://3d2b28ec-e2f5-4edd-a95c-18d8ea828022@p.ssl.fastly.net:80?security=none&encryption=none&host=frenchboijji.global.ssl.fastly.net&type=ws#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23131"
+      "latency_ms": 1.0,
+      "raw": "vless://20df8c30-c07a-494e-b83d-4af21ee57788@151.101.193.55:80?encryption=none&security=none&type=ws&host=lexeu.global.ssl.fastly.net&path=%2Fcontainers%2Ffi#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23131"
     },
     {
       "name": "🌐 mwri🧘🏽 #132",
       "protocol": "vless",
-      "address": "pizzakakhi.global.ssl.fastly.net",
+      "address": "theverge.com",
+      "port": 80,
+      "latency_ms": 1.0,
+      "raw": "vless://4868519f-ad61-4017-96f5-8d9efec49304@theverge.com:80?mode=auto&path=%2Fdl%3Fed%3D2560&encryption=none&host=donttalkaboutit.global.ssl.fastly.net&fp=chrome&type=xhttp&security=none#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23132"
+    },
+    {
+      "name": "🇪🇺 mwri🧘🏽 #133",
+      "protocol": "vless",
+      "address": "151.101.64.223",
+      "port": 80,
+      "latency_ms": 1.0,
+      "raw": "vless://ed549170-b8f1-490e-85c4-6679e2cbcd54@151.101.64.223:80?type=ws&encryption=none&host=JOIN.unlimiteddev.4.4.4.4.wWw.CloudFlare.cOm.wWw.SpeedTeSt.cOm.Home.iR...&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23133"
+    },
+    {
+      "name": "🇺🇸 mwri🧘🏽 #134",
+      "protocol": "vless",
+      "address": "140.248.128.184",
       "port": 443,
-      "latency_ms": 1.2,
-      "raw": "vless://505997ba-cbdb-466e-a3ad-69c6a4553b38@pizzakakhi.global.ssl.fastly.net:443?path=%2Fcontainers%2Ffi&security=tls&alpn=http%2F1.1&encryption=none&insecure=1&host=pizzakakhi.global.ssl.fastly.net&fp=chrome&type=ws&allowInsecure=1&sni=pizzakakhi.global.ssl.fastly.net#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23132"
+      "latency_ms": 1.0,
+      "raw": "vless://d063f2f8-1c54-412c-ac96-d9a357bf8344@140.248.128.184:443?type=ws&encryption=none&host=www.gaesrebxvg.io&path=Tel%3A%40Ahmedhamoomi_Servers%2CTel%3A%40Ahmedhamoomi_Servers%2CTel%3A%40Ahmedhamoomi_Servers%2CTel%3A%40Ahmedhamoomi_Servers%2CTel%3A%40Ahmedhamoomi_Servers%2CTel%3A%40Ahmedhamoomi_Servers%2CTel%3A%40Ahmedhamoomi_Servers%2CTel%3A%40Ahmedhamoomi_Servers&security=tls&sni=default.ssl.fastly.net&fp=chrome&alpn=h2%2Chttp%2F1.1&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23134"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #133",
+      "name": "🇪🇺 mwri🧘🏽 #135",
       "protocol": "vless",
-      "address": "104.20.1.252",
-      "port": 80,
-      "latency_ms": 1.2,
-      "raw": "vless://65fe56c2-78ec-417a-a666-9f393eac8b61@104.20.1.252:80?path=%2F%3Fed&encryption=none&host=everlASTinG-oFfERC4S5Mg1918.SpoRTLand.COMpaNy.&type=ws&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23133"
-    },
-    {
-      "name": "🌐 mwri🧘🏽 #134",
-      "protocol": "vless",
-      "address": "telegram-g0dv2ray.fastlynew.hosting-ip.com",
-      "port": 80,
-      "latency_ms": 1.2,
-      "raw": "vless://e4a6331b-e3e7-4f4e-b46a-8c31bf44bf83@telegram-g0dv2ray.fastlynew.hosting-ip.com:80?encryption=none&type=ws&host=moodaontw.global.ssl.fastly.net&path=%2F%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%2F%40HqV2RayNG--%40HqV2RayNG%3Fed%3D2056&security=none#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23134"
-    },
-    {
-      "name": "🌐 mwri🧘🏽 #135",
-      "protocol": "vless",
-      "address": "dc-kish.global.ssl.fastly.net",
+      "address": "151.101.67.6",
       "port": 443,
-      "latency_ms": 1.2,
-      "raw": "vless://f62902b0-77b2-41ac-aaf0-04985d0b4665@dc-kish.global.ssl.fastly.net:443?path=%2Fdownload&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&host=dc-kish.global.ssl.fastly.net&fp=chrome&type=ws&allowInsecure=1&sni=dc-kish.global.ssl.fastly.net#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23135"
+      "latency_ms": 1.0,
+      "raw": "vless://74a35085-df4f-40d2-8480-beb2352f9439@151.101.67.6:443?mode=packet-up&path=%2F&security=tls&encryption=none&alpn=h3&extra=%7B%22scMaxEachPostBytes%22%3A%221000000%22%2C%22scMaxConcurrentPosts%22%3A100.0%2C%22scMinPostsIntervalMs%22%3A30.0%2C%22xPad%E2%80%A6&host=151.101.67.6&sni=151.101.67.6&fp=chrome&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23135"
     },
     {
-      "name": "🌐 mwri🧘🏽 #136",
-      "protocol": "ss",
-      "address": "20.254.21.147",
+      "name": "🇺🇸 mwri🧘🏽 #136",
+      "protocol": "vless",
+      "address": "199.232.3.2",
+      "port": 80,
+      "latency_ms": 1.0,
+      "raw": "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@199.232.3.2:80?type=ws&encryption=none&host=en.mfa.gov.ir&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23136"
+    },
+    {
+      "name": "🇪🇺 mwri🧘🏽 #137",
+      "protocol": "vless",
+      "address": "151.101.65.57",
+      "port": 80,
+      "latency_ms": 1.0,
+      "raw": "vless://5228ed06-1c88-49a7-b3bc-a4ba01332a9f@151.101.65.57:80?encryption=none&security=none&type=xhttp&host=taxix.com&path=%2Fcpanelc%3Fed%3D2048&mode=stream-up#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23137"
+    },
+    {
+      "name": "🇪🇺 mwri🧘🏽 #138",
+      "protocol": "vless",
+      "address": "151.101.1.242",
+      "port": 80,
+      "latency_ms": 1.0,
+      "raw": "vless://7d2987c1-960b-44d7-afe0-cf94ffa8731c@151.101.1.242:80?encryption=none&type=ws&host=4rdm.global.ssl.fastly.net&path=%2Fy%3Fed%3D2048&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23138"
+    },
+    {
+      "name": "🇪🇺 mwri🧘🏽 #139",
+      "protocol": "vless",
+      "address": "151.101.65.55",
+      "port": 80,
+      "latency_ms": 1.0,
+      "raw": "vless://20df8c30-c07a-494e-b83d-4af21ee57788@151.101.65.55:80?encryption=none&security=none&type=ws&host=lexeu.global.ssl.fastly.net&path=%2Fcontainers%2Ffi#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23139"
+    },
+    {
+      "name": "🇪🇺 mwri🧘🏽 #140",
+      "protocol": "vless",
+      "address": "151.101.129.140",
+      "port": 80,
+      "latency_ms": 1.0,
+      "raw": "vless://b990ae01-5d9f-4008-849c-8c0ef84b85a9@151.101.129.140:80?security=none&type=ws&host=Assdnmkilp.net&path=%2FJoin--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420%3Fed%3D2048#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23140"
+    },
+    {
+      "name": "🇺🇸 mwri🧘🏽 #141",
+      "protocol": "vless",
+      "address": "199.232.0.190",
       "port": 443,
-      "latency_ms": 1.2,
-      "raw": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB@20.254.21.147:443#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23136"
+      "latency_ms": 1.0,
+      "raw": "vless://a89b1111-7ee2-4741-b5db-be2e32270ae8@199.232.0.190:443?type=ws&encryption=none&host=fullhd.4k.eliv2ray.ai&security=tls&sni=FullHD.4k.ELiV2RaY.ai&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23141"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #137",
+      "name": "🌐 mwri🧘🏽 #142",
       "protocol": "vless",
-      "address": "104.24.230.106",
-      "port": 2083,
-      "latency_ms": 1.2,
-      "raw": "vless://4309abbb-9427-41e5-b3a0-cca6763f9964@104.24.230.106:2083?type=ws&security=tls&host=52yunwang.dpdns.org&path=%2F&sni=52yunwang.dpdns.org&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23137"
-    },
-    {
-      "name": "🇩🇪 mwri🧘🏽 #138",
-      "protocol": "vless",
-      "address": "194.76.18.158",
-      "port": 2096,
-      "latency_ms": 1.2,
-      "raw": "vless://1a25f8ad-cad2-4e93-b5bf-34e42bcac02a@194.76.18.158:2096?security=tls&type=ws&path=%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2&host=sni.111000.de5.net&sni=sni.111000.de5.net&fp=chrome&encryption=none&alpn=h2%2Chttp%2F1.1&allowInsecure=1#%F0%9F%87%A9%F0%9F%87%AA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23138"
-    },
-    {
-      "name": "🇺🇸 mwri🧘🏽 #139",
-      "protocol": "vless",
-      "address": "199.232.209.133",
+      "address": "test.fast.hosting-ip.com",
       "port": 80,
-      "latency_ms": 1.2,
-      "raw": "vless://28ef7769-b7a8-478f-bac7-052494312c01@199.232.209.133:80?security=none&type=ws&path=%2Fcontainers%2Ffi&host=vasat.global.ssl.fastly.net#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23139"
+      "latency_ms": 1.0,
+      "raw": "vless://0788f940-bc79-4438-9553-ac469844469d@test.fast.hosting-ip.com:80?mode=auto&path=%2Ftelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%3Fed%3D2048&security=none&encryption=none&host=Meme.global.ssl.fastly.net&type=xhttp#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23142"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #140",
+      "name": "🌐 mwri🧘🏽 #143",
       "protocol": "vless",
-      "address": "199.232.232.231",
-      "port": 80,
-      "latency_ms": 1.2,
-      "raw": "vless://01c4caac-6f75-49d2-be5f-8bce33441057@199.232.232.231:80?mode=auto&path=%2F&security=none&encryption=none&host=Mego-mego.global.ssl.fastly.net&type=xhttp#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23140"
-    },
-    {
-      "name": "🇪🇺 mwri🧘🏽 #141",
-      "protocol": "vless",
-      "address": "151.101.1.153",
-      "port": 80,
-      "latency_ms": 1.2,
-      "raw": "vless://ed500a32-05ba-4d2f-a1a8-f8d2a50e1ee9@151.101.1.153:80?security=none&type=ws&host=topalangmani.com&path=%2Fwss%2F%3Fed%3D2048#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23141"
-    },
-    {
-      "name": "🇪🇺 mwri🧘🏽 #142",
-      "protocol": "vless",
-      "address": "151.101.3.147",
-      "port": 80,
-      "latency_ms": 1.2,
-      "raw": "vless://9d468e0a-01ca-41a2-a89b-73b2756f91ec@151.101.3.147:80?encryption=none&type=xhttp&host=151.101.3.147&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23142"
-    },
-    {
-      "name": "🇺🇸 mwri🧘🏽 #143",
-      "protocol": "vless",
-      "address": "199.232.8.123",
+      "address": "104.156.85.223",
       "port": 443,
-      "latency_ms": 1.2,
-      "raw": "vless://d578322a-266b-479d-9eda-f1b41324e721@199.232.8.123:443?type=ws&encryption=none&host=IRANINGOAT2.IR&path=%2FRsAMasAPMX5yb1YZ%3Fed%3D2560&security=tls&sni=IRANINGOAT2.IR&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23143"
+      "latency_ms": 1.0,
+      "raw": "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@104.156.85.223:443?type=ws&encryption=none&host=en.mfa.gov.ir&path=%2FH%3Fed%3D2560&security=tls&sni=en.mfa.gov.ir&alpn=h2%2Chttp%2F1.1&fp=randomized&allowInsecure=1#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23143"
     },
     {
-      "name": "🌐 mwri🧘🏽 #144",
+      "name": "🇪🇺 mwri🧘🏽 #144",
       "protocol": "vless",
-      "address": "104.156.85.203",
-      "port": 443,
-      "latency_ms": 1.2,
-      "raw": "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@104.156.85.203:443?type=ws&encryption=none&host=en.mfa.gov.ir&path=%2FH%3Fed%3D2560&security=tls&sni=en.mfa.gov.ir&alpn=h2%2Chttp%2F1.1&fp=randomized&allowInsecure=1#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23144"
+      "address": "151.101.193.153",
+      "port": 80,
+      "latency_ms": 1.0,
+      "raw": "vless://ed500a32-05ba-4d2f-a1a8-f8d2a50e1ee9@151.101.193.153:80?type=ws&encryption=none&host=topalangmani.com&path=%2Fwss%2F%3Fed%3D2048&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23144"
     },
     {
       "name": "🇪🇺 mwri🧘🏽 #145",
       "protocol": "vless",
-      "address": "151.101.1.160",
+      "address": "151.101.66.228",
       "port": 80,
-      "latency_ms": 1.2,
-      "raw": "vless://07e299c3-1e03-42d8-82a6-c47bfc79954d@151.101.1.160:80?path=%2Fwst%3Fed%3D2056&security=none&encryption=none&host=parsianmobilebank.ir&type=ws#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23145"
+      "latency_ms": 1.0,
+      "raw": "vless://2037eda3-6750-428b-af5d-c396e7ce2a41@151.101.66.228:80?type=ws&encryption=none&host=hajmainv2.COM.&path=%2FTELEGRAM-%40MainV2-ray%2C...&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23145"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #146",
+      "name": "🇺🇸 mwri🧘🏽 #146",
       "protocol": "vless",
-      "address": "151.101.193.57",
+      "address": "199.232.236.1",
       "port": 80,
-      "latency_ms": 1.2,
-      "raw": "vless://a0e59a04-45bf-48e7-9ac2-fbf7cb985636@151.101.193.57:80?type=ws&encryption=none&host=loye.ir&path=%2F%40Maznet--%40MAZNET--%40Maznet--%40MAZNET--%40Maznet--%40MAZNET--%40Maznet--%40MAZNET--%40Maznet--%40MAZNET%3Fed%3D2560&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23146"
+      "latency_ms": 1.0,
+      "raw": "vless://0bf4efe9-c3b3-47bc-a707-e1535b502e90@199.232.236.1:80?path=%2F&encryption=none&host=pmiusc1l1.global.ssl.fastly.net&type=ws&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23146"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #147",
+      "name": "🇪🇺 mwri🧘🏽 #147",
       "protocol": "vless",
-      "address": "199.232.208.18",
+      "address": "151.101.2.228",
       "port": 80,
-      "latency_ms": 1.2,
-      "raw": "vless://0d2b6505-c554-43db-95f0-0b51bac41f48@199.232.208.18:80?mode=auto&path=%2Fmsproxyx&security=none&encryption=none&host=aliirancel12.global.ssl.fastly.net&type=xhttp#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23147"
+      "latency_ms": 1.0,
+      "raw": "vless://c72db571-2c94-4bfa-e546-c6eca9e43b91@151.101.2.228:80?type=ws&encryption=none&host=foffmelo.com&path=%2Folem%2Fws%3Fed%3D1024&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23147"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #148",
       "protocol": "vless",
-      "address": "23.235.33.81",
+      "address": "140.248.152.37",
       "port": 80,
-      "latency_ms": 1.2,
-      "raw": "vless://Parsashonam-336@23.235.33.81:80?mode=auto&path=%2FParsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam&security=none&encryption=none&host=Parsashonam-v2ray-channel2.global.ssl.fastly.net&type=xhttp#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23148"
+      "latency_ms": 1.0,
+      "raw": "vless://31c48574-6f81-4dc5-a723-a2de16ee44f2@140.248.152.37:80?path=%2F&encryption=none&host=TRCLOAKNET.global.ssl.fastly.net&type=ws&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23148"
     },
     {
-      "name": "🌐 mwri🧘🏽 #149",
+      "name": "🇺🇸 mwri🧘🏽 #149",
       "protocol": "vless",
-      "address": "uk1.miyazono-kaori.com",
-      "port": 443,
-      "latency_ms": 1.2,
-      "raw": "vless://0ca4d383-8463-4a5a-af24-d9a115fde26e@uk1.miyazono-kaori.com:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=www.bp.com&fp=chrome&pbk=_dsOu_vxEU7pY3sIeGJxIpR0Ac2KoqIyBor2Bx0CwGA&sid=d923&insecure=0&allowInsecure=1&type=tcp&headerType=none&host=uk1.miyazono-kaori.com&alpn=h2%2Chttp%2F1.1#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23149"
+      "address": "167.82.102.100",
+      "port": 80,
+      "latency_ms": 1.0,
+      "raw": "vless://42f36835-730c-4ecc-9daf-20121ae7ba47@167.82.102.100:80?type=ws&encryption=none&host=edge.validbv3528.ir&path=%2Fvless-wsfp%3Dchrome&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23149"
     },
     {
       "name": "🌐 mwri🧘🏽 #150",
       "protocol": "vless",
-      "address": "telegram-npvv2rayfilter.fastlynew.hosting-ip.com",
+      "address": "cdn.turbooserver.com",
       "port": 80,
-      "latency_ms": 1.3,
-      "raw": "vless://e4a6331b-e3e7-4f4e-b46a-8c31bf44bf83@telegram-npvv2rayfilter.fastlynew.hosting-ip.com:80?encryption=none&type=ws&host=moodaontw.global.ssl.fastly.net&path=%2F%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%40HqV2RayNG--%2F%40HqV2RayNG--%40HqV2RayNG%3Fed%3D2056&security=none#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23150"
+      "latency_ms": 1.0,
+      "raw": "vless://38557b1f-49e9-4a33-990d-8209e69ef2be@cdn.turbooserver.com:80?mode=packet-up&path=%2F&encryption=none&host=data.server-abr.net&type=xhttp&security=none#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23150"
     },
     {
-      "name": "🌐 mwri🧘🏽 #151",
+      "name": "🇺🇸 mwri🧘🏽 #151",
       "protocol": "vless",
-      "address": "live.skornorth.com",
+      "address": "167.82.97.49",
       "port": 443,
-      "latency_ms": 1.3,
-      "raw": "vless://d6252cc5-2f53-4966-ad3b-99285b891879@live.skornorth.com:443?path=%2F%40custom_config%3Fed%3D2048&security=tls&encryption=none&alpn=h2%2Chttp%2F1.1&host=soft-sun.com&fp=chrome&type=ws&sni=live.skornorth.com&allowInsecure=1#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23151"
+      "latency_ms": 1.0,
+      "raw": "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@167.82.97.49:443?type=ws&encryption=none&host=cosmocare.ir&path=%2Fsecurity%3Dtls&security=tls&sni=cosmocare.ir&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23151"
     },
     {
-      "name": "🌐 mwri🧘🏽 #152",
+      "name": "🇺🇸 mwri🧘🏽 #152",
       "protocol": "vless",
-      "address": "ip3.iranvatanam.com",
-      "port": 8443,
-      "latency_ms": 1.3,
-      "raw": "vless://bdc39e5c-7605-4060-bebe-906801c5479b@ip3.iranvatanam.com:8443?path=%2F%3Fed%3D2048&security=tls&encryption=none&fp=chrome&type=ws&sni=test2.iranvatanam.com&host=ip3.iranvatanam.com&alpn=h2%2Chttp%2F1.1&allowInsecure=1#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23152"
+      "address": "199.232.8.99",
+      "port": 443,
+      "latency_ms": 1.0,
+      "raw": "vless://98e13612-5400-54b2-951c-1abaf1406313@199.232.8.99:443?type=ws&encryption=none&host=joinbede.eliv2.io&path=%2FTEL%2C%40ELiV2RAY--TEL%2C%40ELiV2RAY&security=tls&sni=JOinBEDE.ELiV2.iO&alpn=h3%2Ch2&fp=random&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23152"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #153",
       "protocol": "vless",
-      "address": "167.99.80.91",
-      "port": 443,
-      "latency_ms": 1.3,
-      "raw": "vless://6202b230-417c-4d8e-b624-0f71afa9c75d@167.99.80.91:443?encryption=none&security=tls&sni=sni.111000.indevs.in&insecure=1&type=ws&host=sni.111000.indevs.in&path=%2F%3Fed%3D2560%26telegram%F0%9F%8E%96%40alixtso&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23153"
+      "address": "23.235.33.81",
+      "port": 80,
+      "latency_ms": 1.0,
+      "raw": "vless://Parsashonam-338@23.235.33.81:80?mode=auto&path=%2FParsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam&security=none&encryption=none&host=Free-V2ray-Bot-Parsashonam3.global.ssl.fastly.net&type=xhttp#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23153"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #154",
-      "protocol": "vmess",
-      "address": "198.41.203.6",
-      "port": 443,
-      "latency_ms": 1.3,
-      "raw": "vmess://eyJhZGQiOiAiMTk4LjQxLjIwMy42IiwgImFpZCI6IDAsICJob3N0IjogIjE5OC40MS4yMDMuNiIsICJpZCI6ICIyYjIxNDEyMi0xOTA2LTQyOGEtYmJiNy1hMDM5Y2JiN2NkNWMiLCAibmV0IjogIndzIiwgInBhdGgiOiAiLzlKWkZEVEtFIiwgInBvcnQiOiA0NDMsICJwcyI6ICLwn4e68J+HuCBtd3Jp8J+nmPCfj70gIzE1NCIsICJ0bHMiOiAidGxzIiwgInR5cGUiOiAiYXV0byIsICJzZWN1cml0eSI6ICJhdXRvIiwgInNraXAtY2VydC12ZXJpZnkiOiB0cnVlLCAic25pIjogIjE5OC40MS4yMDMuNiIsICJhbHBuIjogImgyLGh0dHAvMS4xIiwgImZwIjogImNocm9tZSIsICJhbGxvd0luc2VjdXJlIjogdHJ1ZX0="
+      "name": "🌐 mwri🧘🏽 #154",
+      "protocol": "vless",
+      "address": "ip4-fas.tyryqyserver.ir",
+      "port": 80,
+      "latency_ms": 1.1,
+      "raw": "vless://612fa38e-dbf2-491c-9417-a4187c25bda2@ip4-fas.tyryqyserver.ir:80?path=%2FV2ynpv-V2ynpv-V2ynpv-V2ynpv-V2ynpv&security=none&encryption=none&host=tamamde1.global.ssl.fastly.net&type=ws#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23154"
     },
     {
       "name": "🌐 mwri🧘🏽 #155",
-      "protocol": "vmess",
-      "address": "104.31.16.46",
-      "port": 80,
-      "latency_ms": 1.3,
-      "raw": "vmess://eyJhZGQiOiAiMTA0LjMxLjE2LjQ2IiwgImFpZCI6IDAsICJob3N0IjogIjEwNC4zMS4xNi40NiIsICJpZCI6ICI4YWJlOTQ5Ni01ZTI0LTRlNDktYjU2Ni1kY2Y4NjExNjAxN2QiLCAibmV0IjogIndzIiwgInBhdGgiOiAiL2k5OUxndlNhc2xic1BMTFFRN2o2WiIsICJwb3J0IjogODAsICJwcyI6ICLwn4yQIG13cmnwn6eY8J+PvSAjMTU1IiwgInRscyI6ICIiLCAidHlwZSI6ICJhdXRvIiwgInNlY3VyaXR5IjogImF1dG8iLCAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWUsICJzbmkiOiAiIn0="
+      "protocol": "vless",
+      "address": "zmaoz.faculty.ucdavis.edu",
+      "port": 443,
+      "latency_ms": 1.1,
+      "raw": "vless://Biain--ZEDMODEON@zmaoz.faculty.ucdavis.edu:443?path=%2F%40ZEDMODEON-ZEDMODEON-ZEDMODEON%40ZEDMODEON-ZEDMODEON-TEL-ZEDMODEON-ZEDMODEON-ZEDMODEON-%40ZEDMODEON%3Fed%3D2048&security=tls&encryption=none&host=karafarini.ir&type=ws&sni=zmaoz.faculty.ucdavis.edu&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23155"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #156",
-      "protocol": "vless",
-      "address": "104.17.163.123",
-      "port": 8443,
-      "latency_ms": 1.3,
-      "raw": "vless://83adcc98-ac23-4e51-9ae0-788a73fd9939@104.17.163.123:8443?security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=vjv62pggz1658fuliaf9lri7rra85l8utox0kjtogve4whop.zjde5.de5.net&fp=chrome&type=ws&allowInsecure=1&sni=vjv62pggz1658fuliaf9lri7rra85l8utox0kjtogve4whop.zjde5.de5.net#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23156"
+      "name": "🌐 mwri🧘🏽 #156",
+      "protocol": "ss",
+      "address": "series-a2.varzesh360.co",
+      "port": 443,
+      "latency_ms": 1.1,
+      "raw": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptcHMzRndtRGpMcldhT1Zn@series-a2.varzesh360.co:443#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23156"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #157",
+      "name": "🇪🇺 mwri🧘🏽 #157",
       "protocol": "vless",
-      "address": "199.232.196.193",
+      "address": "151.101.194.228",
       "port": 80,
-      "latency_ms": 1.3,
-      "raw": "vless://2637679c-e2fe-45a2-9962-e2ddf8469c29@199.232.196.193:80?mode=auto&path=%2F%3Fed%3D2048&security=none&encryption=none&host=Begaiiii.global.ssl.fastly.net&type=xhttp#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23157"
+      "latency_ms": 1.1,
+      "raw": "vless://3892bbba-bc4d-4c7d-b0b9-35cfeae6cae7@151.101.194.228:80?security=none&amp%3Btype=ws&amp%3Bhost=wWw.SpEeDtEsT.NeT.ZuLa.aIr.IkCoSaLeS.iR.D662599.v02.TzZLiMitTNeW.NeT&host=151.101.194.228#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23157"
     },
     {
-      "name": "🌐 mwri🧘🏽 #158",
+      "name": "🇪🇺 mwri🧘🏽 #158",
       "protocol": "vless",
-      "address": "fasty1.hamrahpath.ir",
-      "port": 80,
-      "latency_ms": 1.3,
-      "raw": "vless://aa827e3d-c12b-4097-87d3-2129bb249d21@fasty1.hamrahpath.ir:80?mode=auto&path=%2Fdownload&security=none&encryption=none&host=kir-to-filter-chiton.global.ssl.fastly.net&type=xhttp#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23158"
+      "address": "151.101.35.166",
+      "port": 443,
+      "latency_ms": 1.1,
+      "raw": "vless://dc21629c-73fb-490d-8994-7c29e0bfb377@151.101.35.166:443?mode=auto&path=%2Faociqwxgv%3Fed%3D2560&security=tls&alpn=h2&encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A%221000000%22%2C%22scMinPostsIntervalMs%22%3A%2230%22%2C%22xPaddingBytes%22%3A%22100-500%22%2C%22xmux%22%3A%7B%22maxConcurrency%22%3A%2216-32%22%7D%2C%22headers%22%3A%7B%22User-Agent%22%3A%22Mozilla%2F5.0%28Linux%3BAndroid10%3BK%29AppleWebKit%2F537.36%28KHTML%2ClikeGecko%29Chrome%2F123.0.0.0Safari%2F537.36%22%7D%7D&insecure=1&host=manmardetanhayeshabam.com&fp=chrome&type=xhttp&allowInsecure=1&sni=zmaoz.faculty.ucdavis.edu#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23158"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #159",
       "protocol": "vless",
-      "address": "104.21.17.104",
-      "port": 8880,
-      "latency_ms": 1.3,
-      "raw": "vless://ci49kfwjrc@104.21.17.104:8880?mode=auto&path=%2Fcompass%2Fcdn&security=none&encryption=none&host=ci49kfwjrc-57129121185.hediiigate.com&type=xhttp#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23159"
+      "address": "199.232.0.232",
+      "port": 80,
+      "latency_ms": 1.1,
+      "raw": "vless://25e3462a-5131-4a16-883c-82392f8a23e8@199.232.0.232:80?encryption=none&host=sos-llcofranging.ir&mode=auto&path=%40PuLaVPN%2C%40PuLaFreeBOT%2C&security=none&type=xhttp#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23159"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #160",
       "protocol": "vless",
-      "address": "140.248.131.123",
-      "port": 80,
-      "latency_ms": 1.3,
-      "raw": "vless://dd0cfef0-fda9-47ec-8a65-49d7bc004f82@140.248.131.123:80?path=%2F--Telegram---MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN&security=none&encryption=none&host=mitivpn3.global.ssl.fastly.net&type=ws#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23160"
-    },
-    {
-      "name": "🇺🇸 mwri🧘🏽 #161",
-      "protocol": "vmess",
-      "address": "104.21.88.226",
+      "address": "23.235.33.159",
       "port": 443,
-      "latency_ms": 1.3,
-      "raw": "vmess://eyJhZGQiOiAiMTA0LjIxLjg4LjIyNiIsICJhaWQiOiAiMCIsICJhbHBuIjogImh0dHAvMS4xIiwgImZwIjogImNocm9tZSIsICJob3N0IjogImdnZ2JuaC53d3c4OTA2MDQuZHBkbnMub3JnIiwgImlkIjogIjJiZmU1OGY3LWRhMWQtNDVkZi1hYjQzLTdjNjY1YjIwZWUyOSIsICJuYW1lIjogIvCfh7rwn4e4IFVTIDEzMyIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvdDFVVjRIU3J6YldHbUp0YkJobUtiOG5Pa2ciLCAicG9ydCI6IDQ0MywgInBzIjogIvCfh7rwn4e4IG13cmnwn6eY8J+PvSAjMTYxIiwgInNjeSI6ICJhdXRvIiwgInNuaSI6ICJnZ2dibmgud3d3ODkwNjA0LmRwZG5zLm9yZyIsICJ0bHMiOiAidGxzIiwgInR5cGUiOiBudWxsLCAidiI6IG51bGwsICJhbGxvd0luc2VjdXJlIjogdHJ1ZX0="
+      "latency_ms": 1.1,
+      "raw": "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@23.235.33.159:443?type=ws&encryption=none&host=en.mfa.gov.ir&path=%2FH%3Fed%3D2560&security=tls&sni=en.mfa.gov.ir&alpn=h2%2Chttp%2F1.1&fp=randomized&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23160"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #162",
-      "protocol": "vmess",
-      "address": "172.64.154.102",
-      "port": 443,
-      "latency_ms": 1.3,
-      "raw": "vmess://eyJhZGQiOiAiMTcyLjY0LjE1NC4xMDIiLCAiYWlkIjogMCwgImhvc3QiOiAiMTcyLjY0LjE1NC4xMDIiLCAiaWQiOiAiNWY2NGZhNjUtN2IxNC00OWM1LTk1NGQtYWExNWM2YmZjYWNkIiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi9kb25ndGFpd2FuZy5jb20iLCAicG9ydCI6IDQ0MywgInBzIjogIvCfh7rwn4e4IG13cmnwn6eY8J+PvSAjMTYyIiwgInNlY3VyaXR5IjogImF1dG8iLCAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWUsICJzbmkiOiAiMTcyLjY0LjE1NC4xMDIiLCAidGxzIjogInRscyIsICJ0eXBlIjogImF1dG8iLCAiYWxwbiI6ICJoMixodHRwLzEuMSIsICJmcCI6ICJjaHJvbWUiLCAiYWxsb3dJbnNlY3VyZSI6IHRydWV9"
-    },
-    {
-      "name": "🇦🇺 mwri🧘🏽 #163",
-      "protocol": "vmess",
-      "address": "203.30.191.7",
-      "port": 443,
-      "latency_ms": 1.3,
-      "raw": "vmess://eyJhZGQiOiAiMjAzLjMwLjE5MS43IiwgImFpZCI6IDAsICJob3N0IjogIm9wbGcxLmNmY2RuMi54eXoiLCAiaWQiOiAiYzVhMmQ3YjgtYmY4NC00Zjk3LTg1NzctYjliODdmMmJhYWY3IiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi9BVUlLTjhBVSIsICJwb3J0IjogNDQzLCAicHMiOiAi8J+HpvCfh7ogbXdyafCfp5jwn4+9ICMxNjMiLCAic2VjdXJpdHkiOiAiYXV0byIsICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwgInNuaSI6ICJvcGxnMS5jZmNkbjIueHl6IiwgInRscyI6ICJ0bHMiLCAidHlwZSI6ICJhdXRvIiwgImFscG4iOiAiaDIsaHR0cC8xLjEiLCAiZnAiOiAiY2hyb21lIiwgImFsbG93SW5zZWN1cmUiOiB0cnVlfQ=="
-    },
-    {
-      "name": "🌐 mwri🧘🏽 #164",
+      "name": "🌐 mwri🧘🏽 #161",
       "protocol": "vless",
-      "address": "hallllbadi.global.ssl.fastly.net",
+      "address": "104.156.85.202",
+      "port": 80,
+      "latency_ms": 1.1,
+      "raw": "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@104.156.85.202:80?type=ws&encryption=none&host=en.mfa.gov.ir&path=%40AZARBAYJAB1%40AZARBAYJAB1%40AZARBAYJAB1%40AZARBAYJAB1%3FED&security=none#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23161"
+    },
+    {
+      "name": "🌐 mwri🧘🏽 #162",
+      "protocol": "vless",
+      "address": "pinterest.com",
+      "port": 80,
+      "latency_ms": 1.1,
+      "raw": "vless://02263e1e-10d9-4340-a6f1-fe8a4dbe5dff@pinterest.com:80?path=%2Fcontainers%2Ffi&security=none&encryption=none&host=dojman.global.ssl.fastly.net&type=ws#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23162"
+    },
+    {
+      "name": "🇺🇸 mwri🧘🏽 #163",
+      "protocol": "vless",
+      "address": "140.248.128.40",
       "port": 443,
-      "latency_ms": 1.3,
-      "raw": "vless://0f7794ff-c024-4968-a6c7-6e44c7d188c7@hallllbadi.global.ssl.fastly.net:443?encryption=none&security=tls&sni=hallllbadi.global.ssl.fastly.net&fp=chrome&alpn=http%2F1.1&insecure=0&allowInsecure=1&type=ws&path=%2Fsite&host=hallllbadi.global.ssl.fastly.net#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23164"
+      "latency_ms": 1.1,
+      "raw": "vless://8522177a-de08-4e28-8d79-3302ad89b335@140.248.128.40:443?path=%2Fwst%3Fed%3D2056&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&host=parsianmobilebank.ir&fp=chrome&type=ws&sni=default.ssl.fastly.net&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23163"
+    },
+    {
+      "name": "🇪🇺 mwri🧘🏽 #164",
+      "protocol": "vless",
+      "address": "151.101.3.9",
+      "port": 80,
+      "latency_ms": 1.1,
+      "raw": "vless://484ac0c9-a9d6-4ab9-a811-e1a2a85d610f@151.101.3.9:80?encryption=none&security=none&type=xhttp&host=bpi5.global.ssl.fastly.net&path=%2FTelegram%40viturey%3Fed%3D2048&mode=auto#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23164"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #165",
       "protocol": "vless",
-      "address": "45.130.125.138",
-      "port": 2096,
-      "latency_ms": 1.3,
-      "raw": "vless://6202b230-417c-4d8e-b624-0f71afa9c75d@45.130.125.138:2096?path=%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2&security=tls&encryption=none&insecure=0&host=sni.111000.indevs.in&type=ws&allowInsecure=1&sni=sni.111000.indevs.in&alpn=h2%2Chttp%2F1.1&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23165"
+      "address": "199.232.198.133",
+      "port": 443,
+      "latency_ms": 1.1,
+      "raw": "vless://142e062f-475e-4484-8bd6-8386b246f366@199.232.198.133:443?security=tls&sni=www.speedrun.com&type=ws&host=vpngaming.ir&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23165"
     },
     {
       "name": "🌐 mwri🧘🏽 #166",
       "protocol": "vless",
-      "address": "188.244.122.136",
+      "address": "eco.nexun.ir",
       "port": 80,
-      "latency_ms": 1.3,
-      "raw": "vless://d5657005-94be-4198-80cf-f9a814bad404@188.244.122.136:80?note=---Telegram---%40NetifyVPN---Telegram---%40NetifyVPN---Telegram---%40NetifyVPN---Telegram---%40NetifyVPN---&type=xhttp&host=s2.utuvpn.org&path=dl%3Fed%3D2560&mode=auto&security=none&encryption=none#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23166"
+      "latency_ms": 1.1,
+      "raw": "vless://cfac6bb3-fb6e-4a1a-a0df-02a095269d86@eco.nexun.ir:80?mode=auto&path=%2FceoHTTP&security=none&encryption=none&host=ars.nexun.net&fp=chrome&type=xhttp#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23166"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #167",
       "protocol": "vless",
-      "address": "172.64.144.183",
-      "port": 2096,
-      "latency_ms": 1.3,
-      "raw": "vless://1a25f8ad-cad2-4e93-b5bf-34e42bcac02a@172.64.144.183:2096?security=tls&type=ws&path=%2F%3Fed%3D2560&host=sni.111000.cc.cd&sni=sni.111000.cc.cd&fp=chrome&encryption=none&alpn=h2%2Chttp%2F1.1&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23167"
+      "address": "199.232.79.135",
+      "port": 80,
+      "latency_ms": 1.1,
+      "raw": "vless://8edaa2ae-7c08-4370-93b5-a3c2637bad9d@199.232.79.135:80?mode=auto&amp%3Bpath=%2F&amp%3Bsecurity=none&amp%3Bencryption=mlkem768x25519plus.native.0rtt.AQyUbbOYcuQkbAymidfXiqxpfC8UsX1tnoyPE_ljFg0&amp%3Bhost=iranclicks23.global.ssl.fastly.net&amp%3Btype=xhttp&host=199.232.79.135&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23167"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #168",
+      "name": "🇪🇺 mwri🧘🏽 #168",
       "protocol": "vless",
-      "address": "104.21.51.145",
-      "port": 8443,
-      "latency_ms": 1.3,
-      "raw": "vless://ef23616d-8a9d-4b22-b2f5-9bda864de179@104.21.51.145:8443?path=%2Fassets%3Fed%3D2048&encryption=none&type=ws&host=index.arcane509.workers.dev&fp=chrome&ed=2560&eh=Sec-WebSocket-Protocol&security=tls&sni=INDEX.Arcane509.Workers.DEV&alpn=http%2F1.1&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23168"
+      "address": "151.101.131.1",
+      "port": 80,
+      "latency_ms": 1.1,
+      "raw": "vless://cefffd1d-cc58-4560-b4d1-44f1af528f30@151.101.131.1:80?security=none&type=ws&host=fraud.chase#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23168"
     },
     {
-      "name": "🇩🇪 mwri🧘🏽 #169",
+      "name": "🇺🇸 mwri🧘🏽 #169",
       "protocol": "vless",
-      "address": "162.159.141.243",
-      "port": 8080,
-      "latency_ms": 1.3,
-      "raw": "vless://871d8b36-5b36-4c69-80bd-83fdc0c93597@162.159.141.243:8080?type=httpupgrade&host=abrinew.abriabri.ir&path=%2FAbriVPN-AbriVPN-AbriVPN-AbriVPN-AbriVPN-AbriVPN-AbriVPN-AbriVPN-AbriVPN-AbriVPN-AbriVPN-AbriVPN-AbriVPN-AbriVPN-AbriVPN-AbriVPN-AbriVPN-AbriVPN-AbriVPN-AbriVPN-AbriVPN-AbriVPN-AbriVPN-AbriVPN&security=none#%F0%9F%87%A9%F0%9F%87%AA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23169"
+      "address": "167.82.1.105",
+      "port": 80,
+      "latency_ms": 1.1,
+      "raw": "vless://253ef561-9e57-4336-befd-878ddd30df01@167.82.1.105:80?type=ws&encryption=none&host=167.82.1.105&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23169"
     },
     {
       "name": "🌐 mwri🧘🏽 #170",
       "protocol": "vless",
-      "address": "asd.fastnew199.hosting-ip.com",
+      "address": "fast1.p31download.com",
       "port": 80,
-      "latency_ms": 1.3,
-      "raw": "vless://6570d7cc-0e3d-49c2-ae23-e8ff8425b79d@asd.fastnew199.hosting-ip.com:80?path=%2F%3Fed%3D2560&encryption=none&host=maxde22.global.ssl.fastly.net&type=xhttp&security=none#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23170"
+      "latency_ms": 1.1,
+      "raw": "vless://53e5c21b-9b0e-49d7-8917-e8fd5decb752@fast1.p31download.com:80?mode=auto&path=%2F&security=none&encryption=none&host=clinet-exo.ir&type=xhttp#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23170"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #171",
+      "name": "🇪🇺 mwri🧘🏽 #171",
       "protocol": "vless",
-      "address": "45.12.31.136",
-      "port": 2053,
-      "latency_ms": 1.3,
-      "raw": "vless://ee2bb495-2632-445b-b1f8-3c476a50b78b@45.12.31.136:2053?type=ws&encryption=none&host=dl1-pl-cdn.easy-upload.org&path=%2F&security=tls&sni=dl1-pl-cdn.easy-upload.org&alpn=h2%2Chttp%2F1.1&fp=random&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23171"
+      "address": "151.101.129.242",
+      "port": 80,
+      "latency_ms": 1.1,
+      "raw": "vless://a5934cc1-721a-45ca-9e4e-4abde093b1c5@151.101.129.242:80?security=none&type=xhttp&path=%2FphpMyAdmin%3Fq%3D%E4%B8%80%E4%BD%8D%E8%99%95%E5%A5%B3%E5%9C%A8%E5%AD%AB%E5%85%88%E7%94%9F%E7%9A%84%E8%BE%B2%E5%A0%B4%E5%B7%A5%E4%BD%9C%E3%80%82&host=xn--cr8haaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbcaabcdccdcdadccccad.global.ssl.fastly.net.&mode=auto&extra=%7B%22scMaxEachPostBytes%22%3A+1000000%2C+%22scMaxConcurrentPosts%22%3A+100%2C+%22scMinPostsIntervalMs%22%3A+30%2C+%22xPaddingBytes%22%3A+%22100-1000%22%2C+%22noGRPCHeader%22%3A+false%7D#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23171"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #172",
       "protocol": "vless",
-      "address": "167.82.0.9",
-      "port": 80,
-      "latency_ms": 1.3,
-      "raw": "vless://42f36835-730c-4ecc-9daf-20121ae7ba47@167.82.0.9:80?type=ws&encryption=none&host=167.82.0.9&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23172"
+      "address": "199.232.1.47",
+      "port": 443,
+      "latency_ms": 1.1,
+      "raw": "vless://621e8a54-2947-4a98-b0e0-f9048a426e34@199.232.1.47:443?type=ws&encryption=none&host=Elenav2ray.my.id&path=%2FVLESS%3Fed%3D2560&security=tls&sni=ELENaV2Ray.My.iD&fp=edge&alpn=h2%2Chttp%2F1.1&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23172"
     },
     {
-      "name": "🌐 mwri🧘🏽 #173",
+      "name": "🇺🇸 mwri🧘🏽 #173",
       "protocol": "vless",
-      "address": "pypi.org",
-      "port": 80,
-      "latency_ms": 1.3,
-      "raw": "vless://41563f48-2378-43dc-9938-47f211c58ff7@pypi.org:80?path=%2Fdownload&security=none&encryption=none&host=sAbzNeT.glObal.sSl.fasTly.nEt&type=ws#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23173"
+      "address": "199.232.8.62",
+      "port": 443,
+      "latency_ms": 1.1,
+      "raw": "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@199.232.8.62:443?type=ws&encryption=none&host=Sanjeshp.Ir&path=%2FH%3Fed%3D2560&security=tls&sni=Sanjeshp.Ir&alpn=h2%2Chttp%2F1.1&fp=randomized&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23173"
     },
     {
-      "name": "🌐 mwri🧘🏽 #174",
+      "name": "🇺🇸 mwri🧘🏽 #174",
       "protocol": "vless",
-      "address": "vpconnect1.pishipishi.pro",
+      "address": "199.232.76.150",
       "port": 80,
-      "latency_ms": 1.3,
-      "raw": "vless://vpn_connects@vpconnect1.pishipishi.pro:80?security=none&type=ws&path=%2Fvpn_connects&host=vpconnect.pishipishi1.pro&encryption=none#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23174"
+      "latency_ms": 1.1,
+      "raw": "vless://8edaa2ae-7c08-4370-93b5-a3c2637bad9d@199.232.76.150:80?mode=auto&path=%2F&security=none&encryption=mlkem768x25519plus.native.0rtt.AQyUbbOYcuQkbAymidfXiqxpfC8UsX1tnoyPE_ljFg0&host=iranclicks23.global.ssl.fastly.net&type=xhttp#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23174"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #175",
       "protocol": "vless",
-      "address": "140.248.133.204",
+      "address": "199.232.0.0",
       "port": 443,
-      "latency_ms": 1.3,
-      "raw": "vless://1db3fcb8-0609-4bdd-9091-3c1352bb1e4f@140.248.133.204:443?path=%2Fwst%3Fed%3D2056&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&insecure=0&host=parsianmobilebank.ir&fp=chrome&type=ws&allowInsecure=1&sni=default.ssl.fastly.net#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23175"
+      "latency_ms": 1.1,
+      "raw": "vless://8ff9fb56-a63c-5ec8-a4ac-3be008369bfd@199.232.0.0:443?type=ws&encryption=none&host=channel-id-eliv2ray.net&path=%2F%3Fed%3D2048&security=tls&sni=ChaNnel-iD-ELiV2rAY.nEt&fp=edge&alpn=h2%2Chttp%2F1.1&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23175"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #176",
+      "name": "🇺🇸 mwri🧘🏽 #176",
       "protocol": "vless",
-      "address": "151.101.66.219",
-      "port": 443,
-      "latency_ms": 1.3,
-      "raw": "vless://5f0c9583-7dab-4288-908f-9fa86b82d0bc@151.101.66.219:443?security=tls&amp%3Bsni=speedtest.net&amp%3Btype=ws&amp%3Bhost=kingstore.ir&amp%3Bpath=Join%3A%40oPeTa_v2ray-telegram%3A%40oPeTa_v2ray-join-chanel%3A%40oPeTa_v2ray-join%3A%40opeta_v2ray-telegram%3A%40opeta_v2ray%2F%3Fed%3D1024&amp%3Bfp=chrome&amp%3Balpn=h2%2Chttp%2F1.1&host=151.101.66.219&sni=151.101.66.219&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23176"
-    },
-    {
-      "name": "🇺🇸 mwri🧘🏽 #177",
-      "protocol": "vless",
-      "address": "140.248.152.37",
+      "address": "199.232.0.100",
       "port": 80,
-      "latency_ms": 1.3,
-      "raw": "vless://31c48574-6f81-4dc5-a723-a2de16ee44f2@140.248.152.37:80?path=%2F&encryption=none&host=TRCLOAKNET.global.ssl.fastly.net&type=ws&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23177"
+      "latency_ms": 1.1,
+      "raw": "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@199.232.0.100:80?type=ws&encryption=none&host=IRANINGOAT.IR&path=%2F7qJzyVWj0ybhGdPg&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23176"
+    },
+    {
+      "name": "🌐 mwri🧘🏽 #177",
+      "protocol": "vless",
+      "address": "104.156.81.79",
+      "port": 80,
+      "latency_ms": 1.1,
+      "raw": "vless://5a1d2c0c-abfa-4050-918f-bfab3eaee62a@104.156.81.79:80?type=ws&host=adspeedx23.global.ssl.fastly.net&path=%2F%3Fed%3D&security=none#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23177"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #178",
       "protocol": "vless",
-      "address": "140.248.129.58",
-      "port": 80,
-      "latency_ms": 1.3,
-      "raw": "vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@140.248.129.58:80?type=ws&encryption=none&host=Channel-VPNCUSTOMIZE.ir&path=%2FTelegram-VPNCUSTOMIZE--VPNCUSTOMIZE%3Fed2048&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23178"
+      "address": "199.232.79.58",
+      "port": 443,
+      "latency_ms": 1.1,
+      "raw": "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@199.232.79.58:443?type=ws&encryption=none&host=VPELEN.Com&security=tls&sni=JOIN.TG.VPELEN.Com&fp=safari&alpn=h2%2Chttp%2F1.1&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23178"
     },
     {
       "name": "🇪🇺 mwri🧘🏽 #179",
       "protocol": "vless",
-      "address": "151.101.1.124",
+      "address": "151.101.193.6",
       "port": 80,
-      "latency_ms": 1.3,
-      "raw": "vless://f149f3ea-ac0f-4e29-8db2-89d57b4f6eac@151.101.1.124:80?type=ws&path=%2F&host=danuwazero.com&encryption=none&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23179"
+      "latency_ms": 1.1,
+      "raw": "vless://271d139e-b41b-5338-b306-32f66450140b@151.101.193.6:80?type=ws&encryption=none&host=PABLOO-MOSTAFA.COM&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23179"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #180",
       "protocol": "vless",
-      "address": "167.82.99.180",
-      "port": 80,
-      "latency_ms": 1.3,
-      "raw": "vless://42f36835-730c-4ecc-9daf-20121ae7ba47@167.82.99.180:80?type=tcp&encryption=none&host=167.82.99.180&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23180"
+      "address": "199.232.0.55",
+      "port": 443,
+      "latency_ms": 1.1,
+      "raw": "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@199.232.0.55:443?type=ws&encryption=none&host=Sanjeshp.Ir&path=%2FH%3Fed%3D2560&security=tls&sni=Sanjeshp.Ir&alpn=h2%2Chttp%2F1.1&fp=randomized&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23180"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #181",
       "protocol": "vless",
-      "address": "23.235.37.79",
-      "port": 80,
-      "latency_ms": 1.3,
-      "raw": "vless://ed746e5d-185b-400a-a2e2-0ae0b2fefcd9@23.235.37.79:80?mode=auto&path=%2F&security=none&encryption=none&host=oryzopanel369.com&type=xhttp#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23181"
+      "address": "199.232.0.1",
+      "port": 443,
+      "latency_ms": 1.1,
+      "raw": "vless://c6d299d4-db0b-4444-8b56-b23bbdcbcd67@199.232.0.1:443?type=ws&encryption=none&host=imdiana.net&path=%2FFreedomToDream%3Fed%3D2560&security=tls&sni=cloudflare.com&fp=randomized&alpn=h2%2Chttp%2F1.1&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23181"
     },
     {
       "name": "🌐 mwri🧘🏽 #182",
       "protocol": "vless",
-      "address": "172.187.200.28",
+      "address": "swmrx.global.ssl.fastly.net",
       "port": 443,
-      "latency_ms": 1.3,
-      "raw": "vless://5a2c16f9-e365-4080-8d38-6924c3835586@172.187.200.28:443?encryption=none&security=tls&sni=snippets.kkii.eu.org&type=ws&host=snippets.kkii.eu.org&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3WangCai2&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23182"
+      "latency_ms": 1.1,
+      "raw": "vless://251c716e-d100-5f65-dbef-eed4fc2b3ec2@swmrx.global.ssl.fastly.net:443?path=%2FMarzbanix%3Fed%3D2048&security=tls&alpn=h3%2Ch2%2Chttp%2F1.1&encryption=none&insecure=0&host=Swmrx.global.ssl.fastly.net&fp=randomized&type=ws&allowInsecure=1&sni=Swmrx.global.ssl.fastly.net#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23182"
     },
     {
-      "name": "🇪🇺 mwri🧘🏽 #183",
+      "name": "🇺🇸 mwri🧘🏽 #183",
       "protocol": "vless",
-      "address": "188.114.98.0",
-      "port": 2096,
-      "latency_ms": 1.4,
-      "raw": "vless://6202b230-417c-4d8e-b624-0f71afa9c75d@188.114.98.0:2096?path=%2F%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2&security=tls&encryption=none&insecure=0&host=sni.111000.indevs.in&type=ws&allowInsecure=1&sni=sni.111000.indevs.in&alpn=h2%2Chttp%2F1.1&fp=chrome#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23183"
-    },
-    {
-      "name": "🌐 mwri🧘🏽 #184",
-      "protocol": "vless",
-      "address": "miltering.global.ssl.fastly.net",
+      "address": "23.235.33.157",
       "port": 443,
-      "latency_ms": 1.4,
-      "raw": "vless://f50407c6-f465-4a6b-8a28-bbef97c4b308@miltering.global.ssl.fastly.net:443?type=ws&host=miltering.global.ssl.fastly.net&path=%2Fdownload&security=tls&fp=chrome&sni=miltering.global.ssl.fastly.net&alpn=http%2F1.1&allowInsecure=1#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23184"
+      "latency_ms": 1.1,
+      "raw": "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@23.235.33.157:443?security=tls&sni=behdasht.hrtc.ir&type=ws&host=behdasht.hrtc.ir&path=%2FH%3Fed%3D2560&fp=randomized&alpn=h2%2Chttp%2F1.1&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23183"
     },
     {
-      "name": "🌐 mwri🧘🏽 #185",
+      "name": "🇪🇺 mwri🧘🏽 #184",
       "protocol": "vless",
-      "address": "discord.gg",
-      "port": 80,
-      "latency_ms": 1.4,
-      "raw": "vless://-DIGiV2RAY@discord.gg:80?path=%2FDigiv2ray-&security=none&encryption=none&host=%C3%A6d%C3%ADg%C3%AD.RadioTeHran.oRG.&type=ws#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23185"
+      "address": "151.101.131.6",
+      "port": 443,
+      "latency_ms": 1.1,
+      "raw": "vless://9da7c06a-1a37-4157-aa70-b5f410e714cb@151.101.131.6:443?mode=auto&path=%2F&security=tls&alpn=h3&encryption=none&extra=%7B%22scMaxEachPostBytes%22%3A&host=151.101.131.6&sni=151.101.131.6&fp=chrome&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23184"
+    },
+    {
+      "name": "🇺🇸 mwri🧘🏽 #185",
+      "protocol": "vless",
+      "address": "199.232.8.168",
+      "port": 443,
+      "latency_ms": 1.1,
+      "raw": "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@199.232.8.168:443?type=ws&encryption=none&host=Sanjeshp.Ir&path=%2FH%3Fed%3D2560&security=tls&sni=Sanjeshp.Ir&alpn=h2%2Chttp%2F1.1&fp=randomized&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23185"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #186",
-      "protocol": "vmess",
-      "address": "172.64.149.182",
-      "port": 8080,
-      "latency_ms": 1.4,
-      "raw": "vmess://eyJ2IjogIjIiLCAicHMiOiAi8J+HuvCfh7ggbXdyafCfp5jwn4+9ICMxODYiLCAiYWRkIjogIjE3Mi42NC4xNDkuMTgyIiwgInBvcnQiOiAiODA4MCIsICJ0eXBlIjogIm5vbmUiLCAiaWQiOiAibmFzbmV0IiwgImFpZCI6ICIwIiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi9uYXNuZXQvY2RuIiwgImhvc3QiOiAibmFzbmV0LTU3MTI5NjQxMDIuc2hhcmdoZGFpbHkuY28iLCAidGxzIjogIiJ9"
+      "protocol": "vless",
+      "address": "23.235.37.79",
+      "port": 80,
+      "latency_ms": 1.1,
+      "raw": "vless://c1a0341e-ae00-44f8-8033-6bcab44fc357@23.235.37.79:80?encryption=none&host=23.235.37.79&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23186"
     },
     {
       "name": "🌐 mwri🧘🏽 #187",
       "protocol": "vless",
-      "address": "zmaoz.faculty.ucdavis.edu",
-      "port": 443,
-      "latency_ms": 1.4,
-      "raw": "vless://Biain--ZEDMODEON@zmaoz.faculty.ucdavis.edu:443?path=%2F%40ZEDMODEON-ZEDMODEON-ZEDMODEON%40ZEDMODEON-ZEDMODEON-TEL-ZEDMODEON-ZEDMODEON-ZEDMODEON-%40ZEDMODEON%3Fed%3D2048&security=tls&encryption=none&host=karafarini.ir&type=ws&sni=zmaoz.faculty.ucdavis.edu&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23187"
+      "address": "api.musiciraniafc4.ir",
+      "port": 80,
+      "latency_ms": 1.2,
+      "raw": "vless://97df9c11-68da-4223-883d-6fec0b256696@api.musiciraniafc4.ir:80?path=%2F&security=none&encryption=none&host=okpan3music.global.ssl.fastly.net&type=ws#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23187"
     },
     {
-      "name": "🌐 mwri🧘🏽 #188",
+      "name": "🇪🇺 mwri🧘🏽 #188",
+      "protocol": "vless",
+      "address": "151.101.130.216",
+      "port": 80,
+      "latency_ms": 1.2,
+      "raw": "vless://217b48d6-5dac-4662-9a8c-aa76e92a7cfe@151.101.130.216:80?security=none&amp%3Btype=ws&amp%3Bhost=befreewithus.com&amp%3Bpath=ws%2F%3Fed%3D2048&host=151.101.130.216#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23188"
+    },
+    {
+      "name": "🌐 mwri🧘🏽 #189",
       "protocol": "ss",
-      "address": "admin.c2.havij.co",
+      "address": "series-a2.samanehha.co",
       "port": 443,
-      "latency_ms": 1.4,
-      "raw": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprYVFIM2hHZGNQODBYRURJ@admin.c2.havij.co:443#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23188"
+      "latency_ms": 1.2,
+      "raw": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB@series-a2.samanehha.co:443#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23189"
     },
     {
-      "name": "🇩🇪 mwri🧘🏽 #189",
+      "name": "🌐 mwri🧘🏽 #190",
       "protocol": "vless",
-      "address": "5.10.246.238",
-      "port": 2096,
-      "latency_ms": 1.4,
-      "raw": "vless://6202b230-417c-4d8e-b624-0f71afa9c75d@5.10.246.238:2096?path=%2F%3Fed%3D2560%26telegram%F0%9F%87%A8%F0%9F%87%B3+%40wangcai2&security=tls&encryption=none&host=sni.jpmj.dev&type=ws&sni=sni.jpmj.dev&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%A9%F0%9F%87%AA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23189"
+      "address": "ir.fast.hosting-ip.com",
+      "port": 80,
+      "latency_ms": 1.2,
+      "raw": "vless://TELEGRAM-NUFiLTER-8@ir.fast.hosting-ip.com:80?path=%2Ftelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%3Fed%3D1024&encryption=none&host=looaajboijji.global.ssl.fastly.net&type=ws&security=none#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23190"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #190",
+      "name": "🇪🇺 mwri🧘🏽 #191",
       "protocol": "vless",
-      "address": "104.16.9.245",
+      "address": "151.101.2.133",
       "port": 443,
-      "latency_ms": 1.4,
-      "raw": "vless://bd196116-c3c4-4737-8e4f-4db7a12de2e6@104.16.9.245:443?security=tls&type=ws&host=pub.113299.xyz&fp=chrome&sni=pub.113299.xyz&path=%2F%3Fed%3D2560&encryption=none&alpn=h2%2Chttp%2F1.1&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23190"
+      "latency_ms": 1.2,
+      "raw": "vless://c8ff1adb-a3d7-4727-a987-957a80babfcc@151.101.2.133:443?type=ws&encryption=none&host=vistapcit.com&path=%2F%40vistav2ray---%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vist&security=tls&sni=live.theworldwidewolf.com&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23191"
     },
     {
-      "name": "🇺🇸 mwri🧘🏽 #191",
+      "name": "🇺🇸 mwri🧘🏽 #192",
       "protocol": "vless",
-      "address": "108.162.198.154",
+      "address": "167.82.97.5",
       "port": 443,
-      "latency_ms": 1.4,
-      "raw": "vless://d89d6641-3b1a-4f51-a194-9c9109fd21b6@108.162.198.154:443?path=%2Ffp%3Dchrome&security=tls&encryption=none&host=DiprOX.pages.DEV&fp=chrome&type=ws&sni=DiprOX.pages.DEV&alpn=h2%2Chttp%2F1.1&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23191"
-    },
-    {
-      "name": "🌐 mwri🧘🏽 #192",
-      "protocol": "vless",
-      "address": "hd.pelatiposi.info",
-      "port": 2087,
-      "latency_ms": 1.4,
-      "raw": "vless://e999db7a-1b17-4da6-bc37-c9fa24af2e93@hd.pelatiposi.info:2087?alpn=h3h2&encryption=none&security=tls&sni=splash.VaRtAlReX.iNfO&type=grpc&host=hd.pelatiposi.info&fp=chrome&allowInsecure=1#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23192"
+      "latency_ms": 1.2,
+      "raw": "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@167.82.97.5:443?type=tcp&encryption=none&security=tls&host=167.82.97.5&sni=167.82.97.5&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23192"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #193",
-      "protocol": "trojan",
-      "address": "104.18.32.47",
-      "port": 443,
-      "latency_ms": 1.4,
-      "raw": "trojan://humanity@104.18.32.47:443?type=ws&host=www.multiplydose.com&path=%2Fassignment&security=tls&sni=www.multiplydose.com&allowInsecure=1&alpn=h2%2Chttp%2F1.1&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23193"
-    },
-    {
-      "name": "🇺🇸 mwri🧘🏽 #194",
       "protocol": "vless",
-      "address": "172.67.153.156",
-      "port": 8443,
-      "latency_ms": 1.4,
-      "raw": "vless://57ba2ab1-a283-42eb-82ee-dc3561a805b8@172.67.153.156:8443?type=ws&encryption=none&host=ovhwuxian.pai50288.uk&path=%2F57ba2ab1&security=tls&sni=ovhwuxian.pai50288.uk&alpn=h2%2Chttp%2F1.1&fp=chrome&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23194"
-    },
-    {
-      "name": "🌐 mwri🧘🏽 #195",
-      "protocol": "ss",
-      "address": "57.129.140.88",
-      "port": 8388,
-      "latency_ms": 1.4,
-      "raw": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMXY1ZzlGZWZkb08@57.129.140.88:8388#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23195"
-    },
-    {
-      "name": "🇪🇺 mwri🧘🏽 #196",
-      "protocol": "trojan",
-      "address": "188.114.98.0",
-      "port": 443,
-      "latency_ms": 1.4,
-      "raw": "trojan://humanity@188.114.98.0:443?path=%2Fassignment&security=tls&insecure=1&fp=chrome&type=ws&allowInsecure=1&sni=www.multiplydose.com&alpn=h2%2Chttp%2F1.1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23196"
-    },
-    {
-      "name": "🇪🇺 mwri🧘🏽 #197",
-      "protocol": "vless",
-      "address": "151.101.194.133",
+      "address": "167.82.99.180",
       "port": 80,
-      "latency_ms": 1.4,
-      "raw": "vless://560a0f6c-9057-4d18-b88f-6512c2568481@151.101.194.133:80?security=none&amp%3Btype=ws&amp%3Bhost=Morchechi.ir&amp%3Bpath=%2Ftelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%2Ctelegram-NUFiLTER%3Fed%3D2048&host=151.101.194.133#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23197"
+      "latency_ms": 1.2,
+      "raw": "vless://42f36835-730c-4ecc-9daf-20121ae7ba47@167.82.99.180:80?type=tcp&encryption=none&host=167.82.99.180&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23193"
     },
     {
-      "name": "🌐 mwri🧘🏽 #198",
-      "protocol": "vmess",
-      "address": "kampong.org",
+      "name": "🌐 mwri🧘🏽 #194",
+      "protocol": "vless",
+      "address": "104.156.85.79",
       "port": 443,
-      "latency_ms": 1.4,
-      "raw": "vmess://eyJhZGQiOiAia2FtcG9uZy5vcmciLCAiYWlkIjogMSwgImhvc3QiOiAia2FtcG9uZy5vcmciLCAiaWQiOiAiMDNmY2M2MTgtYjkzZC02Nzk2LTZhZWQtOGEzOGM5NzVkNTgxIiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi8iLCAicG9ydCI6IDQ0MywgInBzIjogIvCfjJAgbXdyafCfp5jwn4+9ICMxOTgiLCAidGxzIjogInRscyIsICJ0eXBlIjogImF1dG8iLCAic2VjdXJpdHkiOiAiYXV0byIsICJza2lwLWNlcnQtdmVyaWZ5IjogZmFsc2UsICJzbmkiOiAia2FtcG9uZy5vcmciLCAiYWxwbiI6ICJoMixodHRwLzEuMSIsICJmcCI6ICJjaHJvbWUiLCAiYWxsb3dJbnNlY3VyZSI6IHRydWV9"
+      "latency_ms": 1.2,
+      "raw": "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@104.156.85.79:443?type=ws&encryption=none&host=en.mfa.gov.ir&path=%2FH%3Fed%3D2560&security=tls&sni=en.mfa.gov.ir&alpn=h2%2Chttp%2F1.1&fp=randomized&allowInsecure=1#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23194"
+    },
+    {
+      "name": "🇪🇺 mwri🧘🏽 #195",
+      "protocol": "vless",
+      "address": "151.101.130.228",
+      "port": 80,
+      "latency_ms": 1.2,
+      "raw": "vless://5f301020-9b83-493f-94a9-75fb761ef0d3@151.101.130.228:80?type=ws&encryption=none&host=wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v25.drlimit.net&path=%2F&security=none#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23195"
+    },
+    {
+      "name": "🇺🇸 mwri🧘🏽 #196",
+      "protocol": "vless",
+      "address": "23.235.33.114",
+      "port": 443,
+      "latency_ms": 1.2,
+      "raw": "vless://89b3cbba-e6ac-485a-9481-976a0415eab9@23.235.33.114:443?type=ws&encryption=none&host=en.mfa.gov.ir&path=%2FH%3Fed%3D2560&security=tls&sni=en.mfa.gov.ir&alpn=h2%2Chttp%2F1.1&fp=randomized&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23196"
+    },
+    {
+      "name": "🌐 mwri🧘🏽 #197",
+      "protocol": "vless",
+      "address": "mitivpndozd.global.ssl.fastly.net",
+      "port": 443,
+      "latency_ms": 1.2,
+      "raw": "vless://a9bac46a-2037-4ad1-a192-08c70927f4ad@mitivpndozd.global.ssl.fastly.net:443?encryption=none&type=ws&host=mitivpndozd.global.ssl.fastly.net&path=%2Fcontainers%2Ffi&security=tls&fp=chrome&sni=mitivpndozd.global.ssl.fastly.net&alpn=http%2F1.1&allowInsecure=1#%F0%9F%8C%90%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23197"
+    },
+    {
+      "name": "🇪🇺 mwri🧘🏽 #198",
+      "protocol": "vless",
+      "address": "151.101.130.132",
+      "port": 443,
+      "latency_ms": 1.2,
+      "raw": "vless://2ed001df-c508-4d54-8baa-8f12cf140fa6@151.101.130.132:443?security=tls&sni=pscresearch.faculty.ucdavis.edu&type=ws&host=vistapardisgmae.ir&path=%2F%40vistav2ray---%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vistav2ray----%40vist&fp=chrome&alpn=h2%2Chttp%2F1.1&allowInsecure=1#%F0%9F%87%AA%F0%9F%87%BA%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23198"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #199",
-      "protocol": "vmess",
-      "address": "104.21.6.201",
-      "port": 443,
-      "latency_ms": 1.4,
-      "raw": "vmess://eyJhZGQiOiAiMTA0LjIxLjYuMjAxIiwgImFpZCI6IDAsICJob3N0IjogImhrbmJ5aXZmZmZqLnNpdGUiLCAiaWQiOiAiZDEzZmMyZjUtM2UwNS00Nzk1LTgxZWItNDQxNDNhMDllNTUyIiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi9yYnFxdndzIiwgInBvcnQiOiA0NDMsICJwcyI6ICLwn4e68J+HuCBtd3Jp8J+nmPCfj70gIzE5OSIsICJ0bHMiOiAidGxzIiwgInR5cGUiOiAiYXV0byIsICJzZWN1cml0eSI6ICJhdXRvIiwgInNraXAtY2VydC12ZXJpZnkiOiBmYWxzZSwgInNuaSI6ICJoa25ieWl2ZmZmai5zaXRlIiwgImFscG4iOiAiaDIsaHR0cC8xLjEiLCAiZnAiOiAiY2hyb21lIiwgImFsbG93SW5zZWN1cmUiOiB0cnVlfQ=="
+      "protocol": "vless",
+      "address": "199.232.193.57",
+      "port": 80,
+      "latency_ms": 1.2,
+      "raw": "vless://698e1d97-0594-481d-8d97-f5f6f46aa32d@199.232.193.57:80?type=ws&encryption=none&host=virav2ray-alsjddhkasdasdkaslj.com&path=ViraV2ray%2F%3Fed%3D2560&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23199"
     },
     {
       "name": "🇺🇸 mwri🧘🏽 #200",
-      "protocol": "vmess",
-      "address": "172.67.216.97",
-      "port": 2095,
-      "latency_ms": 1.4,
-      "raw": "vmess://eyJhZGQiOiAiMTcyLjY3LjIxNi45NyIsICJhaWQiOiAwLCAiaG9zdCI6ICIxNzIuNjcuMjE2Ljk3IiwgImlkIjogIjQxN2QyN2ZiLWNiOTMtM2JkOC05YmY3LTcxY2Q5MTMxOTgyMSIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvaGdjZWZvbW4iLCAicG9ydCI6IDIwOTUsICJwcyI6ICLwn4e68J+HuCBtd3Jp8J+nmPCfj70gIzIwMCIsICJ0bHMiOiAiIiwgInR5cGUiOiAiYXV0byIsICJzZWN1cml0eSI6ICJhdXRvIiwgInNraXAtY2VydC12ZXJpZnkiOiB0cnVlLCAic25pIjogIiJ9"
+      "protocol": "vless",
+      "address": "167.82.102.107",
+      "port": 80,
+      "latency_ms": 1.2,
+      "raw": "vless://42f36835-730c-4ecc-9daf-20121ae7ba47@167.82.102.107:80?type=ws&encryption=none&host=edge.validbv3528.ir&path=%2F&security=none#%F0%9F%87%BA%F0%9F%87%B8%20mwri%F0%9F%A7%98%F0%9F%8F%BD%20%23200"
     }
   ]
 }
