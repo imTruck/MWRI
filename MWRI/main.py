@@ -38,7 +38,7 @@ class Config:
                 params = dict(urllib.parse.parse_qsl(parsed.query))
                 self.sni = params.get("sni", params.get("host", self.address))
                 security = params.get("security", "").lower()
-                self.use_tls = security in ["tls", "xtls", "reality"] or self.port in [443, 2083, 8443]
+                self.use_tls = security in ["tls", "xtls", "reality"] or self.port in TARGET_PORTS
                 self.is_cdn = params.get("type", "").lower() in ["ws", "grpc", "httpupgrade", "splithttp"]
                 
             elif self.raw.startswith("vmess://"):
@@ -51,7 +51,7 @@ class Config:
                 self.port = int(data.get("port", 0))
                 self.sni = data.get("sni", data.get("host", self.address))
                 tls_val = str(data.get("tls", "")).lower()
-                self.use_tls = tls_val in ["tls", "reality"] or self.port in [443, 2083, 8443]
+                self.use_tls = tls_val in ["tls", "reality"] or self.port in TARGET_PORTS
                 self.is_cdn = str(data.get("net", "")).lower() in ["ws", "grpc", "httpupgrade", "splithttp"]
         except:
             pass
@@ -68,7 +68,6 @@ def test_config(config):
         start = time.perf_counter()
         sock.connect((config.address, config.port))
         
-        # فقط اگر کانفیگ TLS دارد تست هندشیک انجام شود، در غیر این صورت اتصال TCP کافیست
         if config.use_tls:
             context = ssl.create_default_context()
             context.check_hostname = False
@@ -86,6 +85,16 @@ def test_config(config):
         config.is_alive = False
     return config
 
+def write_sub_files(configs, plain_path, b64_path):
+    # ذخیره متنی عادی
+    with open(plain_path, "w", encoding="utf-8") as f:
+        for c in configs:
+            f.write(c + "\n")
+    # ذخیره بیس ۶۴
+    b64_data = base64.b64encode(("\n".join(configs)).encode("utf-8")).decode("utf-8")
+    with open(b64_path, "w", encoding="utf-8") as f:
+        f.write(b64_data)
+
 def main():
     import requests
     
@@ -100,19 +109,24 @@ def main():
         logger.error(f"Download failed: {e}")
         return
 
-    # 2. Parse (بدون فیلتر سخت‌گیرانه TLS/CDN)
+    # 2. Parse & Filter SNIs
     configs = []
+    blocked_keywords = ["workers.dev", "pages.dev", "github.com", "githubusercontent.com"]
+    
     for line in raw_lines:
         c = Config(line)
         if c.protocol in ["vless", "vmess"] and c.address:
-            # حذف آی‌پی‌های مستقیم در مرحله اولیه برای افزایش کیفیت دامنه‌ها
-            if not c.address[0].isdigit():
-                configs.append(c)
+            if c.address[0].isdigit():
+                continue
+            is_blocked = any(keyword in c.sni.lower() for keyword in blocked_keywords)
+            if is_blocked:
+                continue
+            configs.append(c)
             
-    logger.info(f"Parsed {len(configs)} VLESS/VMESS configs.")
+    logger.info(f"Parsed {len(configs)} clean configs (blocked domains excluded).")
 
-    # 3. High-Speed Test (500 Workers)
-    logger.info("Testing with 500 workers (TCP & TLS Handshake Test)...")
+    # 3. High-Speed Test
+    logger.info("Testing with 500 workers...")
     tested_configs = []
     with ThreadPoolExecutor(max_workers=500) as executor:
         futures = {executor.submit(test_config, c): c for c in configs}
@@ -121,35 +135,25 @@ def main():
 
     alive_configs = [c for c in tested_configs if c.is_alive]
     alive_configs.sort(key=lambda x: x.latency)
-    logger.info(f"Total Alive configs: {len(alive_configs)} / {len(configs)}")
+    logger.info(f"Total Alive: {len(alive_configs)} / {len(configs)}")
 
     if not alive_configs:
         logger.warning("No alive configs found!")
         return
 
-    # --- بخش اول: تفکیک و انتخاب ۱۵۰ کانفیگ مستقیم (غیر کلودفلر) ---
-    # ترجیحاً کانفیگ‌هایی که CDN نیستند (مثل Reality یا TCP مستقیم)
+    # ================= SUB 1: DIRECT CONFIGS (NON-CF) =================
+    logger.info("Generating Sub 1: Direct (Non-Cloudflare)...")
     direct_candidates = [c for c in alive_configs if not c.is_cdn]
-    # اگر کاندیدای دایرکت کم بود، از بقیه کانفیگ‌های زنده پر کن
-    if len(direct_candidates) < 150:
-        logger.info(f"Direct candidates: {len(direct_candidates)}. Filling remaining from other alive nodes...")
-        used_raws = {c.raw for c in direct_candidates}
-        for c in alive_configs:
-            if c.raw not in used_raws and len(direct_candidates) < 150:
-                direct_candidates.append(c)
-                used_raws.add(c.raw)
-                
-    direct_configs = []
+    direct_final = []
     for idx, c in enumerate(direct_candidates[:150]):
-        # زیباسازی نام کانفیگ‌های دایرکت
         name = f"{PREFIX}Direct-{idx+1}"
         if c.protocol == "vless":
             try:
                 parsed = urllib.parse.urlparse(c.raw)
                 params = dict(urllib.parse.parse_qsl(parsed.query))
                 new_raw = f"vless://{parsed.username}@{parsed.hostname}:{parsed.port}?" + urllib.parse.urlencode(params) + f"#{name}"
-                direct_configs.append(new_raw)
-            except: direct_configs.append(c.raw)
+                direct_final.append(new_raw)
+            except: direct_final.append(c.raw)
         elif c.protocol == "vmess":
             try:
                 b64 = c.raw.replace("vmess://", "")
@@ -158,20 +162,44 @@ def main():
                 data = json.loads(base64.b64decode(b64).decode("utf-8", errors="ignore"))
                 data["ps"] = name
                 new_raw = "vmess://" + base64.b64encode(json.dumps(data, ensure_ascii=False).encode("utf-8")).decode("utf-8")
-                direct_configs.append(new_raw)
-            except: direct_configs.append(c.raw)
+                direct_final.append(new_raw)
+            except: direct_final.append(c.raw)
+            
+    write_sub_files(direct_final, "output/direct.txt", "output/direct_sub.txt")
+    logger.info(f"[+] Saved {len(direct_final)} Direct configs.")
 
-    # ذخیره کانفیگ‌های دایرکت
-    with open("output/direct.txt", "w", encoding="utf-8") as f:
-        for c in direct_configs:
-            f.write(c + "\n")
-    logger.info(f"Saved {len(direct_configs)} Direct (non-CF) configs to output/direct.txt")
+    # ================= SUB 2: CDN CONFIGS (ORIGINAL SNI) =================
+    logger.info("Generating Sub 2: Cloudflare CDN (Original Domain)...")
+    cdn_candidates = [c for c in alive_configs if c.is_cdn]
+    cdn_final = []
+    for idx, c in enumerate(cdn_candidates[:150]):
+        name = f"{PREFIX}CDN-{idx+1}"
+        if c.protocol == "vless":
+            try:
+                parsed = urllib.parse.urlparse(c.raw)
+                params = dict(urllib.parse.parse_qsl(parsed.query))
+                new_raw = f"vless://{parsed.username}@{parsed.hostname}:{parsed.port}?" + urllib.parse.urlencode(params) + f"#{name}"
+                cdn_final.append(new_raw)
+            except: cdn_final.append(c.raw)
+        elif c.protocol == "vmess":
+            try:
+                b64 = c.raw.replace("vmess://", "")
+                padding = 4 - len(b64) % 4
+                if padding != 4: b64 += "=" * padding
+                data = json.loads(base64.b64decode(b64).decode("utf-8", errors="ignore"))
+                data["ps"] = name
+                new_raw = "vmess://" + base64.b64encode(json.dumps(data, ensure_ascii=False).encode("utf-8")).decode("utf-8")
+                cdn_final.append(new_raw)
+            except: cdn_final.append(c.raw)
+            
+    write_sub_files(cdn_final, "output/cdn.txt", "output/cdn_sub.txt")
+    logger.info(f"[+] Saved {len(cdn_final)} CDN configs.")
 
-    # --- بخش دوم: تولید ۱۵۰ کانفیگ کلودفلر (Clean IP + 3 Ports) ---
-    # انتخاب قالب‌های CDN (WS/gRPC) از کانفیگ‌های تست شده
+    # ================= SUB 3: CLEAN IP CONFIGS (3 PORTS) =================
+    logger.info("Generating Sub 3: Cloudflare Clean IP (3-Ports)...")
+    # قالب‌های CDN را برای جایگذاری آی‌پی‌های تمیز برمی‌داریم
     cdn_templates = [c for c in tested_configs if c.is_cdn]
     if not cdn_templates:
-        # اگر قالبی نبود، از کل کانفیگ‌های پارس شده استفاده کن
         cdn_templates = [c for c in configs if c.is_cdn]
         
     clean_ips = []
@@ -179,18 +207,17 @@ def main():
         with open("clean_ips.txt", "r") as f:
             clean_ips = [line.strip() for line in f if line.strip()]
 
-    clean_configs = []
+    clean_final = []
     if clean_ips and cdn_templates:
-        logger.info("Generating exactly 150 Cloudflare Clean IP configs...")
-        limit = 150
+        limit = 300  # کل ۱۰۰ آی‌پی ضرب‌در ۳ پورت = ۳۰۰ کانفیگ
         ip_index = 0
         port_index = 0
         
-        while len(clean_configs) < limit:
+        while len(clean_final) < limit:
             ip = clean_ips[ip_index % len(clean_ips)]
             port = TARGET_PORTS[port_index % len(TARGET_PORTS)]
-            template = cdn_templates[len(clean_configs) % len(cdn_templates)]
-            name = f"{PREFIX}CF-clean-{len(clean_configs)+1}-{port}"
+            template = cdn_templates[len(clean_final) % len(cdn_templates)]
+            name = f"{PREFIX}CF-clean-{len(clean_final)+1}-{port}"
             
             new_raw = None
             if template.protocol == "vless":
@@ -222,32 +249,16 @@ def main():
                 except: pass
 
             if new_raw:
-                clean_configs.append(new_raw)
+                clean_final.append(new_raw)
                 
             port_index += 1
             if port_index % len(TARGET_PORTS) == 0:
                 ip_index += 1
 
-        with open("output/clean.txt", "w", encoding="utf-8") as f:
-            for c in clean_configs:
-                f.write(c + "\n")
-        logger.info(f"Saved {len(clean_configs)} Cloudflare configs to output/clean.txt")
+    write_sub_files(clean_final, "output/clean.txt", "output/clean_sub.txt")
+    logger.info(f"[+] Saved {len(clean_final)} Clean IP configs across 3 ports.")
 
-    # --- بخش سوم: ادغام و ساخت سابسکریپشن کل (مجموعاً ۳۰۰ کانفیگ) ---
-    all_final_configs = direct_configs + clean_configs
-    
-    # ذخیره متنی کل ۳۰۰ کانفیگ
-    with open("output/best.txt", "w", encoding="utf-8") as f:
-        for c in all_final_configs:
-            f.write(c + "\n")
-            
-    # ذخیره سابسکریپشن Base64 کل ۳۰۰ کانفیگ
-    b64_all = base64.b64encode(("\n".join(all_final_configs)).encode("utf-8")).decode("utf-8")
-    with open("output/clean_sub.txt", "w", encoding="utf-8") as f:
-        f.write(b64_all)
-
-    logger.info(f"=== SUCCESS ===")
-    logger.info(f"Total Subscription Configs: {len(all_final_configs)} (150 Direct + 150 Cloudflare)")
+    logger.info("=== ALL SUBSCRIPTIONS GENERATED SUCCESSFULLY ===")
 
 if __name__ == "__main__":
     main()
