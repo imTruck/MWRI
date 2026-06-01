@@ -86,11 +86,14 @@ def test_config(config):
     return config
 
 def write_sub_files(configs, plain_path, b64_path):
-    # ذخیره متنی عادی
+    # اگر لیست خالی بود، یک کانفیگ نمونه می‌گذاریم تا فایل‌ها خالی نمانند و ساخته شوند
+    if not configs:
+        configs = ["vless://dummy@1.1.1.1:443?security=tls#No-Configs-Found-Try-Again-Later"]
+        
     with open(plain_path, "w", encoding="utf-8") as f:
         for c in configs:
             f.write(c + "\n")
-    # ذخیره بیس ۶۴
+            
     b64_data = base64.b64encode(("\n".join(configs)).encode("utf-8")).decode("utf-8")
     with open(b64_path, "w", encoding="utf-8") as f:
         f.write(b64_data)
@@ -137,13 +140,13 @@ def main():
     alive_configs.sort(key=lambda x: x.latency)
     logger.info(f"Total Alive: {len(alive_configs)} / {len(configs)}")
 
-    if not alive_configs:
-        logger.warning("No alive configs found!")
-        return
-
     # ================= SUB 1: DIRECT CONFIGS (NON-CF) =================
     logger.info("Generating Sub 1: Direct (Non-Cloudflare)...")
     direct_candidates = [c for c in alive_configs if not c.is_cdn]
+    # اگر زنده نداشتیم از کل لیست استفاده کن
+    if not direct_candidates:
+        direct_candidates = [c for c in tested_configs if not c.is_cdn]
+        
     direct_final = []
     for idx, c in enumerate(direct_candidates[:150]):
         name = f"{PREFIX}Direct-{idx+1}"
@@ -171,6 +174,12 @@ def main():
     # ================= SUB 2: CDN CONFIGS (ORIGINAL SNI) =================
     logger.info("Generating Sub 2: Cloudflare CDN (Original Domain)...")
     cdn_candidates = [c for c in alive_configs if c.is_cdn]
+    # اگر زنده پیدا نشد، از کل کانفیگ‌های CDN دانلود شده استفاده کن تا سابسکریپشن هرگز خالی نماند
+    if not cdn_candidates:
+        cdn_candidates = [c for c in tested_configs if c.is_cdn]
+    if not cdn_candidates:
+        cdn_candidates = [c for c in configs if c.is_cdn]
+        
     cdn_final = []
     for idx, c in enumerate(cdn_candidates[:150]):
         name = f"{PREFIX}CDN-{idx+1}"
@@ -197,7 +206,6 @@ def main():
 
     # ================= SUB 3: CLEAN IP CONFIGS (3 PORTS) =================
     logger.info("Generating Sub 3: Cloudflare Clean IP (3-Ports)...")
-    # قالب‌های CDN را برای جایگذاری آی‌پی‌های تمیز برمی‌داریم
     cdn_templates = [c for c in tested_configs if c.is_cdn]
     if not cdn_templates:
         cdn_templates = [c for c in configs if c.is_cdn]
@@ -209,7 +217,7 @@ def main():
 
     clean_final = []
     if clean_ips and cdn_templates:
-        limit = 300  # کل ۱۰۰ آی‌پی ضرب‌در ۳ پورت = ۳۰۰ کانفیگ
+        limit = 300
         ip_index = 0
         port_index = 0
         
