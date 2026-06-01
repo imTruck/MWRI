@@ -18,30 +18,14 @@
 
 * ⚡ **Ultra-Fast Speed:** اجرای کل فرآیند جمع‌آوری، تفکیک تکراری‌ها و ساخت ۸ سابسکریپشن در کمتر از **۲ ثانیه**.
 * 🛡️ **Zero Corrupt Logic:** عدم دستکاری در پارامترهای اصلی انتقال (TLS, Reality pbk/sid, gRPC/WS) جهت تضمین راندمان ۱۰۰٪ واقعی کلاینت‌ها.
-* 📦 **Anti-Lag Division:** شکستن مخزن کانفیگ‌ها به قطعات ۱۰۰ تایی مجزا برای پیشگیری از کندی، لودینگ طولانی یا کرش کردن نرم‌افزارهای کلاینت.
+* 📦 **Anti-Lag Division:** شکستن مخزن کانفیگ‌ها به قطعات ۱۰۰ تایی مجزا برای پیشگیری از کندی یا کرش کردن نرم‌افزارهای کلاینت.
 * 🧘🏽 **Gorgeous Naming:** نام‌گذاری فوق‌العاده منظم به صورت `mwri🧘🏽 | S{1-8} - {1-100}` جهت تفکیک شیک و دسته‌بندی‌شده.
 
 ---
 
-## 📡 لینک‌های سابسکریپشن مستقیم (Plain Text)
-> **پیشنهاد ویژه:** برای سرعت بیشتر و پایداری لود کلاینت، استفاده از لینک‌های متنی مستقیم (Plain Text) زیر پیشنهاد می‌شود.
+## 📡 لینک‌های سابسکریپشن (با قابلیت کپی سریع)
+> **راهنما:** برای کپی کردن هر لینک، کافیست روی علامت **کپی (Copy)** در سمت راست باکس‌های خاکستری زیر کلیک کنید و سپس آن را در کلاینت خود (v2rayNG, Nekobox, Shadowrocket) وارد کنید.
 
-| 🗂️ دسته سابسکریپشن | 🔗 لینک سابسکریپشن مستقیم و خوانا |
-| :--- | :--- |
-| **سابسکریپشن ۱ 🧘🏽** | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub1.txt` |
-| **سابسکریپشن ۲ 🧘🏽** | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub2.txt` |
-| **سابسکریپشن ۳ 🧘🏽** | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub3.txt` |
-| **سابسکریپشن ۴ 🧘🏽** | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub4.txt` |
-| **سابسکریپشن ۵ 🧘🏽** | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub5.txt` |
-| **سابسکریپشن ۶ 🧘🏽** | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub6.txt` |
-| **سابسکریپشن ۷ 🧘🏽** | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub7.txt` |
-| **سابسکریپشن ۸ 🧘🏽** | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub8.txt` |
-
----
-
-## ⚙️ راهنمای اجرا و آپدیت خودکار
-
-کافیست ترمینال خود را باز کرده و خط زیر را اجرا کنید تا کل کانفیگ‌های روی گیت‌هابتان در چند ثانیه کاملاً بروزرسانی شوند:
-
-```bash
-python main.py ; git add . ; git commit -m "Update nodes" ; git push origin main
+### 🧘🏽 سابسکریپشن ۱ (۱۰۰ کانفیگ متنی)
+```text
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub1.txt
