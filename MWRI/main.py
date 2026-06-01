@@ -25,6 +25,7 @@ class Config:
         self.use_tls = False
         self.is_alive = False
         self.latency = -1
+        self.is_cdn = False
         self._parse()
 
     def _parse(self):
@@ -36,7 +37,10 @@ class Config:
                 self.port = parsed.port
                 params = dict(urllib.parse.parse_qsl(parsed.query))
                 self.sni = params.get("sni", params.get("host", self.address))
-                self.use_tls = params.get("security", "").lower() in ["tls", "reality"] or self.port in TARGET_PORTS
+                security = params.get("security", "").lower()
+                self.use_tls = security in ["tls", "xtls", "reality"] or self.port in [443, 2083, 8443]
+                self.is_cdn = params.get("type", "").lower() in ["ws", "grpc", "httpupgrade", "splithttp"]
+                
             elif self.raw.startswith("vmess://"):
                 self.protocol = "vmess"
                 b64 = self.raw.replace("vmess://", "")
@@ -46,7 +50,9 @@ class Config:
                 self.address = data.get("add", "")
                 self.port = int(data.get("port", 0))
                 self.sni = data.get("sni", data.get("host", self.address))
-                self.use_tls = str(data.get("tls", "")).lower() in ["tls", "reality"] or self.port in TARGET_PORTS
+                tls_val = str(data.get("tls", "")).lower()
+                self.use_tls = tls_val in ["tls", "reality"] or self.port in [443, 2083, 8443]
+                self.is_cdn = str(data.get("net", "")).lower() in ["ws", "grpc", "httpupgrade", "splithttp"]
         except:
             pass
 
@@ -62,6 +68,7 @@ def test_config(config):
         start = time.perf_counter()
         sock.connect((config.address, config.port))
         
+        # فقط اگر کانفیگ TLS دارد تست هندشیک انجام شود، در غیر این صورت اتصال TCP کافیست
         if config.use_tls:
             context = ssl.create_default_context()
             context.check_hostname = False
@@ -93,18 +100,19 @@ def main():
         logger.error(f"Download failed: {e}")
         return
 
-    # 2. Parse & Filter
+    # 2. Parse (بدون فیلتر سخت‌گیرانه TLS/CDN)
     configs = []
     for line in raw_lines:
         c = Config(line)
-        if c.protocol in ["vless", "vmess"] and c.use_tls and c.address:
+        if c.protocol in ["vless", "vmess"] and c.address:
+            # حذف آی‌پی‌های مستقیم در مرحله اولیه برای افزایش کیفیت دامنه‌ها
             if not c.address[0].isdigit():
                 configs.append(c)
             
-    logger.info(f"Filtered {len(configs)} high-quality TLS configs.")
+    logger.info(f"Parsed {len(configs)} VLESS/VMESS configs.")
 
     # 3. High-Speed Test (500 Workers)
-    logger.info("Testing with 500 workers (TLS Handshake Test)...")
+    logger.info("Testing with 500 workers (TCP & TLS Handshake Test)...")
     tested_configs = []
     with ThreadPoolExecutor(max_workers=500) as executor:
         futures = {executor.submit(test_config, c): c for c in configs}
@@ -113,74 +121,133 @@ def main():
 
     alive_configs = [c for c in tested_configs if c.is_alive]
     alive_configs.sort(key=lambda x: x.latency)
-    logger.info(f"Alive configs: {len(alive_configs)} / {len(configs)}")
+    logger.info(f"Total Alive configs: {len(alive_configs)} / {len(configs)}")
 
     if not alive_configs:
-        logger.warning("No alive configs found on your connection! Please check your network/VPN status.")
+        logger.warning("No alive configs found!")
         return
 
-    # 4. Save Best Original Configs
-    best_file = "output/best.txt"
-    with open(best_file, "w", encoding="utf-8") as f:
-        for c in alive_configs[:100]:
-            f.write(c.raw + "\n")
-    logger.info(f"Saved top 100 working configs to {best_file}")
+    # --- بخش اول: تفکیک و انتخاب ۱۵۰ کانفیگ مستقیم (غیر کلودفلر) ---
+    # ترجیحاً کانفیگ‌هایی که CDN نیستند (مثل Reality یا TCP مستقیم)
+    direct_candidates = [c for c in alive_configs if not c.is_cdn]
+    # اگر کاندیدای دایرکت کم بود، از بقیه کانفیگ‌های زنده پر کن
+    if len(direct_candidates) < 150:
+        logger.info(f"Direct candidates: {len(direct_candidates)}. Filling remaining from other alive nodes...")
+        used_raws = {c.raw for c in direct_candidates}
+        for c in alive_configs:
+            if c.raw not in used_raws and len(direct_candidates) < 150:
+                direct_candidates.append(c)
+                used_raws.add(c.raw)
+                
+    direct_configs = []
+    for idx, c in enumerate(direct_candidates[:150]):
+        # زیباسازی نام کانفیگ‌های دایرکت
+        name = f"{PREFIX}Direct-{idx+1}"
+        if c.protocol == "vless":
+            try:
+                parsed = urllib.parse.urlparse(c.raw)
+                params = dict(urllib.parse.parse_qsl(parsed.query))
+                new_raw = f"vless://{parsed.username}@{parsed.hostname}:{parsed.port}?" + urllib.parse.urlencode(params) + f"#{name}"
+                direct_configs.append(new_raw)
+            except: direct_configs.append(c.raw)
+        elif c.protocol == "vmess":
+            try:
+                b64 = c.raw.replace("vmess://", "")
+                padding = 4 - len(b64) % 4
+                if padding != 4: b64 += "=" * padding
+                data = json.loads(base64.b64decode(b64).decode("utf-8", errors="ignore"))
+                data["ps"] = name
+                new_raw = "vmess://" + base64.b64encode(json.dumps(data, ensure_ascii=False).encode("utf-8")).decode("utf-8")
+                direct_configs.append(new_raw)
+            except: direct_configs.append(c.raw)
 
-    # 5. Apply Clean IPs with 3 Ports (443, 2083, 8443)
+    # ذخیره کانفیگ‌های دایرکت
+    with open("output/direct.txt", "w", encoding="utf-8") as f:
+        for c in direct_configs:
+            f.write(c + "\n")
+    logger.info(f"Saved {len(direct_configs)} Direct (non-CF) configs to output/direct.txt")
+
+    # --- بخش دوم: تولید ۱۵۰ کانفیگ کلودفلر (Clean IP + 3 Ports) ---
+    # انتخاب قالب‌های CDN (WS/gRPC) از کانفیگ‌های تست شده
+    cdn_templates = [c for c in tested_configs if c.is_cdn]
+    if not cdn_templates:
+        # اگر قالبی نبود، از کل کانفیگ‌های پارس شده استفاده کن
+        cdn_templates = [c for c in configs if c.is_cdn]
+        
     clean_ips = []
     if os.path.exists("clean_ips.txt"):
         with open("clean_ips.txt", "r") as f:
             clean_ips = [line.strip() for line in f if line.strip()]
 
-    if clean_ips and alive_configs:
-        logger.info(f"Applying 3 Ports (443, 2083, 8443) to {len(clean_ips)} Clean IPs...")
-        clean_configs = []
-        for i, ip in enumerate(clean_ips):
-            for p_idx, port in enumerate(TARGET_PORTS):
-                template = alive_configs[(i * len(TARGET_PORTS) + p_idx) % len(alive_configs)]
-                name = f"{PREFIX}clean-{i+1}-{port}"
-                
-                if template.protocol == "vless":
-                    try:
-                        parsed = urllib.parse.urlparse(template.raw)
-                        params = dict(urllib.parse.parse_qsl(parsed.query))
-                        params["host"] = template.sni
-                        params["security"] = "tls"
-                        params["sni"] = template.sni
-                        params["alpn"] = "h2,http/1.1"
-                        params["fp"] = "chrome"
-                        params["allowInsecure"] = "1"
-                        new_raw = f"vless://{parsed.username}@{ip}:{port}?" + urllib.parse.urlencode(params) + f"#{name}"
-                        clean_configs.append(new_raw)
-                    except: pass
-                elif template.protocol == "vmess":
-                    try:
-                        b64 = template.raw.replace("vmess://", "")
-                        padding = 4 - len(b64) % 4
-                        if padding != 4: b64 += "=" * padding
-                        data = json.loads(base64.b64decode(b64).decode("utf-8", errors="ignore"))
-                        data["add"] = ip
-                        data["port"] = port
-                        data["tls"] = "tls"
-                        data["ps"] = name
-                        data["alpn"] = "h2,http/1.1"
-                        data["fp"] = "chrome"
-                        data["allowInsecure"] = True
-                        new_raw = "vmess://" + base64.b64encode(json.dumps(data, ensure_ascii=False).encode("utf-8")).decode("utf-8")
-                        clean_configs.append(new_raw)
-                    except: pass
+    clean_configs = []
+    if clean_ips and cdn_templates:
+        logger.info("Generating exactly 150 Cloudflare Clean IP configs...")
+        limit = 150
+        ip_index = 0
+        port_index = 0
+        
+        while len(clean_configs) < limit:
+            ip = clean_ips[ip_index % len(clean_ips)]
+            port = TARGET_PORTS[port_index % len(TARGET_PORTS)]
+            template = cdn_templates[len(clean_configs) % len(cdn_templates)]
+            name = f"{PREFIX}CF-clean-{len(clean_configs)+1}-{port}"
+            
+            new_raw = None
+            if template.protocol == "vless":
+                try:
+                    parsed = urllib.parse.urlparse(template.raw)
+                    params = dict(urllib.parse.parse_qsl(parsed.query))
+                    params["host"] = template.sni
+                    params["security"] = "tls"
+                    params["sni"] = template.sni
+                    params["alpn"] = "h2,http/1.1"
+                    params["fp"] = "chrome"
+                    params["allowInsecure"] = "1"
+                    new_raw = f"vless://{parsed.username}@{ip}:{port}?" + urllib.parse.urlencode(params) + f"#{name}"
+                except: pass
+            elif template.protocol == "vmess":
+                try:
+                    b64 = template.raw.replace("vmess://", "")
+                    padding = 4 - len(b64) % 4
+                    if padding != 4: b64 += "=" * padding
+                    data = json.loads(base64.b64decode(b64).decode("utf-8", errors="ignore"))
+                    data["add"] = ip
+                    data["port"] = port
+                    data["tls"] = "tls"
+                    data["ps"] = name
+                    data["alpn"] = "h2,http/1.1"
+                    data["fp"] = "chrome"
+                    data["allowInsecure"] = True
+                    new_raw = "vmess://" + base64.b64encode(json.dumps(data, ensure_ascii=False).encode("utf-8")).decode("utf-8")
+                except: pass
 
-        clean_file = "output/clean.txt"
-        with open(clean_file, "w", encoding="utf-8") as f:
+            if new_raw:
+                clean_configs.append(new_raw)
+                
+            port_index += 1
+            if port_index % len(TARGET_PORTS) == 0:
+                ip_index += 1
+
+        with open("output/clean.txt", "w", encoding="utf-8") as f:
             for c in clean_configs:
                 f.write(c + "\n")
-        
-        # Save Base64 subscription
-        b64_clean = base64.b64encode(("\n".join(clean_configs)).encode("utf-8")).decode("utf-8")
-        with open("output/clean_sub.txt", "w", encoding="utf-8") as f:
-            f.write(b64_clean)
+        logger.info(f"Saved {len(clean_configs)} Cloudflare configs to output/clean.txt")
+
+    # --- بخش سوم: ادغام و ساخت سابسکریپشن کل (مجموعاً ۳۰۰ کانفیگ) ---
+    all_final_configs = direct_configs + clean_configs
+    
+    # ذخیره متنی کل ۳۰۰ کانفیگ
+    with open("output/best.txt", "w", encoding="utf-8") as f:
+        for c in all_final_configs:
+            f.write(c + "\n")
             
-        logger.info(f"Generated {len(clean_configs)} clean IP configs with 3 ports in {clean_file}")
+    # ذخیره سابسکریپشن Base64 کل ۳۰۰ کانفیگ
+    b64_all = base64.b64encode(("\n".join(all_final_configs)).encode("utf-8")).decode("utf-8")
+    with open("output/clean_sub.txt", "w", encoding="utf-8") as f:
+        f.write(b64_all)
+
+    logger.info(f"=== SUCCESS ===")
+    logger.info(f"Total Subscription Configs: {len(all_final_configs)} (150 Direct + 150 Cloudflare)")
 
 if __name__ == "__main__":
     main()
