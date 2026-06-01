@@ -1,31 +1,93 @@
-﻿# <p align="center">🧘🏽 MWRI - Neo Proxy Aggregator</p>
+﻿<div align="center">
 
-<p align="center">
-  <img src="https://img.shields.io/github/languages/top/imTruck/MWRI?color=purple&style=for-the-badge" alt="Language">
-  <img src="https://img.shields.io/github/repo-size/imTruck/MWRI?color=magenta&style=for-the-badge" alt="Size">
-  <img src="https://img.shields.io/github/last-commit/imTruck/MWRI?color=cyan&style=for-the-badge" alt="Last Commit">
-</p>
+# 🧘🏽 MWRI
 
----
+### Lightweight Proxy Subscription Splitter
 
-<p align="right">
-یک موتور فوق‌العاده سبک، سریع و کاملاً هوشمند برای جمع‌آوری، هرس کردن و زیباسازی کانفیگ‌های فعال اینترنت. این سیستم کانفیگ‌های دریافتی را بدون دستکاری در لایه‌های حساس امنیتی (مانند Reality Flow) فیلتر کرده، نام‌گذاری یکدست انجام می‌دهد و آن‌ها را به <b>۸ سابسکریپشن مجزا و بسیار سبک ۱۰۰ تایی</b> تقسیم می‌کند.
-</p>
+Transforms large proxy collections into clean, organized subscriptions.
 
----
+<img src="https://img.shields.io/github/stars/imTruck/MWRI?style=for-the-badge&color=8A2BE2">
+<img src="https://img.shields.io/github/last-commit/imTruck/MWRI?style=for-the-badge&color=00C2FF">
+<img src="https://img.shields.io/github/repo-size/imTruck/MWRI?style=for-the-badge&color=FF69B4">
 
-## 🌟 ویژگی‌های کلیدی پروژه
-
-* ⚡ **Ultra-Fast Speed:** اجرای کل فرآیند جمع‌آوری، تفکیک تکراری‌ها و ساخت ۸ سابسکریپشن در کمتر از **۲ ثانیه**.
-* 🛡️ **Zero Corrupt Logic:** عدم دستکاری در پارامترهای اصلی انتقال (TLS, Reality pbk/sid, gRPC/WS) جهت تضمین راندمان ۱۰۰٪ واقعی کلاینت‌ها.
-* 📦 **Anti-Lag Division:** شکستن مخزن کانفیگ‌ها به قطعات ۱۰۰ تایی مجزا برای پیشگیری از کندی یا کرش کردن نرم‌افزارهای کلاینت.
-* 🧘🏽 **Gorgeous Naming:** نام‌گذاری فوق‌العاده منظم به صورت `mwri🧘🏽 | S{1-8} - {1-100}` جهت تفکیک شیک و دسته‌بندی‌شده.
+</div>
 
 ---
 
-## 📡 لینک‌های سابسکریپشن (با قابلیت کپی سریع)
-> **راهنما:** برای کپی کردن هر لینک، کافیست روی علامت **کپی (Copy)** در سمت راست باکس‌های خاکستری زیر کلیک کنید و سپس آن را در کلاینت خود (v2rayNG, Nekobox, Shadowrocket) وارد کنید.
+## ⚡ Features
 
-### 🧘🏽 سابسکریپشن ۱ (۱۰۰ کانفیگ متنی)
-```text
+- 🧘🏽 Clean naming format
+- 📦 Split large subscriptions into smaller sets
+- 🚀 Fast generation
+- 🔄 Easy updates
+- 💎 Lightweight structure
+
+---
+
+# 📡 Subscription Links
+
+### S1
+```txt
 https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub1.txt
+```
+
+### S2
+```txt
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub2.txt
+```
+
+### S3
+```txt
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub3.txt
+```
+
+### S4
+```txt
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub4.txt
+```
+
+### S5
+```txt
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub5.txt
+```
+
+### S6
+```txt
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub6.txt
+```
+
+### S7
+```txt
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub7.txt
+```
+
+### S8
+```txt
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub8.txt
+```
+
+---
+
+## 📊 Structure
+
+```text
+output/
+├── sub1.txt
+├── sub2.txt
+├── sub3.txt
+├── sub4.txt
+├── sub5.txt
+├── sub6.txt
+├── sub7.txt
+└── sub8.txt
+```
+
+---
+
+<div align="center">
+
+### 💜 MWRI
+
+Organized • Fast • Minimal
+
+</div>
