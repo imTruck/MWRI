@@ -2,22 +2,26 @@
 
 # 🧘🏽 MWRI
 
-### Curated Proxy Subscription Collection
+### Premium Proxy Subscription Collection
 
-[![GitHub last commit](https://img.shields.io/github/last-commit/imTruck/MWRI?style=flat-square)](https://github.com/imTruck/MWRI)
-[![Repo Size](https://img.shields.io/github/repo-size/imTruck/MWRI?style=flat-square)](https://github.com/imTruck/MWRI)
-[![Stars](https://img.shields.io/github/stars/imTruck/MWRI?style=flat-square)](https://github.com/imTruck/MWRI)
+<img src="https://img.shields.io/badge/MWRI-PROXY%20COLLECTION-8A2BE2?style=for-the-badge">
+<img src="https://img.shields.io/github/last-commit/imTruck/MWRI?style=for-the-badge&color=00E5FF">
+<img src="https://img.shields.io/github/repo-size/imTruck/MWRI?style=for-the-badge&color=FF0080">
 
-Fast, lightweight and organized proxy subscriptions split into smaller sets for better client performance.
+<br>
+
+> ⚡ Fast • Clean • Organized • Lightweight
 
 </div>
 
 ---
 
-## 📡 Subscription Links
+# 🚀 Subscription Hub
 
-| Subscription | URL |
-|-------------|-----|
+<div align="center">
+
+| 🧘🏽 Subscription | Direct Link |
+|:---:|:---|
 | S1 | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub1.txt` |
 | S2 | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub2.txt` |
 | S3 | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub3.txt` |
@@ -27,21 +31,23 @@ Fast, lightweight and organized proxy subscriptions split into smaller sets for 
 | S7 | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub7.txt` |
 | S8 | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub8.txt` |
 
----
-
-## ⚡ Quick Start
-
-Import any subscription link into:
-
-- v2rayNG
-- Nekobox
-- v2rayN
-- Shadowrocket
-- Clash Meta compatible clients
+</div>
 
 ---
 
-## 📂 Project Structure
+# ✨ Features
+
+```diff
++ Organized 100-node chunks
++ Lightweight subscriptions
++ Duplicate-free collections
++ Clean naming convention
++ Fast updates
+```
+
+---
+
+# 📦 Structure
 
 ```text
 output/
@@ -59,6 +65,8 @@ output/
 
 <div align="center">
 
-Made with 🧘🏽
+## 💜 MWRI
+
+Curated • Clean • Powerful
 
 </div>
