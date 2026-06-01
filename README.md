@@ -4,50 +4,91 @@
 
 ### Premium Proxy Subscription Collection
 
-<img src="https://img.shields.io/badge/MWRI-PROXY%20COLLECTION-8A2BE2?style=for-the-badge">
-<img src="https://img.shields.io/github/last-commit/imTruck/MWRI?style=for-the-badge&color=00E5FF">
-<img src="https://img.shields.io/github/repo-size/imTruck/MWRI?style=for-the-badge&color=FF0080">
+<p>
+  <img src="https://img.shields.io/github/last-commit/imTruck/MWRI?style=for-the-badge&color=8A2BE2">
+  <img src="https://img.shields.io/github/repo-size/imTruck/MWRI?style=for-the-badge&color=00C2FF">
+  <img src="https://img.shields.io/github/languages/top/imTruck/MWRI?style=for-the-badge&color=FF0080">
+</p>
 
-<br>
-
-> ⚡ Fast • Clean • Organized • Lightweight
-
-</div>
-
----
-
-# 🚀 Subscription Hub
-
-<div align="center">
-
-| 🧘🏽 Subscription | Direct Link |
-|:---:|:---|
-| S1 | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub1.txt` |
-| S2 | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub2.txt` |
-| S3 | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub3.txt` |
-| S4 | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub4.txt` |
-| S5 | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub5.txt` |
-| S6 | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub6.txt` |
-| S7 | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub7.txt` |
-| S8 | `https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub8.txt` |
+Fast • Clean • Lightweight • Organized
 
 </div>
 
 ---
 
-# ✨ Features
+## ⚡ About
 
-```diff
-+ Organized 100-node chunks
-+ Lightweight subscriptions
-+ Duplicate-free collections
-+ Clean naming convention
-+ Fast updates
+MWRI is a lightweight subscription collection project.
+
+Subscriptions are automatically organized into smaller chunks for better client performance and easier management.
+
+---
+
+# 📡 Subscription Links
+
+> Click the copy button on the right side of each box.
+
+### 🧘🏽 Subscription 1
+
+```text
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub1.txt
+```
+
+### 🧘🏽 Subscription 2
+
+```text
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub2.txt
+```
+
+### 🧘🏽 Subscription 3
+
+```text
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub3.txt
+```
+
+### 🧘🏽 Subscription 4
+
+```text
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub4.txt
+```
+
+### 🧘🏽 Subscription 5
+
+```text
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub5.txt
+```
+
+### 🧘🏽 Subscription 6
+
+```text
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub6.txt
+```
+
+### 🧘🏽 Subscription 7
+
+```text
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub7.txt
+```
+
+### 🧘🏽 Subscription 8
+
+```text
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub8.txt
 ```
 
 ---
 
-# 📦 Structure
+## ✨ Features
+
+- 🚀 Fast updates
+- 📦 Split subscriptions
+- 💎 Lightweight structure
+- 🧘🏽 Clean naming format
+- 🔄 Easy maintenance
+
+---
+
+## 📂 Structure
 
 ```text
 output/
@@ -65,8 +106,8 @@ output/
 
 <div align="center">
 
-## 💜 MWRI
+### 💜 MWRI
 
-Curated • Clean • Powerful
+Organized • Fast • Minimal
 
 </div>
