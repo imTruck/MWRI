@@ -1,0 +1,7 @@
+.venv/
+output/
+temp_configs/
+__pycache__/
+*.pyc
+xray.exe
+xray
