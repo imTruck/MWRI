@@ -1,0 +1,27 @@
+{
+  "total_configs": 2421,
+  "chunk_size": 300,
+  "total_subs": 9,
+  "files": [
+    "sub1.txt",
+    "sub2.txt",
+    "sub3.txt",
+    "sub4.txt",
+    "sub5.txt",
+    "sub6.txt",
+    "sub7.txt",
+    "sub8.txt",
+    "sub9.txt"
+  ],
+  "base64_files": [
+    "sub1_sub.txt",
+    "sub2_sub.txt",
+    "sub3_sub.txt",
+    "sub4_sub.txt",
+    "sub5_sub.txt",
+    "sub6_sub.txt",
+    "sub7_sub.txt",
+    "sub8_sub.txt",
+    "sub9_sub.txt"
+  ]
+}
