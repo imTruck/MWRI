@@ -1,146 +1,208 @@
-MWRI
-یک اسکریپت ساده و تمیز برای:
-دریافت کانفیگ از چند Subscription Source
-استخراج لینک‌ها
-حذف کانفیگ‌های تکراری
-تغییر نام همه کانفیگ‌ها به فرمت یکسان
-ساخت فایل‌های Subscription به‌صورت داینامیک و ۳۰۰تایی
+# MWRI
+
+<p align="center">
+  <b>Dynamic Subscription Builder</b>
+  <br>
+  Extract • Rename • Split • Publish
+</p>
+
+<p align="center">
+  کانفیگ‌ها از چند سورس جمع می‌شوند، تکراری‌ها حذف می‌شوند، اسم همه به فرمت یکسان تغییر می‌کند و خروجی‌ها به‌صورت خودکار در فایل‌های ۳۰۰تایی ساخته می‌شوند.
+</p>
+
 ---
-✨ ویژگی‌ها
-دریافت کانفیگ از چند سورس مختلف
-پشتیبانی از فرمت‌های رایج مثل:
-`vmess://`
-`vless://`
-`trojan://`
-`ss://`
-`ssr://`
-`hysteria://`
-`hy2://`
-`tuic://`
-حذف کانفیگ‌های تکراری
-تغییر نام همه کانفیگ‌ها به این فرمت:
+
+## ✨ Features
+
+- استخراج کانفیگ از چند Subscription Source
+- حذف کانفیگ‌های تکراری
+- Rename کردن همه کانفیگ‌ها با فرمت زیر:
+
 ```text
 mwri 🧘🏽 1
 mwri 🧘🏽 2
 mwri 🧘🏽 3
 ```
-ساخت فایل‌های خروجی بر اساس تعداد واقعی کانفیگ‌ها
-تقسیم خودکار کانفیگ‌ها به فایل‌های ۳۰۰تایی
-ساخت نسخه متنی و Base64 از هر ساب
+
+- تقسیم خودکار خروجی‌ها به فایل‌های ۳۰۰تایی
+- ساخت نسخه متنی و Base64 برای هر ساب
+- به‌روزرسانی خودکار README با لینک‌های قابل کپی
+
 ---
-📦 ساختار پروژه
+
+## 📊 Current Build
+
+- **Total Configs:** `3129`
+- **Chunk Size:** `300`
+- **Total Subs:** `11`
+- **Output Folder:** [`output/`](https://github.com/imTruck/MWRI/tree/main/output)
+
+---
+
+## 🚀 Quick Copy Links
+
+لینک‌های زیر مستقیماً به فایل‌های Subscription اشاره می‌کنند.
+روی هر باکس می‌توانی با یک کلیک `Copy` بزنی و لینک را کپی کنی.
+
+## 🔗 Subscription 1
+
+- **Open:** [sub1_sub.txt](https://github.com/imTruck/MWRI/blob/main/output/sub1_sub.txt)
+- **Raw:** [https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub1_sub.txt](https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub1_sub.txt)
+
+> برای کپی سریع، از دکمه `Copy` گوشه‌ی باکس پایین استفاده کن.
+
 ```text
-MWRI/
-├─ src/
-│  └─ main.py
-├─ output/
-│  ├─ sub1.txt
-│  ├─ sub1_sub.txt
-│  ├─ sub2.txt
-│  ├─ sub2_sub.txt
-│  └─ ...
-├─ requirements.txt
-└─ README.md
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub1_sub.txt
 ```
+## 🔗 Subscription 2
+
+- **Open:** [sub2_sub.txt](https://github.com/imTruck/MWRI/blob/main/output/sub2_sub.txt)
+- **Raw:** [https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub2_sub.txt](https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub2_sub.txt)
+
+> برای کپی سریع، از دکمه `Copy` گوشه‌ی باکس پایین استفاده کن.
+
+```text
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub2_sub.txt
+```
+## 🔗 Subscription 3
+
+- **Open:** [sub3_sub.txt](https://github.com/imTruck/MWRI/blob/main/output/sub3_sub.txt)
+- **Raw:** [https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub3_sub.txt](https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub3_sub.txt)
+
+> برای کپی سریع، از دکمه `Copy` گوشه‌ی باکس پایین استفاده کن.
+
+```text
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub3_sub.txt
+```
+## 🔗 Subscription 4
+
+- **Open:** [sub4_sub.txt](https://github.com/imTruck/MWRI/blob/main/output/sub4_sub.txt)
+- **Raw:** [https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub4_sub.txt](https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub4_sub.txt)
+
+> برای کپی سریع، از دکمه `Copy` گوشه‌ی باکس پایین استفاده کن.
+
+```text
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub4_sub.txt
+```
+## 🔗 Subscription 5
+
+- **Open:** [sub5_sub.txt](https://github.com/imTruck/MWRI/blob/main/output/sub5_sub.txt)
+- **Raw:** [https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub5_sub.txt](https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub5_sub.txt)
+
+> برای کپی سریع، از دکمه `Copy` گوشه‌ی باکس پایین استفاده کن.
+
+```text
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub5_sub.txt
+```
+## 🔗 Subscription 6
+
+- **Open:** [sub6_sub.txt](https://github.com/imTruck/MWRI/blob/main/output/sub6_sub.txt)
+- **Raw:** [https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub6_sub.txt](https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub6_sub.txt)
+
+> برای کپی سریع، از دکمه `Copy` گوشه‌ی باکس پایین استفاده کن.
+
+```text
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub6_sub.txt
+```
+## 🔗 Subscription 7
+
+- **Open:** [sub7_sub.txt](https://github.com/imTruck/MWRI/blob/main/output/sub7_sub.txt)
+- **Raw:** [https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub7_sub.txt](https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub7_sub.txt)
+
+> برای کپی سریع، از دکمه `Copy` گوشه‌ی باکس پایین استفاده کن.
+
+```text
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub7_sub.txt
+```
+## 🔗 Subscription 8
+
+- **Open:** [sub8_sub.txt](https://github.com/imTruck/MWRI/blob/main/output/sub8_sub.txt)
+- **Raw:** [https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub8_sub.txt](https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub8_sub.txt)
+
+> برای کپی سریع، از دکمه `Copy` گوشه‌ی باکس پایین استفاده کن.
+
+```text
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub8_sub.txt
+```
+## 🔗 Subscription 9
+
+- **Open:** [sub9_sub.txt](https://github.com/imTruck/MWRI/blob/main/output/sub9_sub.txt)
+- **Raw:** [https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub9_sub.txt](https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub9_sub.txt)
+
+> برای کپی سریع، از دکمه `Copy` گوشه‌ی باکس پایین استفاده کن.
+
+```text
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub9_sub.txt
+```
+## 🔗 Subscription 10
+
+- **Open:** [sub10_sub.txt](https://github.com/imTruck/MWRI/blob/main/output/sub10_sub.txt)
+- **Raw:** [https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub10_sub.txt](https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub10_sub.txt)
+
+> برای کپی سریع، از دکمه `Copy` گوشه‌ی باکس پایین استفاده کن.
+
+```text
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub10_sub.txt
+```
+## 🔗 Subscription 11
+
+- **Open:** [sub11_sub.txt](https://github.com/imTruck/MWRI/blob/main/output/sub11_sub.txt)
+- **Raw:** [https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub11_sub.txt](https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub11_sub.txt)
+
+> برای کپی سریع، از دکمه `Copy` گوشه‌ی باکس پایین استفاده کن.
+
+```text
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub11_sub.txt
+```
+
 ---
-🔗 سورس‌های فعلی
-اسکریپت از این منابع استفاده می‌کند:
-`https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS_mobile.txt`
-`https://key.zarazaex.xyz/sub`
-`https://raw.githubusercontent.com/Efration/ZerondOne/refs/heads/main/ZerondOne.txt`
-`https://raw.githubusercontent.com/iampedii/whitedns-sub/refs/heads/main/base64.txt`
-`https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_SS+All_RUS.txt`
+
+## 📁 Output Files
+
+برای هر ساب، دو فایل ساخته می‌شود:
+
+- `subX.txt` → نسخه متنی خام کانفیگ‌ها
+- `subX_sub.txt` → نسخه Base64 برای استفاده به‌عنوان Subscription URL
+
 ---
-⚙️ نحوه کار
-اسکریپت این مراحل را انجام می‌دهد:
-دریافت داده از سورس‌ها
-استخراج کانفیگ‌ها
-Decode کردن ساب‌های Base64 در صورت نیاز
-حذف موارد تکراری
-تغییر نام همه کانفیگ‌ها
-تقسیم خروجی به فایل‌های ۳۰۰تایی
-ساخت فایل‌های متنی و Base64
----
-🧠 منطق تقسیم فایل‌ها
-تقسیم‌بندی کاملاً داینامیک است.
-مثال:
-اگر `900` کانفیگ استخراج شود → `3` ساب ساخته می‌شود
-اگر `1000` کانفیگ استخراج شود → `4` ساب ساخته می‌شود
-اگر `1200` کانفیگ استخراج شود → `4` ساب ساخته می‌شود
-اگر `600` کانفیگ استخراج شود → `2` ساب ساخته می‌شود
-یعنی تعداد فایل‌ها با این منطق ساخته می‌شود:
+
+## 🧠 Split Logic
+
+تعداد فایل‌ها کاملاً داینامیک است:
+
 ```text
 total_subs = ceil(total_configs / 300)
 ```
-همچنین قبل از هر اجرا، خروجی‌های قبلی پاک می‌شوند تا فقط فایل‌های جدید باقی بمانند.
+
+### مثال
+- `900` config → `3` sub
+- `1000` config → `4` sub
+- `1200` config → `4` sub
+- `600` config → `2` sub
+
 ---
-🏷️ فرمت نام‌گذاری
-تمام کانفیگ‌ها با این الگو rename می‌شوند:
-```text
-mwri 🧘🏽 {number}
-```
-نمونه:
-```text
-mwri 🧘🏽 1
-mwri 🧘🏽 2
-mwri 🧘🏽 3
-...
-```
----
-🚀 اجرا
-ابتدا وابستگی‌ها را نصب کنید:
+
+## ⚙️ Run Locally
+
 ```bash
 pip install -r requirements.txt
-```
-سپس اسکریپت را اجرا کنید:
-```bash
 python .\src\main.py
 ```
+
 ---
-📁 خروجی‌ها
-در پوشه `output` این فایل‌ها ساخته می‌شوند:
-`sub1.txt`
-`sub1_sub.txt`
-`sub2.txt`
-`sub2_sub.txt`
-...
-`summary.json`
-توضیح فایل‌ها
-`subX.txt`
-نسخه متنی خام کانفیگ‌ها
-`subX_sub.txt`
-نسخه Base64 همان فایل متنی
-`summary.json`
-شامل اطلاعات کلی مثل:
-تعداد کل کانفیگ‌ها
-تعداد کل ساب‌ها
-اندازه هر chunk
-لیست فایل‌های ساخته‌شده
----
-📝 مثال خروجی
-اگر ۹۲۰ کانفیگ پیدا شود:
-`sub1.txt` → 300 config
-`sub2.txt` → 300 config
-`sub3.txt` → 300 config
-`sub4.txt` → 20 config
----
-✅ Git
-برای ثبت تغییرات:
-```bash
-git add src/main.py requirements.txt README.md
+
+## 🛠 Sources
+
+```text
+https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS_mobile.txt
+https://key.zarazaex.xyz/sub
+https://raw.githubusercontent.com/Efration/ZerondOne/refs/heads/main/ZerondOne.txt
+https://raw.githubusercontent.com/iampedii/whitedns-sub/refs/heads/main/base64.txt
+https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_SS+All_RUS.txt
 ```
-اگر خواستی فایل‌های خروجی را هم push کنی:
-```bash
-git add -f output
-```
-سپس:
-```bash
-git commit -m "Build dynamic 300-size subscriptions"
-git push origin main
-```
+
 ---
-📌 نکته
-اگر تعداد کانفیگ‌ها در اجرای بعدی کمتر یا بیشتر شود، تعداد فایل‌های خروجی هم به‌صورت خودکار کم یا زیاد می‌شود.
----
-❤️ MWRI
-ساده، مرتب، داینامیک.
+
+## ❤️ MWRI
+
+Simple, clean, dynamic.

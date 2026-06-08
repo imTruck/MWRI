@@ -21,7 +21,11 @@ NAME_PREFIX = "mwri"
 EMOJI = "🧘🏽"
 CHUNK_SIZE = 300
 OUTPUT_DIR = Path("output")
+README_PATH = Path("README.md")
 TIMEOUT = 20
+REPO_OWNER = "imTruck"
+REPO_NAME = "MWRI"
+REPO_BRANCH = "main"
 SUPPORTED_PREFIXES = (
     "vmess://",
     "vless://",
@@ -128,6 +132,138 @@ def cleanup_old_outputs() -> None:
     (OUTPUT_DIR / "summary.json").unlink(missing_ok=True)
 
 
+def raw_output_url(file_name: str) -> str:
+    return f"https://raw.githubusercontent.com/{REPO_OWNER}/{REPO_NAME}/{REPO_BRANCH}/output/{file_name}"
+
+
+def github_output_url(file_name: str) -> str:
+    return f"https://github.com/{REPO_OWNER}/{REPO_NAME}/blob/{REPO_BRANCH}/output/{file_name}"
+
+
+def write_readme(total_subs: int, total_configs: int) -> None:
+    card_blocks: list[str] = []
+
+    for index in range(1, total_subs + 1):
+        file_name = f"sub{index}_sub.txt"
+        raw_url = raw_output_url(file_name)
+        open_url = github_output_url(file_name)
+        card_blocks.append(
+            f"## 🔗 Subscription {index}\n\n"
+            f"- **Open:** [{file_name}]({open_url})\n"
+            f"- **Raw:** [{raw_url}]({raw_url})\n\n"
+            f"> برای کپی سریع، از دکمه `Copy` گوشه‌ی باکس پایین استفاده کن.\n\n"
+            f"```text\n{raw_url}\n```"
+        )
+
+    if not card_blocks:
+        card_blocks.append(
+            "## 🔗 Subscription Links\n\n"
+            "هنوز هیچ فایلی ساخته نشده. بعد از اجرای اسکریپت، لینک‌ها اینجا به‌صورت خودکار قرار می‌گیرند."
+        )
+
+    content = f'''# MWRI
+
+<p align="center">
+  <b>Dynamic Subscription Builder</b>
+  <br>
+  Extract • Rename • Split • Publish
+</p>
+
+<p align="center">
+  کانفیگ‌ها از چند سورس جمع می‌شوند، تکراری‌ها حذف می‌شوند، اسم همه به فرمت یکسان تغییر می‌کند و خروجی‌ها به‌صورت خودکار در فایل‌های ۳۰۰تایی ساخته می‌شوند.
+</p>
+
+---
+
+## ✨ Features
+
+- استخراج کانفیگ از چند Subscription Source
+- حذف کانفیگ‌های تکراری
+- Rename کردن همه کانفیگ‌ها با فرمت زیر:
+
+```text
+mwri 🧘🏽 1
+mwri 🧘🏽 2
+mwri 🧘🏽 3
+```
+
+- تقسیم خودکار خروجی‌ها به فایل‌های ۳۰۰تایی
+- ساخت نسخه متنی و Base64 برای هر ساب
+- به‌روزرسانی خودکار README با لینک‌های قابل کپی
+
+---
+
+## 📊 Current Build
+
+- **Total Configs:** `{total_configs}`
+- **Chunk Size:** `{CHUNK_SIZE}`
+- **Total Subs:** `{total_subs}`
+- **Output Folder:** [`output/`](https://github.com/{REPO_OWNER}/{REPO_NAME}/tree/{REPO_BRANCH}/output)
+
+---
+
+## 🚀 Quick Copy Links
+
+لینک‌های زیر مستقیماً به فایل‌های Subscription اشاره می‌کنند.
+روی هر باکس می‌توانی با یک کلیک `Copy` بزنی و لینک را کپی کنی.
+
+{chr(10).join(card_blocks)}
+
+---
+
+## 📁 Output Files
+
+برای هر ساب، دو فایل ساخته می‌شود:
+
+- `subX.txt` → نسخه متنی خام کانفیگ‌ها
+- `subX_sub.txt` → نسخه Base64 برای استفاده به‌عنوان Subscription URL
+
+---
+
+## 🧠 Split Logic
+
+تعداد فایل‌ها کاملاً داینامیک است:
+
+```text
+total_subs = ceil(total_configs / 300)
+```
+
+### مثال
+- `900` config → `3` sub
+- `1000` config → `4` sub
+- `1200` config → `4` sub
+- `600` config → `2` sub
+
+---
+
+## ⚙️ Run Locally
+
+```bash
+pip install -r requirements.txt
+python .\\src\\main.py
+```
+
+---
+
+## 🛠 Sources
+
+```text
+https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS_mobile.txt
+https://key.zarazaex.xyz/sub
+https://raw.githubusercontent.com/Efration/ZerondOne/refs/heads/main/ZerondOne.txt
+https://raw.githubusercontent.com/iampedii/whitedns-sub/refs/heads/main/base64.txt
+https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_SS+All_RUS.txt
+```
+
+---
+
+## ❤️ MWRI
+
+Simple, clean, dynamic.
+'''
+    README_PATH.write_text(content, encoding="utf-8")
+
+
 def write_outputs(renamed_links: list[str]) -> None:
     cleanup_old_outputs()
 
@@ -153,6 +289,7 @@ def write_outputs(renamed_links: list[str]) -> None:
         "base64_files": [f"sub{i + 1}_sub.txt" for i in range(total_subs)],
     }
     (OUTPUT_DIR / "summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
+    write_readme(total_subs, total_configs)
 
 
 def main() -> None:
@@ -193,6 +330,7 @@ def main() -> None:
     print(f"Chunk size: {CHUNK_SIZE}")
     print(f"Total subs: {total_subs}")
     print(f"Output dir: {OUTPUT_DIR.resolve()}")
+    print(f"README: {README_PATH.resolve()}")
     print("Done.")
 
 
