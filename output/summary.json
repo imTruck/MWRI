@@ -1,31 +1,20 @@
 {
-  "total_configs": 3129,
+  "total_configs": 3345,
   "chunk_size": 300,
-  "total_subs": 11,
+  "total_subs": 5,
+  "rule": "sub1..sub4 up to 300 configs each, everything else goes to sub5",
   "files": [
     "sub1.txt",
     "sub2.txt",
     "sub3.txt",
     "sub4.txt",
-    "sub5.txt",
-    "sub6.txt",
-    "sub7.txt",
-    "sub8.txt",
-    "sub9.txt",
-    "sub10.txt",
-    "sub11.txt"
+    "sub5.txt"
   ],
   "base64_files": [
     "sub1_sub.txt",
     "sub2_sub.txt",
     "sub3_sub.txt",
     "sub4_sub.txt",
-    "sub5_sub.txt",
-    "sub6_sub.txt",
-    "sub7_sub.txt",
-    "sub8_sub.txt",
-    "sub9_sub.txt",
-    "sub10_sub.txt",
-    "sub11_sub.txt"
+    "sub5_sub.txt"
   ]
 }
