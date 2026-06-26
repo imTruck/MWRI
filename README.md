@@ -38,6 +38,7 @@ mwri 🧘🏽 3
 - **Total Configs:** `1416`
 - **Chunk Size:** `300`
 - **Total Subs:** `5`
+- **بروزرسانی خودکار:** `هر 6 ساعت یک بار`
 - **Output Folder:** [output/](https://github.com/imTruck/MWRI/tree/main/output)
 
 ---

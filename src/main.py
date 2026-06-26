@@ -137,7 +137,12 @@ def canonicalize_vmess(link: str) -> str:
     for key in DISPLAY_JSON_KEYS:
         data.pop(key, None)
 
-    return "vmess://" + json.dumps(data, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    return "vmess://" + json.dumps(
+        data,
+        ensure_ascii=False,
+        sort_keys=True,
+        separators=(",", ":"),
+    )
 
 
 def canonicalize_ssr(link: str) -> str:
@@ -151,10 +156,17 @@ def canonicalize_ssr(link: str) -> str:
         return "ssr://" + base
 
     pairs = urllib.parse.parse_qsl(query, keep_blank_values=True)
-    pairs = [(k, v) for k, v in pairs if k.lower() not in DISPLAY_QUERY_KEYS | {"group"}]
+    pairs = [
+        (k, v)
+        for k, v in pairs
+        if k.lower() not in DISPLAY_QUERY_KEYS | {"group"}
+    ]
     pairs.sort()
     normalized_query = urllib.parse.urlencode(pairs, doseq=True)
-    return f"ssr://{base}/?{normalized_query}" if normalized_query else f"ssr://{base}"
+
+    if normalized_query:
+        return f"ssr://{base}/?{normalized_query}"
+    return f"ssr://{base}"
 
 
 def canonicalize_generic_url(link: str) -> str:
@@ -163,7 +175,10 @@ def canonicalize_generic_url(link: str) -> str:
     pairs = [(k, v) for k, v in pairs if k.lower() not in DISPLAY_QUERY_KEYS]
     pairs.sort()
     normalized_query = urllib.parse.urlencode(pairs, doseq=True)
-    return urllib.parse.urlunsplit((parsed.scheme, parsed.netloc, parsed.path, normalized_query, ""))
+
+    return urllib.parse.urlunsplit(
+        (parsed.scheme, parsed.netloc, parsed.path, normalized_query, "")
+    )
 
 
 def canonical_key(link: str) -> str:
@@ -189,7 +204,12 @@ def rename_config(link: str, new_name: str) -> str | None:
 
             data = json.loads(decoded)
             data["ps"] = new_name
-            payload = json.dumps(data, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+            payload = json.dumps(
+                data,
+                ensure_ascii=False,
+                separators=(",", ":"),
+            ).encode("utf-8")
+
             return "vmess://" + base64.b64encode(payload).decode("utf-8")
         except Exception:
             return link
@@ -218,11 +238,17 @@ def cleanup_old_outputs() -> None:
 
 
 def raw_output_url(file_name: str) -> str:
-    return f"https://raw.githubusercontent.com/{REPO_OWNER}/{REPO_NAME}/{REPO_BRANCH}/output/{file_name}"
+    return (
+        f"https://raw.githubusercontent.com/"
+        f"{REPO_OWNER}/{REPO_NAME}/{REPO_BRANCH}/output/{file_name}"
+    )
 
 
 def github_output_url(file_name: str) -> str:
-    return f"https://github.com/{REPO_OWNER}/{REPO_NAME}/blob/{REPO_BRANCH}/output/{file_name}"
+    return (
+        f"https://github.com/{REPO_OWNER}/{REPO_NAME}/blob/"
+        f"{REPO_BRANCH}/output/{file_name}"
+    )
 
 
 def split_links(links: list[str]) -> list[list[str]]:
@@ -285,6 +311,7 @@ def build_readme_content(total_subs: int, total_configs: int) -> str:
         f"- **Total Configs:** `{total_configs}`",
         f"- **Chunk Size:** `{CHUNK_SIZE}`",
         f"- **Total Subs:** `{total_subs}`",
+        "- **بروزرسانی خودکار:** `هر 6 ساعت یک بار`",
         f"- **Output Folder:** [output/](https://github.com/{REPO_OWNER}/{REPO_NAME}/tree/{REPO_BRANCH}/output)",
         "",
         "---",
@@ -370,7 +397,10 @@ def build_readme_content(total_subs: int, total_configs: int) -> str:
 
 
 def write_readme(total_subs: int, total_configs: int) -> None:
-    README_PATH.write_text(build_readme_content(total_subs, total_configs), encoding="utf-8")
+    README_PATH.write_text(
+        build_readme_content(total_subs, total_configs),
+        encoding="utf-8",
+    )
 
 
 def write_outputs(renamed_links: list[str]) -> None:
@@ -387,7 +417,10 @@ def write_outputs(renamed_links: list[str]) -> None:
         b64_path = OUTPUT_DIR / f"sub{index}_sub.txt"
 
         plain_path.write_text(plain_text, encoding="utf-8")
-        b64_path.write_text(base64.b64encode(plain_text.encode("utf-8")).decode("utf-8"), encoding="utf-8")
+        b64_path.write_text(
+            base64.b64encode(plain_text.encode("utf-8")).decode("utf-8"),
+            encoding="utf-8",
+        )
 
     summary = {
         "total_configs": total_configs,
@@ -398,7 +431,10 @@ def write_outputs(renamed_links: list[str]) -> None:
         "base64_files": [f"sub{i + 1}_sub.txt" for i in range(total_subs)],
     }
 
-    (OUTPUT_DIR / "summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
+    (OUTPUT_DIR / "summary.json").write_text(
+        json.dumps(summary, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
     write_readme(total_subs, total_configs)
 
 
