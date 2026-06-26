@@ -35,7 +35,7 @@ mwri 🧘🏽 3
 
 ## 📊 Current Build
 
-- **Total Configs:** `1416`
+- **Total Configs:** `1413`
 - **Chunk Size:** `300`
 - **Total Subs:** `5`
 - **بروزرسانی خودکار:** `هر 6 ساعت یک بار`
