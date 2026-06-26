@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import base64
 import json
+import random
 import urllib.parse
 from pathlib import Path
 
@@ -38,6 +39,22 @@ SUPPORTED_PREFIXES = (
     "hy2://",
     "tuic://",
 )
+
+DISPLAY_QUERY_KEYS = {
+    "remarks",
+    "remark",
+    "ps",
+    "name",
+    "title",
+}
+
+DISPLAY_JSON_KEYS = {
+    "ps",
+    "remark",
+    "remarks",
+    "name",
+    "title",
+}
 
 
 def unwrap_markdown_url(value: str) -> str:
@@ -104,6 +121,58 @@ def extract_links(text: str) -> list[str]:
             links.append(decoded.strip())
 
     return links
+
+
+def canonicalize_vmess(link: str) -> str:
+    encoded = link[len("vmess://") :]
+    decoded = decode_base64_loose(encoded)
+    if not decoded:
+        return link.split("#", 1)[0].strip()
+
+    try:
+        data = json.loads(decoded)
+    except Exception:
+        return link.split("#", 1)[0].strip()
+
+    for key in DISPLAY_JSON_KEYS:
+        data.pop(key, None)
+
+    return "vmess://" + json.dumps(data, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+
+
+def canonicalize_ssr(link: str) -> str:
+    encoded = link[len("ssr://") :]
+    decoded = decode_base64_loose(encoded)
+    if not decoded:
+        return link.split("#", 1)[0].strip()
+
+    base, sep, query = decoded.partition("/?")
+    if not sep:
+        return "ssr://" + base
+
+    pairs = urllib.parse.parse_qsl(query, keep_blank_values=True)
+    pairs = [(k, v) for k, v in pairs if k.lower() not in DISPLAY_QUERY_KEYS | {"group"}]
+    pairs.sort()
+    normalized_query = urllib.parse.urlencode(pairs, doseq=True)
+    return f"ssr://{base}/?{normalized_query}" if normalized_query else f"ssr://{base}"
+
+
+def canonicalize_generic_url(link: str) -> str:
+    parsed = urllib.parse.urlsplit(link)
+    pairs = urllib.parse.parse_qsl(parsed.query, keep_blank_values=True)
+    pairs = [(k, v) for k, v in pairs if k.lower() not in DISPLAY_QUERY_KEYS]
+    pairs.sort()
+    normalized_query = urllib.parse.urlencode(pairs, doseq=True)
+    return urllib.parse.urlunsplit((parsed.scheme, parsed.netloc, parsed.path, normalized_query, ""))
+
+
+def canonical_key(link: str) -> str:
+    link = link.strip()
+    if link.startswith("vmess://"):
+        return canonicalize_vmess(link)
+    if link.startswith("ssr://"):
+        return canonicalize_ssr(link)
+    return canonicalize_generic_url(link)
 
 
 def rename_config(link: str, new_name: str) -> str | None:
@@ -185,7 +254,7 @@ def build_readme_content(total_subs: int, total_configs: int) -> str:
         "</p>",
         "",
         '<p align="center">',
-        "  کانفیگ‌ها از چند سورس جمع می‌شوند، تکراری‌ها حذف می‌شوند، اسم همه به فرمت یکسان تغییر می‌کند و خروجی‌ها به‌صورت خودکار ساخته می‌شوند.",
+        "  کانفیگ‌ها از چند سورس جمع می‌شوند، موارد تکراری واقعی حذف می‌شوند، ترتیب خروجی‌ها رندوم می‌شود و اسم همه به فرمت یکسان تغییر می‌کند.",
         "</p>",
         "",
         "---",
@@ -193,7 +262,8 @@ def build_readme_content(total_subs: int, total_configs: int) -> str:
         "## ✨ Features",
         "",
         "- استخراج کانفیگ از چند Subscription Source",
-        "- حذف کانفیگ‌های تکراری",
+        "- حذف کانفیگ‌های تکراری واقعی حتی اگر اسمشان فرق داشته باشد",
+        "- رندوم شدن ترتیب خروجی‌ها در هر آپدیت",
         "- Rename کردن همه کانفیگ‌ها با فرمت زیر:",
         "",
         "```text",
@@ -336,8 +406,8 @@ def main() -> None:
     session = requests.Session()
     session.headers.update({"User-Agent": "MWRI-Sub-Builder/1.0"})
 
-    all_links: list[str] = []
-    seen: set[str] = set()
+    unique_links: list[str] = []
+    seen_keys: set[str] = set()
 
     for source in SOURCES:
         url = unwrap_markdown_url(source)
@@ -348,17 +418,25 @@ def main() -> None:
             added = 0
             for link in extracted:
                 normalized = link.strip()
-                if normalized and normalized not in seen:
-                    seen.add(normalized)
-                    all_links.append(normalized)
-                    added += 1
+                if not normalized:
+                    continue
 
-            print(f"[+] {url} -> {added} configs")
+                key = canonical_key(normalized)
+                if key in seen_keys:
+                    continue
+
+                seen_keys.add(key)
+                unique_links.append(normalized)
+                added += 1
+
+            print(f"[+] {url} -> {added} unique configs")
         except Exception as exc:
             print(f"[!] {url} -> {exc}")
 
+    random.shuffle(unique_links)
+
     renamed_links: list[str] = []
-    for index, link in enumerate(all_links, start=1):
+    for index, link in enumerate(unique_links, start=1):
         new_name = f"{NAME_PREFIX} {EMOJI} {index}"
         renamed = rename_config(link, new_name)
         if renamed:
@@ -368,7 +446,7 @@ def main() -> None:
 
     total_subs = len(split_links(renamed_links))
     print("----------------------------------------")
-    print(f"Total configs: {len(renamed_links)}")
+    print(f"Total unique configs: {len(renamed_links)}")
     print(f"Chunk size: {CHUNK_SIZE}")
     print(f"Total subs: {total_subs}")
     print(f"Output dir: {OUTPUT_DIR.resolve()}")
