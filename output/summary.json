@@ -1,14 +1,12 @@
 {
-  "total_configs": 346,
+  "total_configs": 281,
   "chunk_size": 300,
-  "total_subs": 2,
+  "total_subs": 1,
   "rule": "sub1..sub4 up to 300 configs each, everything else goes to sub5",
   "files": [
-    "sub1.txt",
-    "sub2.txt"
+    "sub1.txt"
   ],
   "base64_files": [
-    "sub1_sub.txt",
-    "sub2_sub.txt"
+    "sub1_sub.txt"
   ]
 }
