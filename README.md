@@ -35,9 +35,9 @@ mwri 🧘🏽 3
 
 ## 📊 Current Build
 
-- **Total Configs:** `299`
+- **Total Configs:** `356`
 - **Chunk Size:** `300`
-- **Total Subs:** `1`
+- **Total Subs:** `2`
 - **بروزرسانی خودکار:** `هر 6 ساعت یک بار`
 - **Output Folder:** [output/](https://github.com/imTruck/MWRI/tree/main/output)
 
@@ -55,6 +55,18 @@ mwri 🧘🏽 3
 
 ```text
 https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub1_sub.txt
+```
+
+### Subscription 2
+
+- **Base64 File:** [sub2_sub.txt](https://github.com/imTruck/MWRI/blob/main/output/sub2_sub.txt)
+- **Text File:** [sub2.txt](https://github.com/imTruck/MWRI/blob/main/output/sub2.txt)
+- **Raw Link:** [https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub2_sub.txt](https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub2_sub.txt)
+
+> برای کپی سریع، از دکمه `Copy` بالای باکس استفاده کن.
+
+```text
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub2_sub.txt
 ```
 
 ---
