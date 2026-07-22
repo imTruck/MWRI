@@ -35,10 +35,9 @@ mwri 🧘🏽 3
 
 ## 📊 Current Build
 
-- **Total Configs:** `768`
+- **Total Configs:** `985`
 - **Chunk Size:** `300`
-- **Total Subs:** `3`
-- **بروزرسانی خودکار:** `هر 6 ساعت یک بار`
+- **Total Subs:** `4`
 - **Output Folder:** [output/](https://github.com/imTruck/MWRI/tree/main/output)
 
 ---
@@ -81,6 +80,18 @@ https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub2_sub.txt
 https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub3_sub.txt
 ```
 
+### Subscription 4
+
+- **Base64 File:** [sub4_sub.txt](https://github.com/imTruck/MWRI/blob/main/output/sub4_sub.txt)
+- **Text File:** [sub4.txt](https://github.com/imTruck/MWRI/blob/main/output/sub4.txt)
+- **Raw Link:** [https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub4_sub.txt](https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub4_sub.txt)
+
+> برای کپی سریع، از دکمه `Copy` بالای باکس استفاده کن.
+
+```text
+https://raw.githubusercontent.com/imTruck/MWRI/main/output/sub4_sub.txt
+```
+
 ---
 
 ## 🧠 Split Logic
@@ -110,11 +121,14 @@ python .\src\main.py
 ## 🛠 Sources
 
 ```text
+https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt
+https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_SS+All_RUS.txt
 https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS_mobile.txt
-https://key.zarazaex.xyz/sub
+https://raw.githubusercontent.com/wearexstack/xstack/main/sub
+https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/Base64/WHITE-CIDR-RU-all-base64.txt
+https://sub.iampedi5.live/sub/base64.txt
 https://raw.githubusercontent.com/Efration/ZerondOne/refs/heads/main/ZerondOne.txt
 https://raw.githubusercontent.com/iampedii/whitedns-sub/refs/heads/main/base64.txt
-https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_SS+All_RUS.txt
 ```
 
 ---
