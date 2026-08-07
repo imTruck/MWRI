@@ -1,5 +1,5 @@
 {
-  "total_configs": 1094,
+  "total_configs": 1160,
   "chunk_size": 300,
   "total_subs": 4,
   "rule": "sub1..sub4 up to 300 configs each, everything else goes to sub5",
